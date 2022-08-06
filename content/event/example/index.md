@@ -1,7 +1,7 @@
 ---
 title: Example Talk
 
-event: Wowchemy Conference
+event: Paleo Conference
 event_url: https://example.org
 
 location: Wowchemy HQ

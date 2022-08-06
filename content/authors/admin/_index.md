@@ -5,8 +5,8 @@ avatar_filename: armando-falcucci.jpg
 bio: My research interests include distributed robotics, mobile computing and
   programmable matter.
 interests:
-  - Archaeology
-  - Lithics
+  - Paleolithic Archaeology
+  - Lithic Technology
 social:
   - icon: envelope
     icon_pack: fas
