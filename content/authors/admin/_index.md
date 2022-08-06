@@ -22,7 +22,7 @@ social:
     icon_pack: fab
     link: https://github.com/ArmandoFalcucci
   - icon: researchgate
-    icon_pack: custom
+    icon_pack: ai
     link: https://www.researchgate.net/profile/Armando-Falcucci
 organizations:
   - name: University of Tübingen
