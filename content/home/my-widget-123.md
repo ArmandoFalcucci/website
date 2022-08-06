@@ -1,9 +1,9 @@
 ---
 widget: author
-widget_id: my-widget-123
+widget_id: authors
 headless: true
 weight: 10
-title: Author
+title: Bipgraphy
 active: true
 design:
   columns: "2"
