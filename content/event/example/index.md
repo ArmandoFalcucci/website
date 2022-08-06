@@ -1,5 +1,5 @@
 ---
-title: Example Talk
+title: Paleo Talk
 
 event: Paleo Conference
 event_url: https://example.org
