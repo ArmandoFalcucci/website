@@ -1,7 +1,7 @@
 ---
 title: Armando Falcucci
 role: Postdoctoral Researcher
-avatar_filename: armando-falcucci.jpg
+avatar_filename: ffff.jpg
 bio: My research interests include distributed robotics, mobile computing and
   programmable matter.
 interests:
