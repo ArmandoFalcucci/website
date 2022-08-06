@@ -24,6 +24,9 @@ social:
   - icon: researchgate
     icon_pack: ai
     link: https://www.researchgate.net/profile/Armando-Falcucci
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-3255-1005
 organizations:
   - name: University of Tübingen
     url: https://uni-tuebingen.de/
