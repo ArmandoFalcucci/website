@@ -25,9 +25,9 @@ feature:
     icon_pack: fas
     name: Statistics
   - description: 90%
-    icon: bladelet
-    icon_pack: custom
-    name: Lithics
+    icon: "bladelet"
+    icon_pack: "custom"
+    name: "Lithics"
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"
