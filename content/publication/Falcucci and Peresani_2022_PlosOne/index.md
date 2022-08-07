@@ -44,7 +44,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: '/static/Falcucci_Peresani_2022'
+url_pdf: '/static/Falcucci_Peresani_2022.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
