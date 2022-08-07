@@ -48,7 +48,7 @@ highlight_name: true
 
 Armando Falcucci is a postdoctoral researcher at the Department of Geosciences, University of Tübingen. His research interests include human evolution, lithic technology, 3D visualization, geometric morphometrics, and data science. He is currently carrying out a 3-year research project funded by the German Research Foundation (DFG) that aims at better understanding the earliest stages of the Upper Paleolithic in Italy. Furthermore, he is developing new quantitative methods in lithic analysis to complement more traditional methods such as reduction sequence and attribute analysis.
 
-Important note: This website is still under construction and most information below are part of the hugo academic example template.
+*Important note*: This website is still under construction and most information below are part of the hugo academic example template.
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
