@@ -44,7 +44,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: '[link](static/Folder1/File1.pdf)'
+url_pdf: '/Folder1/File1.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
