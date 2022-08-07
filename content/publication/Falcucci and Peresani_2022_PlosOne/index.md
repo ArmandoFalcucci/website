@@ -44,7 +44,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'website/static/Falcucci_Peresani_2022.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -73,7 +73,7 @@ url_video: ''
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-PDF: Falcucci_Peresani_2022
+# PDF: Falcucci_Peresani_2022
 ---
 
 {{% callout note %}}
