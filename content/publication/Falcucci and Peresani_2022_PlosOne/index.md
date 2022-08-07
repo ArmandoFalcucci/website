@@ -13,7 +13,7 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2022'
+date: '2022-05-01T00:00:00Z'
 doi: '10.1371/journal.pone.0268539'
 
 # Schedule page publish date (NOT publication's date).
@@ -73,7 +73,7 @@ url_video: ''
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-# slides: example
+PDF: Falcucci_Peresani_2022
 ---
 
 {{% callout note %}}
