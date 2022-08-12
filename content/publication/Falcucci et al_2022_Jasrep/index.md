@@ -1,5 +1,5 @@
 ---
-title: 'The contribution of integrated 3D model analysis to Protoaurignacian stone tool design'
+title: 'Bringing shape into focus: Assessing differences between blades and bladelets and their technological significance in 3D form'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -44,7 +44,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: '/Folder1/File1.pdf'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
