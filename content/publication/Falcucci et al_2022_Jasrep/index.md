@@ -16,7 +16,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2022-06-01T00:00:00Z'
-doi: ''
+doi: '10.1016/j.jasrep.2022.103490'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -28,10 +28,10 @@ doi: ''
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Journal of Archaeological Science Reports*
+publication: In *Journal of Archaeological Science: Reports*
 # publication_short: In *ICW*
 
-abstract: Laminar
+#abstract:
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -47,8 +47,8 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: ''
-url_dataset: ''
+url_code: 'https://zenodo.org/record/6368201#.YvZkt3ZByUk'
+url_dataset: 'https://zenodo.org/record/6362150#.YvZkznZByUk'
 url_poster: ''
 url_project: ''
 url_slides: ''
