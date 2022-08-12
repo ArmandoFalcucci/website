@@ -6,6 +6,7 @@ bio: My research focus on the earliest stages of the Upper Paleolithic. I am cur
 interests:
   - Paleolithic Archaeology
   - Lithic Technology
+  - Geometric morphometrics
   - 3D visualization
   - Data Science
 social:
