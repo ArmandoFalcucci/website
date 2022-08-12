@@ -1,5 +1,5 @@
 ---
-title: 'The contribution of integrated 3D model analysis to Protoaurignacian stone tool design'
+title: 'Practical and technical aspects for the 3D scanning of lithic artefacts using micro-computed tomography techniques and laser light scanners for subsequent geometric morphometric analysis. Introducing the StyroStone protocol'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
