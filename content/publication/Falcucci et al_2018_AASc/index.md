@@ -47,7 +47,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/306086397_What's_the_point_Retouched_bladelet_variability_in_the_Protoaurignacian_Results_from_Fumane_Isturitz_and_Les_Cottes'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -44,7 +44,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/323436604_Protoaurignacian_Core_Reduction_Procedures_Blade_and_Bladelet_Technologies_at_Fumane_Cave'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
