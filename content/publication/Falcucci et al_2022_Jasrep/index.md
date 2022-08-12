@@ -28,7 +28,7 @@ doi: '10.1016/j.jasrep.2022.103490'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Journal of Archaeological Science: Reports*
+publication: In *Journal of Archaeological Science Reports*
 # publication_short: In *ICW*
 
 #abstract:
