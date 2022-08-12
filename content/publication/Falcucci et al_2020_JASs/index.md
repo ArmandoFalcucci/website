@@ -38,7 +38,7 @@ abstract: The cultural dynamics that led to the appearance of the Aurignacian ha
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
