@@ -1,5 +1,5 @@
 ---
-title: Armando Fallcucci
+title: Armando Falcucci
 role: Postdoctoral Researcher
 avatar_filename: ""
 bio: My research focus on the earliest stages of the Upper Paleolithic. I am currently analyzing several Aurignacian sites in Italy to better frame the chrono-cultural development of this technocomplex and investigate the role of climate change in the evolution of stone tool technologies.
