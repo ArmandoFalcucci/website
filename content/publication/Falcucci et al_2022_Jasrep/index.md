@@ -7,7 +7,7 @@ title: 'Bringing shape into focus: Assessing differences between blades and blad
 authors:
   - admin
   - Fotios Alexandros Karakostis
-  - Dominik Goeldner
+  - Dominik Göldner
   - Marco Peresani
 
 # Author notes (optional)
@@ -16,7 +16,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2022-06-01T00:00:00Z'
-doi: '10.1016/j.jasrep.2022.103490'
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
