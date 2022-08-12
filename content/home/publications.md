@@ -10,7 +10,7 @@ headless: true
 weight: 90
 
 title: Publications
-subtitle: ''
+subtitle: '2022'
 
 content:
   # Filter on criteria
@@ -37,7 +37,7 @@ design:
   # 3 = Card
   # 4 = Citation (publication only)
   view: citation
-  columns: '2'
+  columns: '3'
 ---
 
 {{% callout note %}}
