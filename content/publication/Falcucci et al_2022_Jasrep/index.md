@@ -6,6 +6,8 @@ title: 'Bringing shape into focus: Assessing differences between blades and blad
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
+  - Fotios Alexandros Karakostis
+  - Dominik Göldner
   - Marco Peresani
 
 # Author notes (optional)
@@ -13,8 +15,8 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2022-05-01T00:00:00Z'
-doi: '10.1371/journal.pone.0268539'
+date: '2022-06-01T00:00:00Z'
+doi: '10.1016/j.jasrep.2022.103490'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -26,10 +28,10 @@ doi: '10.1371/journal.pone.0268539'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *PLOS ONE*
+publication: In *Journal of Archaeological Science: Reports*
 # publication_short: In *ICW*
 
-abstract: Protoaurignacian foragers relied heavily on the production and use of bladelets. Technotypological studies of these implements have provided insights into crucial aspects of cultural variability. However, new technologies have seldom been used to quantify patterns of stone tool design. Taking advantage of a new scanning protocol and open-source software, we conduct the first 3D analysis of a Protoaurignacian assemblage, focusing on the selection and modification of blades and bladelets. We study a large dataset of complete blanks and retouched tools from the early Protoaurignacian assemblage at Fumane Cave in northeastern Italy. Our main goal is to validate and refine previous techno-typological considerations employing a 3D geometric morphometrics approach complemented by 2D analysis of cross-section outlines and computation of retouch angle. The encouraging results show the merits of the proposed integrated approach and confirm that bladelets were the main focus of stone knapping at the site. Among modified bladelets, various retouching techniques were applied to achieve specific shape objectives. We suggest that the variability observed among retouched bladelets relates to the design of multi-part artifacts that need to be further explored via renewed experimental and functional studies.
+abstract: Laminar technologies were adopted by Paleolithic foragers to produce a variable range of stone implements. Archaeologists have reconstructed the different reduction procedures involved in the production of laminar stone tools, often underlying a separation between the bigger blanks (i.e., blades) and smaller bladelets. However, these two blank types are in most cases poorly defined, as their classification typically relies on arbitrary size thresholds that do not consider blank shape, which is a fundamental component of tool production and function. In this study, we investigate whether traditional classifications of blades and bladelets are morphologically and technologically meaningful. For this purpose, we employ a three-dimensional geometric morphometric approach on a large sample of complete blanks retrieved from one of the earliest laminar industries assigned to modern humans in southern Europe: the Protoaurignacian from Fumane Cave. We rely on a cutting-edge protocol for acquiring virtual 3D meshes of stone tools using micro-computed tomography. This novel approach allows us to scan large quantities of small lithics in a short period of time and without the typical technical problems associated with scanning small objects. After calculating the principal components of shape variation, we explore differences and similarities across the dataset using linear discriminant analysis and analysis of variance. Our multivariate study highlights distinct morphological tendencies across blades and bladelets that are however better framed when the technological organization of Protoaurignacian stone knapping is taken into consideration. Overall, our results demonstrate that virtual analysis of stone tool shape can help elucidate aspects of lithic technology and its implications for past human behavior.
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
