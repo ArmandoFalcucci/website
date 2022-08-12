@@ -1,22 +1,21 @@
 ---
-title: 'Bringing shape into focus: Assessing differences between blades and bladelets and their technological significance in 3D form'
+title: 'Practical and technical aspects for the 3D scanning of lithic artefacts using micro-computed tomography techniques and laser light scanners for subsequent geometric morphometric analysis. Introducing the StyroStone protocol'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
-  - Fotios Alexandros Karakostis
   - Dominik Göldner
-  - Marco Peresani
+  - Fotios Alexandros Karakostis
+  - admin
 
 # Author notes (optional)
 # author_notes:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2022-06-01T00:00:00Z'
-doi: '10.1016/j.jasrep.2022.103490'
+date: '2022-04-01T00:00:00Z'
+doi: '10.1371/journal.pone.0267163'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -28,10 +27,10 @@ doi: '10.1016/j.jasrep.2022.103490'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Journal of Archaeological Science: Reports*
+publication: In *PLOS ONE*
 # publication_short: In *ICW*
 
-abstract: Laminar technologies were adopted by Paleolithic foragers to produce a variable range of stone implements. Archaeologists have reconstructed the different reduction procedures involved in the production of laminar stone tools, often underlying a separation between the bigger blanks (i.e., blades) and smaller bladelets. However, these two blank types are in most cases poorly defined, as their classification typically relies on arbitrary size thresholds that do not consider blank shape, which is a fundamental component of tool production and function. In this study, we investigate whether traditional classifications of blades and bladelets are morphologically and technologically meaningful. For this purpose, we employ a three-dimensional geometric morphometric approach on a large sample of complete blanks retrieved from one of the earliest laminar industries assigned to modern humans in southern Europe: the Protoaurignacian from Fumane Cave. We rely on a cutting-edge protocol for acquiring virtual 3D meshes of stone tools using micro-computed tomography. This novel approach allows us to scan large quantities of small lithics in a short period of time and without the typical technical problems associated with scanning small objects. After calculating the principal components of shape variation, we explore differences and similarities across the dataset using linear discriminant analysis and analysis of variance. Our multivariate study highlights distinct morphological tendencies across blades and bladelets that are however better framed when the technological organization of Protoaurignacian stone knapping is taken into consideration. Overall, our results demonstrate that virtual analysis of stone tool shape can help elucidate aspects of lithic technology and its implications for past human behavior.
+abstract: Here, we present a new method to scan a large number of lithic artefacts using three-dimensional scanning technology. Despite the rising use of high-resolution 3D surface scanners in archaeological sciences, no virtual studies have focused on the 3D digitization and analysis of small lithic implements such as bladelets, microblades, and microflakes. This is mostly due to difficulties in creating reliable 3D meshes of these artefacts resulting from several inherent features (i.e., size, translucency, and acute edge angles), which compromise the efficiency of structured light or laser scanners and photogrammetry. Our new protocol StyroStone addresses this problem by proposing a step-by-step procedure relying on the use of micro-computed tomographic technology, which is able to capture the 3D shape of small lithic implements in high detail. We tested a system that enables us to scan hundreds of artefacts together at once within a single scanning session lasting a few hours. As also bigger lithic artefacts (i.e., blades) are present in our sample, this protocol is complemented by a short guide on how to effectively scan such artefacts using a structured light scanner (Artec Space Spider). Furthermore, we estimate the accuracy of our scanning protocol using principal component analysis of 3D Procrustes shape coordinates on a sample of meshes of bladelets obtained with both micro-computed tomography and another scanning device (i.e., Artec Micro). A comprehensive review on the use of 3D geometric morphometrics in lithic analysis and other computer-based approaches is provided in the introductory chapter to show the advantages of improving 3D scanning protocols and increasing the digitization of our prehistoric human heritage.
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -39,7 +38,7 @@ abstract: Laminar technologies were adopted by Paleolithic foragers to produce a
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
@@ -47,8 +46,8 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: '10.5281/zenodo.6368200'
-url_dataset: '10.5281/zenodo.6362149'
+url_code: '10.5281/zenodo.6365680'
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
