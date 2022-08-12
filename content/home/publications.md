@@ -10,7 +10,7 @@ headless: true
 weight: 90
 
 title: Publications
-subtitle: '2022'
+subtitle: ''
 
 content:
   # Filter on criteria
