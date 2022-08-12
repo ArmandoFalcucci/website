@@ -17,6 +17,10 @@ subtitle:
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
   - description:
+    icon: "bladelet"
+    icon_pack: "custom"
+    name: "Lithics"
+  - description:
     icon: r-project
     icon_pack: fab
     name: R
@@ -24,10 +28,7 @@ feature:
     icon: chart-line
     icon_pack: fas
     name: Statistics
-  - description:
-    icon: "bladelet"
-    icon_pack: "custom"
-    name: "Lithics"
+
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"
