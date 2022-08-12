@@ -5,16 +5,17 @@ title: 'Practical and technical aspects for the 3D scanning of lithic artefacts 
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - Dominik Göldner
+  - Fotios Alexandros Karakostis
   - admin
-  - Marco Peresani
 
 # Author notes (optional)
 # author_notes:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2022-05-01T00:00:00Z'
-doi: '10.1371/journal.pone.0268539'
+date: '2022-04-01T00:00:00Z'
+doi: '10.1371/journal.pone.0267163'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -29,7 +30,7 @@ publication_types: ['2']
 publication: In *PLOS ONE*
 # publication_short: In *ICW*
 
-abstract: Protoaurignacian foragers relied heavily on the production and use of bladelets. Technotypological studies of these implements have provided insights into crucial aspects of cultural variability. However, new technologies have seldom been used to quantify patterns of stone tool design. Taking advantage of a new scanning protocol and open-source software, we conduct the first 3D analysis of a Protoaurignacian assemblage, focusing on the selection and modification of blades and bladelets. We study a large dataset of complete blanks and retouched tools from the early Protoaurignacian assemblage at Fumane Cave in northeastern Italy. Our main goal is to validate and refine previous techno-typological considerations employing a 3D geometric morphometrics approach complemented by 2D analysis of cross-section outlines and computation of retouch angle. The encouraging results show the merits of the proposed integrated approach and confirm that bladelets were the main focus of stone knapping at the site. Among modified bladelets, various retouching techniques were applied to achieve specific shape objectives. We suggest that the variability observed among retouched bladelets relates to the design of multi-part artifacts that need to be further explored via renewed experimental and functional studies.
+abstract: 'Here, we present a new method to scan a large number of lithic artefacts using three-dimensional scanning technology. Despite the rising use of high-resolution 3D surface scanners in archaeological sciences, no virtual studies have focused on the 3D digitization and analysis of small lithic implements such as bladelets, microblades, and microflakes. This is mostly due to difficulties in creating reliable 3D meshes of these artefacts resulting from several inherent features (i.e., size, translucency, and acute edge angles), which compromise the efficiency of structured light or laser scanners and photogrammetry. Our new protocol StyroStone addresses this problem by proposing a step-by-step procedure relying on the use of micro-computed tomographic technology, which is able to capture the 3D shape of small lithic implements in high detail. We tested a system that enables us to scan hundreds of artefacts together at once within a single scanning session lasting a few hours. As also bigger lithic artefacts (i.e., blades) are present in our sample, this protocol is complemented by a short guide on how to effectively scan such artefacts using a structured light scanner (Artec Space Spider). Furthermore, we estimate the accuracy of our scanning protocol using principal component analysis of 3D Procrustes shape coordinates on a sample of meshes of bladelets obtained with both micro-computed tomography and another scanning device (i.e., Artec Micro). A comprehensive review on the use of 3D geometric morphometrics in lithic analysis and other computer-based approaches is provided in the introductory chapter to show the advantages of improving 3D scanning protocols and increasing the digitization of our prehistoric human heritage.'
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -37,15 +38,15 @@ abstract: Protoaurignacian foragers relied heavily on the production and use of 
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: '/Folder1/File1.pdf'
-url_code: ''
+url_pdf: '/Papers/Goeldner et al_2022.pdf'
+url_code: 'https://zenodo.org/record/6365681#.YvZqYHZByUk'
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -75,13 +76,3 @@ url_video: ''
 #   Otherwise, set `slides: ""`.
 # PDF: Falcucci_Peresani_2022
 ---
-
-{{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-# {{% callout note %}}
-# Create your slides in Markdown - click the _Slides_ button to check out the example.
-# {{% /callout %}}
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).

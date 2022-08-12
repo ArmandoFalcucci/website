@@ -44,9 +44,9 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: '/Folder1/File1.pdf'
-url_code: ''
-url_dataset: ''
+url_pdf: '/Papers/Falcucci_Peresani_2022.pdf'
+url_code: 'https://zenodo.org/record/6504416#.YvZqpXZByUk'
+url_dataset: 'https://zenodo.org/record/6362150#.YvZqt3ZByUk'
 url_poster: ''
 url_project: ''
 url_slides: ''
@@ -75,13 +75,3 @@ url_video: ''
 #   Otherwise, set `slides: ""`.
 # PDF: Falcucci_Peresani_2022
 ---
-
-# {{% callout note %}}
-# Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-# {{% /callout %}}
-
-# {{% callout note %}}
-# Create your slides in Markdown - click the _Slides_ button to check out the example.
-# {{% /callout %}}
-
-# Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
