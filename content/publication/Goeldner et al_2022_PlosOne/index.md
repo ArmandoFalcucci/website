@@ -39,7 +39,7 @@ abstract: Laminar technologies were adopted by Paleolithic foragers to produce a
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
@@ -47,8 +47,8 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: '10.5281/zenodo.6368200'
-url_dataset: '10.5281/zenodo.6362149'
+url_code: ''
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''

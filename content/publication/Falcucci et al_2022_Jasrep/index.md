@@ -46,7 +46,7 @@ featured: false
 #   url: http://example.org
 
 url_pdf: ''
-url_code: '10.5281/zenodo.6365680'
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
