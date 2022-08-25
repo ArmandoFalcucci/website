@@ -1,12 +1,13 @@
 ---
-title: Research Project supported by the German Research Foundation (DFG) under grant agreement no. 431809858–FA 1707/1-1
+title: Investigating Early Upper Paleolithic technological variability and cultural dynamics south of the Alps
+summary: Research Project supported by the German Research Foundation (DFG) under grant agreement no. 431809858–FA 1707/1-1
 
 tags:
   - The Aurignacian
 date: '2020-09-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
-external_link: 'https://gepris.dfg.de/gepris/projekt/431809858?language=en'
+#external_link: 'https://gepris.dfg.de/gepris/projekt/431809858?language=en'
 
 image:
   caption: The sequence Fumane Cave. Photo by A. Léone
@@ -37,3 +38,5 @@ In this debate, the regions south of the Alps provide a unique test case due to 
 To shed light on these issues, we will characterize and compare the lithic technology and the behavioral patterns of modern humans at the sites of Fumane Cave and Bombrini in northern Italy as well as Castelcivita and Serino in southern Italy. We will perform extensive technological investigations of the lithic assemblages from several archaeological units using different methods of analysis. Furthermore, we will evaluate the stratigraphic integrity of the cultural deposits using lithic refittings and radiocarbon dating. Results will be statistically processed to model patterns of intra- and inter-site variability and diachronic change. In a next step, we will investigate convergences and divergences with Aurignacian sites north of the Alps. 
 
 This project will provide new critical information to test several hypotheses regarding the spread of modern humans across Europe and investigate the diachronic variability of the Aurignacian on various geographic scales. Finally, the project will suggest proxies for better understanding mechanisms of cultural evolution during the formation of the European Upper Paleolithic.
+
+Project's Website: https://gepris.dfg.de/gepris/projekt/431809858?language=en
