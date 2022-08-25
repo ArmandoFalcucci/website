@@ -25,7 +25,7 @@ content:
       captcha: true
 
   # Contact details (edit or remove options as required)
-  email: armando.falcucci@uni-tuebingen.de
+  # email: armando.falcucci@uni-tuebingen.de
   # phone: +49 1590 5135358
   address:
     street: Burgsteige 11
@@ -34,8 +34,8 @@ content:
     country: Germany
     country_code: DE
   coordinates:
-    latitude: '48.519433'
-    longitude: '9.050234'
+    latitude: 48.519433
+    longitude: 9.050234
   appointment_url: ''
   contact_links:
     - icon: twitter
