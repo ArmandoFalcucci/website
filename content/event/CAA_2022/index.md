@@ -1,6 +1,6 @@
 ---
 
-title: Integrating 2D and 3D shape analysis in lithic technology: A discussion around a case study and future research perspectives
+title: "Integrating 2D and 3D shape analysis in lithic technology: A discussion around a case study and future research perspectives"
 
 event: "Computer Applications and Quantitative Methods in Archaeology (CAA), 2022"
 event_url: https://2022.caaconference.org/
