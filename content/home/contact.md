@@ -29,13 +29,13 @@ content:
   # phone: +49 1590 5135358
   address:
     street: Burgsteige 11
-    city: Tuebingen
-    postcode: 72070
+    city: Tübingen
+    postcode: "72070""
     country: Germany
     country_code: DE
   coordinates:
-    latitude: 48.519433
-    longitude: 9.050234
+    latitude: "48.519433"
+    longitude: "9.050234"
   appointment_url: ''
   contact_links:
     - icon: twitter
