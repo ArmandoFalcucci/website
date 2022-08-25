@@ -33,7 +33,6 @@ image:
   caption: 'Image credit: 
   Armando Falcucci'
   focal_point: Right
-# [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)
 
 links:
   # - icon: twitter
