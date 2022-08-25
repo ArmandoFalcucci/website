@@ -30,7 +30,7 @@ content:
   address:
     street: Burgsteige 11
     city: Tübingen
-    postcode: "72070""
+    postcode: "72070"
     country: Germany
     country_code: DE
   coordinates:
