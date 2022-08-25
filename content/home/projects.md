@@ -27,10 +27,10 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Deep Learning
-      tag: Deep Learning
-    - name: Other
-      tag: Demo
+    - name: The Aurignacian
+      tag: The Aurignacian
+    - name: 3D and GM in Lithic Analysis
+      tag: 3D lithics
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
