@@ -6,7 +6,7 @@ bio: My research focus on the earliest stages of the Upper Paleolithic. I am cur
 interests:
   - Paleolithic Archaeology
   - Lithic Technology
-  - Geometric morphometrics
+  - Geometric Morphometrics
   - 3D visualization
   - Data Science
 social:
@@ -47,9 +47,9 @@ superuser: true
 highlight_name: true
 ---
 
-Armando Falcucci is a postdoctoral researcher at the Department of Geosciences, University of Tübingen. His research interests include human evolution, lithic technology, 3D visualization, geometric morphometrics, and data science. He is currently carrying out a 3-year research project funded by the German Research Foundation (DFG) that aims at better understanding the earliest stages of the Upper Paleolithic in Italy. Furthermore, he is developing new quantitative methods in lithic analysis to complement more traditional methods such as reduction sequence and attribute analysis.
+I am a postdoctoral researcher at the Department of Geosciences, Prehistory and Archaeological Sciences Research Unit, University of Tübingen. My main research activities combine lithic technology and 3D visualization techniques to answer questions related to past human behavior. I am currently investigating the cultural dynamics that led to the development of the Aurignacian south of the Alps and along the Italian Peninsula. I analyze lithic assemblages using a combination of traditional methods (e.g., attribute analysis and reduction sequence analysis) and 3D-based approaches (e.g., geometric morphometrics, virtual refittings, and core reduction intensity). Furthermore, I conduct systematic inter-layer refits and lithic taphonomic analyses to assess the integrity of the lithic assemblages I am working on. One of my short-term goals is to create an open-access repository of the Italian Aurignacian, where researchers across the world will be able to access to accurate 3D models and technological datasets of the stone tool assemblages recovered across several stratified sites.
 
-**Important note**: This website is still under construction and most information below are part of the hugo academic example template.
+**Important note**: This website is still under construction.
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
