@@ -29,7 +29,7 @@ content:
       tag: '*'
     - name: The Aurignacian
       tag: The Aurignacian
-    - name: 3D and GM in Lithic Analysis
+    - name: 3D Scanning and GM in Lithic Analysis
       tag: 3D lithics
 
 design:
