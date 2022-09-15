@@ -13,7 +13,6 @@ header:
   caption: ''
   image: ''
 
+---
 
 ## "Prehistory of Mediterranean Europe II: Late Neanderthals and modern humans"
-
----
