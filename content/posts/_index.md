@@ -15,4 +15,4 @@ header:
 
 ---
 
-## "Prehistory of Mediterranean Europe II: Late Neanderthals and modern humans"
+### Prehistory of Mediterranean Europe II: Late Neanderthals and modern humans
