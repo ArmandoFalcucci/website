@@ -15,7 +15,7 @@ header:
 
 ---
 
-I teach prehistoric archaeology, lithic technology, and 3D-based methods in the framework of the MSc program [**Archaeological Sciences and Human Evolution**](https://uni-tuebingen.de/en/study/finding-a-course/degree-programs-available/detail/course/archaeological-sciences-and-human-evolution-master/) at the [**Institute for Archaeological Sciences**](https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/geosciences/work-groups-contacts/prehistory-and-archaeological-sciences/ina/) (University of Tübingen, Germany). My classes are usually taking place during the summer semester.
+I teach prehistoric archaeology, lithic technology, and 3D-based methods in the framework of the MSc program [**Archaeological Sciences and Human Evolution**](https://uni-tuebingen.de/en/study/finding-a-course/degree-programs-available/detail/course/archaeological-sciences-and-human-evolution-master/) at the [**Institute for Archaeological Sciences**](https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/geosciences/work-groups-contacts/prehistory-and-archaeological-sciences/ina/) (University of Tübingen, Germany). My classes are usually taking place during the Summer semester.
 
 
 
@@ -37,4 +37,4 @@ This lecture is shared between different instructors and provides an in-depth ov
 
 ---
 
-Detailed information on the Msc program can be found in the [**Module Handbook**](https://uni-tuebingen.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjMzMTUyNDksImV4cCI6MTY2MzQwNTI0MywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW5cL1VuaV9UdWViaW5nZW5cL0Zha3VsdGFldGVuXC9NYXROYXRcL0ZhY2hiZXJlaWNoZVwvR2Vvd2lzc2Vuc2NoYWZ0ZW5cL0FyYmVpdHNncnVwcGVuXC9Vcmdlc2NoaWNodGVfX19OYXR1cndpc3NlbnNjaGFmdGxpY2hlX0FyY2hcdTAwZTRvbG9naWVcL1N0dWRpdW1cLzIwMjFfQVNIRV9tb2R1bGVfaGFuZGJvb2sucGRmIiwicGFnZSI6MjMxNDIyfQ.Z49qhS777Hm0l69Zryiy7gJLCpjhO5s-FuR1xRpEEZY/2021_ASHE_module_handbook.pdf).
+Detailed information on the MSc program can be found in the [**Module Handbook**](https://uni-tuebingen.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjMzMTUyNDksImV4cCI6MTY2MzQwNTI0MywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW5cL1VuaV9UdWViaW5nZW5cL0Zha3VsdGFldGVuXC9NYXROYXRcL0ZhY2hiZXJlaWNoZVwvR2Vvd2lzc2Vuc2NoYWZ0ZW5cL0FyYmVpdHNncnVwcGVuXC9Vcmdlc2NoaWNodGVfX19OYXR1cndpc3NlbnNjaGFmdGxpY2hlX0FyY2hcdTAwZTRvbG9naWVcL1N0dWRpdW1cLzIwMjFfQVNIRV9tb2R1bGVfaGFuZGJvb2sucGRmIiwicGFnZSI6MjMxNDIyfQ.Z49qhS777Hm0l69Zryiy7gJLCpjhO5s-FuR1xRpEEZY/2021_ASHE_module_handbook.pdf).
