@@ -2,13 +2,6 @@
 
 title: "Linking blades: a systematic refitting analysis of blade fragments from the Protoaurignacian sequence of Fumane Cave"
 
-authors:
-  - admin
-  - Domenico Giusti
-  - Filippo Zangrossi
-  - Matteo De Lorenzi
-  - Letizia Ceregatti
-  - Marco Peresani
 
 event: "12th annual meeting of the European Society for the study of Human Evolution"
 event_url: https://www.eshe.eu/meetings/
