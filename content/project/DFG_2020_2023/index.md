@@ -14,8 +14,8 @@ image:
   focal_point: Smart
 
 links:
-   - icon: "fa-solid fa-browser"
-     icon_pack: fas
+   - icon: open-access
+     icon_pack: ai
      name: "Website"
      url: https://gepris.dfg.de/gepris/projekt/431809858?language=en
 url_code: ''
