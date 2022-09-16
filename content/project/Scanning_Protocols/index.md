@@ -1,6 +1,6 @@
 ---
 title: 3D Scanning Protocols
-summary: Creating open access repositories of lithic artifacts from several Aurignacian sites in Italy
+summary: Developing step-by-step protocols for the 3D scanning of stone tools.
 
 tags:
   - 3D lithics
@@ -17,11 +17,11 @@ links:
    - icon: protocols
      icon_pack: ai
      name: "StyroStone"
-     url: https://zenodo.org/record/6362150#.YySg6nZByUk
+     url: https://www.protocols.io/view/styrostone-a-protocol-for-scanning-and-extracting-4r3l24d9qg1y/v2
    - icon: protocols
      icon_pack: ai
      name: "MicroStone"
-     url: https://www.protocols.io/view/styrostone-a-protocol-for-scanning-and-extracting-4r3l24d9qg1y/v2
+     url: https://www.protocols.io/view/microstone-exploring-the-capabilities-of-the-artec-81wgb6781lpk/v1
 
 url_code: ''
 url_pdf: ''
@@ -36,8 +36,4 @@ url_video: ''
 #slides: example
 ---
 
-The aim of this project is to 3D scan Aurignacian lithic assemblages across Italy to create permanent open access repositories that can be used for teaching, research, and cultural heritage preservation. To do so, I decided to use [**Zenodo**](https://zenodo.org/), a multi-disciplinary open repository maintained by CERN. 3D meshes have been in most cases obtained with an [**Artec Space Spider**](https://www.artec3d.com/portable-3d-scanners/artec-spider), while an [**Artec Micro**](https://www.artec3d.com/portable-3d-scanners/artec-micro) as well as micro-computed tomography has been used to scan the smallest artifacts (e.g., bladelets).
-
-
-
-The first available repository is from the site of [**Fumane Cave**](https://zenodo.org/record/6362150#.YySg6nZByUk). Shortly, other Aurignacian sites (e.g., Castelcivita and Bombrini) will follow.
+The goal of these protocols is to allow archaeologists to effectively scan lithic artifacts using different 3D scanning methods. The [**StyroStone**](https://www.protocols.io/view/styrostone-a-protocol-for-scanning-and-extracting-4r3l24d9qg1y/v2) protocol deals with the digitization and post-processing of large batches of small-sized lithic artifacts using micro-computed tomography (micro-CT). The [**MicroStone**](https://www.protocols.io/view/microstone-exploring-the-capabilities-of-the-artec-81wgb6781lpk/v1) protocol does instead present a detailed step-by-step pipeline to effectively scan lithics using the [**Artec Micro**](https://www.artec3d.com/portable-3d-scanners/artec-micro).

@@ -1,6 +1,6 @@
 ---
 title: Investigating Early Upper Paleolithic technological variability and cultural dynamics south of the Alps
-summary: Research Project supported by the German Research Foundation (DFG) under grant agreement no. 431809858–FA 1707/1-1
+summary: Research Project supported by the German Research Foundation (DFG) under grant agreement no. 431809858–FA 1707/1-1.
 
 tags:
   - The Aurignacian

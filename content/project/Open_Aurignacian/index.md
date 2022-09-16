@@ -1,6 +1,6 @@
 ---
 title: The Open Aurignacian Project
-summary: Creating open access repositories of lithic artifacts from several Aurignacian sites in Italy
+summary: Creating open access repositories of lithic artifacts from several Aurignacian sites in Italy.
 
 tags:
   - The Aurignacian
