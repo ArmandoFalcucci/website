@@ -1,5 +1,5 @@
 ---
-title: Courses
+title: Music
 cms_exclude: true
 
 # View.
@@ -15,4 +15,6 @@ header:
 
 ---
 
-### Prehistory of Mediterranean Europe II: Late Neanderthals and modern humans
+### Guitars
+
+![demo](/personal/guitars.jpg)
