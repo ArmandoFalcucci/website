@@ -4,7 +4,7 @@ title: "Identifying and quantifying morphological separation between blade and b
 
 
 event: "87th Annual Meeting of the Society for American Archaeology"
-event_url: https://www.saa.org/annual-meeting
+event_url: https://www.saa.org/
 
 location: SAA 2022, Chicago
 address:
