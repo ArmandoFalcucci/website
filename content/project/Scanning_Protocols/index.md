@@ -1,9 +1,8 @@
 ---
-title: The Open Aurignacian Project
+title: 3D Scanning Protocols
 summary: Creating open access repositories of lithic artifacts from several Aurignacian sites in Italy
 
 tags:
-  - The Aurignacian
   - 3D lithics
 date: '2020-09-27T00:00:00Z'
 
@@ -15,10 +14,15 @@ date: '2020-09-27T00:00:00Z'
 #   focal_point: Smart
 
 links:
-   - icon: zenodo
+   - icon: protocols
      icon_pack: ai
-     name: "Vol. 1: Fumane Cave"
+     name: "StyroStone"
      url: https://zenodo.org/record/6362150#.YySg6nZByUk
+   - icon: protocols
+     icon_pack: ai
+     name: "MicroStone"
+     url: https://www.protocols.io/view/styrostone-a-protocol-for-scanning-and-extracting-4r3l24d9qg1y/v2
+
 url_code: ''
 url_pdf: ''
 url_slides: ''

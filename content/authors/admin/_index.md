@@ -47,5 +47,3 @@ highlight_name: true
 ---
 
 I am a postdoctoral researcher at the [**Institute for Archaeological Sciences**](https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/geosciences/work-groups-contacts/prehistory-and-archaeological-sciences/ina/). My main research activities combine lithic technology and 3D visualization techniques to answer questions related to past human behavior. I am currently investigating the cultural dynamics that led to the development of the Aurignacian south of the Alps and along the Italian Peninsula. I analyze lithics using a combination of traditional methods and 3D-based approaches. One of my short-term goals is to create an open-access repository of the Italian Aurignacian, where researchers across the world will be able to access to accurate 3D models and data sets of the stone tool assemblages recovered across several stratified sites.
-
-# {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
