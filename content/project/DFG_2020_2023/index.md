@@ -14,10 +14,10 @@ image:
   focal_point: Smart
 
 links:
-   - icon: browser
+   - icon: "fa-solid fa-browser"
      icon_pack: fas
-     name: "Gepris"
-     url: https://zenodo.org/record/6362150#.YySg6nZByUk
+     name: "Website"
+     url: https://gepris.dfg.de/gepris/projekt/431809858?language=en
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -38,5 +38,3 @@ In this debate, the regions south of the Alps provide a unique test case due to 
 To shed light on these issues, we will characterize and compare the lithic technology and the behavioral patterns of modern humans at the sites of Fumane Cave and Bombrini in northern Italy as well as Castelcivita and Serino in southern Italy. We will perform extensive technological investigations of the lithic assemblages from several archaeological units using different methods of analysis. Furthermore, we will evaluate the stratigraphic integrity of the cultural deposits using lithic refittings and radiocarbon dating. Results will be statistically processed to model patterns of intra- and inter-site variability and diachronic change. In a next step, we will investigate convergences and divergences with Aurignacian sites north of the Alps. 
 
 This project will provide new critical information to test several hypotheses regarding the spread of modern humans across Europe and investigate the diachronic variability of the Aurignacian on various geographic scales. Finally, the project will suggest proxies for better understanding mechanisms of cultural evolution during the formation of the European Upper Paleolithic.
-
-Project's Website: https://gepris.dfg.de/gepris/projekt/431809858?language=en
