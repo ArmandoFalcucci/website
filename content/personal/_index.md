@@ -23,7 +23,6 @@ When time allows, I love to play my acoustic and electric guitars. I am particul
 
 ---
 
-\
 
 ### Vinyl Collection
 
