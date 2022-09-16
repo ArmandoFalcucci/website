@@ -8,7 +8,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 130
 
-title: Contact
+title: Contact Me
 subtitle:
 
 content:
@@ -30,6 +30,7 @@ content:
   address:
     street: Burgsteige 11
     city: Tübingen
+    region: DE
     postcode: "72070"
     country: Germany
     country_code: DE
@@ -48,5 +49,5 @@ content:
     #   link: 'https://zoom.com'
 
 design:
-  columns: '1'
+  columns: '2'
 ---
