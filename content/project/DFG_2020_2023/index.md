@@ -13,11 +13,11 @@ image:
   caption: The sequence Fumane Cave. Photo by A. Léone
   focal_point: Smart
 
-# links:
-#   - icon: twitter
-#     icon_pack: fab
-#     name: Follow
-#     url: https://twitter.com/georgecushen
+links:
+   - icon: browser
+     icon_pack: fas
+     name: "Gepris"
+     url: https://zenodo.org/record/6362150#.YySg6nZByUk
 url_code: ''
 url_pdf: ''
 url_slides: ''
