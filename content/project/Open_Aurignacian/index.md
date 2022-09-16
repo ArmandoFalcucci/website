@@ -4,6 +4,7 @@ summary: Creating open access repositories of lithic artifacts from several Auri
 
 tags:
   - The Aurignacian
+  - 3D lithics
 date: '2020-09-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
