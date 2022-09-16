@@ -21,7 +21,7 @@ abstract: "High-resolution chronostratigraphic frameworks of the early Upper Pal
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: '2022-09-15T18:15:00Z'
-date_end: '2022-09-022T20:00:00Z'
+date_end: '2022-09-22T20:00:00Z'
 all_day: false
 
 authors: []
