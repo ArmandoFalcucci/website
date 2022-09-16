@@ -11,8 +11,8 @@ date: '2020-09-27T00:00:00Z'
 #external_link: 'https://gepris.dfg.de/gepris/projekt/431809858?language=en'
 
 # image:
-#     caption: 
-# #   focal_point: Smart
+#   caption: The sequence Fumane Cave. Photo by A. Léone
+#   focal_point: Smart
 
 links:
    - icon: zenodo
