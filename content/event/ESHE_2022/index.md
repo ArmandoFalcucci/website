@@ -20,7 +20,7 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-09-15T18:15:00Z'
+date: '2022-09-21T12:00:00Z'
 date_end: '2022-09-22T20:00:00Z'
 all_day: false
 
@@ -46,7 +46,7 @@ url_video: ''
 
 ---
 
-## 1. Introduction and Research Aim
+# **1. Introduction and Research Aim**
 
 Due to their rather complex formation processes, unraveling the taphonomic history of cave sites is critical in studying cultural change over time (Goldberg et al., 1993). In the specific case of the Aurignacian technocomplex, particular attention is needed in assessing the integrity of lithic assemblages recovered from multi-stratified sites, as its diachronic and regional variability is often used to model the modes of dispersal and adaptation of H. sapiens across Europe (Anderson et al., 2015).
 
@@ -55,7 +55,7 @@ At Fumane Cave (Venetian Prealps, northeastern Italy), recent techno-typological
 Here, we assess **the degree of integrity of the lithic assemblages** using a lithic taphonomic approach and spatial analysis to verify the previous findings and provide a better narrative of the onset of the Upper Paleolithic in the region.
 
 
-## 2.	Materials and Methods
+# **2.	Materials and Methods**
 
 This study focuses on the whole Upper Paleolithic sequence of Fumane, from the earliest Protoaurignacian layer A2, dated to about 41 ky cal BP (Higham et al., 2009), up to the uppermost layer D1e, dated to the Heinrich Event 3 (López-García et al., 2015).
 
@@ -64,7 +64,7 @@ We employ a **break connection method** (Bordes, 2000) to systematically quantif
 Information on the horizontal and vertical provenience of the refitted blanks was then used to assess the reliability of the stratigraphic sequence and quantify the integrity of the lithic assemblages in the different areas of the excavation using multivariate spatial analysis (DG) in the software environment of R (R Core Team, 2022).
 
 
-## 3.	Results of the Refitting Activity
+# **3. Results of the Refitting Activity**
 
 A total of 509 blade fragments have been successfully connected, for an overall refitting rate of 15.6%. Connections belong to a total of 247 blanks and they are composed of two (n = 234), three (n = 11), and four (n = 2) fragments.
 
@@ -73,7 +73,7 @@ Inter-layer connections represent a common occurrence, with an overall percentag
 Fig. 3 shows the distribution of connected fragments across the stratigraphy. Remarkably, A2 contains fragments that connects with all layers of the sequence. Inter-layer connections appear to be more frequent between layers that are in stratigraphic proximity.
 
 
-## 4. Spatial Analysis
+# **4. Spatial Analysis**
 
 Spatial analyses were conducted on 506 (out of 509) connected blade fragments with valid point geometries retrieved from present and historical documentation. We investigated the horizontal and vertical distributions, as well as the relative distance and orientation patters of intra- and inter-layers connections between blade fragments.
 
@@ -86,16 +86,16 @@ The vertical distances between intra- (red) and inter-layer (blue) refitting bla
 Finally, the orientation of the intra- and inter-layer refitting links show clear planar trends (Fig. 6c), thus excluding the role of massive, chaotic processes. A clear linear pattern with E-NE orientation emerges in the A1 intra-layer sample when subsetting long and very long links (>2.1 m). The rose diagrams for the A2 and A2/A1 sub-samples of long links show peaks towards E, NE, N-NW, and NW. Nevertheless, the inter-layer A2/A1 sample does not show more anisotropy than the intra-layer samples.
 
 
-## 5.	Discussion and Ongoing Research
+# **5. Discussion and Ongoing Research**
 
-**So did post-depositional events have a significant role in the formation of the lithic assemblages at Fumane Cave?**
+So did post-depositional events have a significant role in the formation of the lithic assemblages at Fumane Cave?
 
 Our results suggest minor post-depositional reworking processes of the stratigraphic sequence at Fumane Cave and contribute to disentangle the complex stratigraphic relations in such a long-term archaeological excavation.
 
 They will ultimately allow us to identify the optimal area of the excavation to be sampled for a more robust techno-typological study.
 
 
-## References
+# **References**
 
 Anderson L., Bon F., Bordes J.-G. et al. (2015) Relier des espaces, construire de nouveaux réseaux : aux origines du Protoaurignacien et des débuts du Paléolithique supérieur en Europe occidentale. In N. Naudinot, L. Meignen, G. Binder et al. (eds.): Les systèmes de mobilité de la Préhistoire au Moyen Âge XXXVe rencontres internationales d’archéologie et d’histoire d’Antibes, pp. 57-73. Éditions APDCA, Antibes.
 
