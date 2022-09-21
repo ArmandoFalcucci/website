@@ -40,7 +40,7 @@ links:
     name: Follow
     url: https://twitter.com/ArmandoFalcucci
 url_code: ''
-url_pdf: '/Talks/text_and_poster.pdf'
+url_pdf: '/Talks/Falcucci-et-al_2022_Eshe.pdf'
 url_slides: ''
 url_video: ''
 
