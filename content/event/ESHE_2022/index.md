@@ -62,8 +62,7 @@ This study focuses on the whole Upper Paleolithic sequence of Fumane, from the e
 We employ a **break connection method** (Bordes, 2000) to systematically quantify the links within and across layers. We screened all lithics and laid on several tables the identified blade fragments (n = 3,254) sorted according to lithological and technological features (**Fig. 1**). All possible connections were thus systematically tested by three independent analysts (AF, FZ, MDL).
 
 
-![demo](/Talks/Eshe_2022/fig.1.jpg)
-**Fig. 1.** **(a)** Example of the break connection activity carried out after sorting blade fragments according to different features such as preservation (i.e., proximal, mesial, and distal), raw material type, size, and other relevant features (e.g., presence and localization of cortex). **(b)** A small sample of successfully connected blades, composed of either two or three fragments.
+![demo](/Talks/Eshe_2022/fig.1.jpg)**Fig. 1.** **(a)** Example of the break connection activity carried out after sorting blade fragments according to different features such as preservation (i.e., proximal, mesial, and distal), raw material type, size, and other relevant features (e.g., presence and localization of cortex). **(b)** A small sample of successfully connected blades, composed of either two or three fragments.
 
 
 Information on the horizontal and vertical provenience of the refitted blanks was then used to assess the reliability of the stratigraphic sequence and quantify the integrity of the lithic assemblages in the different areas of the excavation using multivariate spatial analysis (DG) in the software environment of R (R Core Team, 2022).
