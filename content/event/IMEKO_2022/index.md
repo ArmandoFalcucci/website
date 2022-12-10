@@ -24,7 +24,7 @@ date: '2022-10-19T10:00:00Z'
 date_end: '2022-10-19T20:00:00Z'
 all_day: false
 
-authors: [Matteo Rossini, admin, Clarissa DOminici, Annamaria Ronchitelli, Antonin Tomasso, Francesco Boschin]
+authors: [Matteo Rossini, admin, Clarissa Dominici, Annamaria Ronchitelli, Antonin Tomasso, Francesco Boschin]
 tags: []
 
 # Is this a featured talk? (true/false)
