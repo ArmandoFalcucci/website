@@ -15,8 +15,7 @@ address:
   country: Italy
 
 
-summary: "Session 1.3 - Archaeometry for Prehistory: modern approaches and new techniques for the evaluation, characterisation and conservation of archaeological remains""
-
+summary: "Session 1.3 - Archaeometry for Prehistory: modern approaches and new techniques for the evaluation, characterisation and conservation of archaeological remains"
 abstract:
 
 # Talk start and end times.
@@ -46,3 +45,4 @@ url_slides: ''
 url_video: ''
 
 ---
+
