@@ -1,6 +1,6 @@
 ---
 
-title: "Measuring reduction intensity in laminar cores:an experimental approach and archaeological application"
+title: "Measuring reduction intensity in laminar cores: an experimental approach and archaeological application"
 
 
 event: "88th Annual Meeting of the Society for American Archaeology"

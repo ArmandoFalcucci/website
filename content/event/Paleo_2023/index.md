@@ -1,12 +1,12 @@
 ---
 
-title: "Measuring reduction intensity in laminar cores:an experimental approach and archaeological application"
+title: "Investigating Aurignacian technological variability and population connectedness south of the Alps and along peninsular Italy"
 
 
-event: "88th Annual Meeting of the Society for American Archaeology"
-event_url: https://www.saa.org/
+event: "Paleoanthropology Society"
+event_url: https://paleoanthro.org/meetings/
 
-location: SAA 2023, Portland
+location: Annual Meeting of the Paleoanthropology Society, Portland
 address:
   street:
   city: Portland
@@ -15,16 +15,17 @@ address:
   country: United States
 
 
-summary: Session on advances in lithic analysis
+summary: Podium presentation in the general session
 abstract: ""
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-03-30T09:00:00Z'
-date_end: '2022-04-03T20:00:00Z'
+date: '2022-03-28T09:00:00Z'
+date_end: '2022-03-29T20:00:00Z'
 all_day: false
 
-authors: [admin, Diego Lombao]
+authors: [admin, Adriana Moroni, Fabio Negrino, Marco Peresani, Julien Riel‑Salvatore, Annamaria Ronchitelli]
+
 tags: []
 
 # Is this a featured talk? (true/false)
