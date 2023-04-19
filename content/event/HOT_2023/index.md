@@ -1,6 +1,6 @@
 ---
 
-title: "Blade and bladelet cores in the Protoaurignacian: A new method for measuring reduction intwnsity"
+title: "Blade and bladelet cores in the Protoaurignacian: A new method for measuring reduction intensity"
 
 
 event: "64th Annual Meeting of the Hugo Obermaier Society"
@@ -10,7 +10,7 @@ location: Hugo Obermaier Society, Aarhus
 address:
   street:
   city: Aarhus
-  region:
+  region: Denmark
   postcode:
   country: Denmark
 
