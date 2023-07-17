@@ -8,6 +8,7 @@ interests:
   - Lithic Technology
   - Geometric Morphometrics
   - 3D visualization
+  - Science Communication
 social:
   - icon: envelope
     icon_pack: fas
