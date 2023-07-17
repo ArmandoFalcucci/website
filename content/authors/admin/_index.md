@@ -7,7 +7,7 @@ interests:
   - Paleolithic Archaeology
   - Lithic Technology
   - Geometric Morphometrics
-  - 3D visualization
+  - 3D Visualization
   - Science Communication
 social:
   - icon: envelope
@@ -35,7 +35,7 @@ education:
   courses:
     - course: PhD in Paleolithic Archaeology
       institution: University of Tübingen
-      year: 2018
+      year: 2019
     - course: MA in Quaternary, Prehistory, and Archaeology
       institution: University of Ferrara
       year: 2015
