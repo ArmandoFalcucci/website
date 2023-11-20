@@ -14,8 +14,8 @@ address:
   country: Spain
 
 
-summary: Podium session 4 – Material culture and behaviour
-abstract: ''
+summary: Podium session 4. Material culture and behaviour
+abstract: 'Still not published'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
