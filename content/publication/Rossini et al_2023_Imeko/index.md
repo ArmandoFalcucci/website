@@ -1,5 +1,6 @@
 ---
-title: 'Unravelling technological behaviors through core reduction intensity. The case of the early Protoaurignacian assemblage from Fumane Cave'
+title: 'Application of 2D shape analysis to study Epigravettian lithic
+assemblages: assessing its analytical potential'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -18,7 +19,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2023-11-24T00:00:00Z'
-doi: 'https://acta.imeko.org/index.php/acta-imeko/article/view/1539'
+doi: 'https://doi.org/10.21014/actaimeko.v12i4.1539'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
