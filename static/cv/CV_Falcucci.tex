@@ -1,0 +1,906 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{009ACD}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Armando}{Falcucci}
+
+\position{Postdoctoral Researcher}
+\address{Department of Geosciences, Early Prehistory and Quaternary
+Ecology, Eberhard Karls University of Tübingen, Germany}
+
+\email{\href{mailto:armando.falcucci@uni-tuebingen.de}{\nolinkurl{armando.falcucci@uni-tuebingen.de}}}
+\homepage{armandofalcucci.com}
+\orcid{0000-0002-3255-1005}
+\googlescholar{hsrY\_B4AAAAJ}
+\github{ArmandoFalcucci}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{float}
+
+% Pandoc CSL macros
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {December 2023}
+    {Armando Falcucci~~~·~~~Curriculum Vitae}
+  {\thepage~ of \pageref{LastPage}~}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{professional-experience}{%
+\section{Professional Experience}\label{professional-experience}}
+
+\begin{cventries}
+    \cventry{Postdoctoral Researcher}{Eberhard Karls University of Tübingen}{Tübingen, Germany}{Sept 2020--Present}{\begin{cvitems}
+\item DFG project "Investigating Early Upper Paleolithic Technological Variability and Cultural Dynamics South of the Alps"  \href{https://gepris.dfg.de/gepris/projekt/431809858?language=en}{\faExternalLink}
+\end{cvitems}}
+    \cventry{Research Scholar}{Harvard University}{Cambridge, MA, USA}{March 2023--June 2023}{\begin{cvitems}
+\item J-1 Short-Term Scholar at the Peabody Museum of Archaeology and Ethnology and the Department of Anthropology
+\end{cvitems}}
+    \cventry{Research Assistant}{Heidelberg Academy of Sciences and Humanities}{Tübingen, Germany}{Jan 2020--Aug 2020}{\begin{cvitems}
+\item The Role of Culture in Early Expansions of Humans (ROCEEH)  \href{https://www.hadw-bw.de/en/research/research-center/roceeh}{\faExternalLink}
+\item Synthesizing archaeological data into the ROCEEH Out of Africa Database (ROAD)
+\end{cvitems}}
+    \cventry{Postdoctoral Researcher}{Eberhard Karls University of Tübingen}{Tübingen, Germany}{Sept 2019--Dec 2019}{\begin{cvitems}
+\item DFG Center for Advanced Studies “Words, Bones, Genes, Tools”  \href{https://uni-tuebingen.de/forschung/forschungsschwerpunkte/forschungsgruppen/words-bones-genes-tools/}{\faExternalLink}
+\item Exploring geometric morphometrics methods in lithic analysis
+\end{cvitems}}
+    \cventry{Research Assistant}{Heidelberg Academy of Sciences and Humanities}{Tübingen, Germany}{April 2019--Aug 2019}{\begin{cvitems}
+\item The Role of Culture in Early Expansions of Humans (ROCEEH)  \href{https://www.hadw-bw.de/en/research/research-center/roceeh}{\faExternalLink}
+\item Synthesizing archaeological data into the ROCEEH Out of Africa Database (ROAD)
+\end{cvitems}}
+    \cventry{Visiting Research Fellow}{Hebrew University of Jerusalem}{Jerusalem, Israel}{April 2015--July 2015}{\begin{cvitems}
+\item Recipient of the research grant awarded by Fondazione Atlante (Italy)
+\item Research on the Early Ahmarian and Levantine Aurignacian from Kebara and Hayonim under the supervision of Prof. Anna Belfer-Cohen
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{Ph.D. in Paleolithic Archaeology}{Eberhard Karls University of Tübingen}{Tübingen, Germany}{Dec 2015--Jan 2019}{\begin{cvitems}
+\item Dissertation: A critical assessment of the Aurignacian: Insights from Fumane Cave in northern Italy
+\item Supervisors: Prof. Nicholas J. Conard, PhD and Prof. Dr. Michael Bolus
+\item Grade: magna cum Laude
+\end{cvitems}}
+    \cventry{M.A. in Quaternary, Prehistory, and Archaeology}{University of Ferrara}{Ferrara, Italy}{Nov 2013--July 2015}{\begin{cvitems}
+\item Dissertation: Morpho-metric variability of Protoaurignacian retouched bladelets. The cases of Grotta di Fumane, Grotte d’Isturitz and Grotte des Cottés
+\item Supervisors: Prof. Marco Peresani and Prof. Marie Soressi (Leiden University, Netherlands)
+\item Grade: 110 cum laude
+\end{cvitems}}
+    \cventry{Erasmus+ Exchange Programme}{University of Toulouse Jean Jaurès}{Toulouse, France}{Sept 2014--Feb 2015}{\begin{cvitems}
+\item Undertook courses in Paleolithic archaeology and lithic technology
+\item Carried out research on the lithic assemblages from Isturitz at TRACES (Travaux et Recherches Archéologiques sur les Cultures, les Espaces et les Sociétés, UMR 5608)
+\item Program supervisors: Prof. François Bon and Dr. Nicholas Teyssandier
+\end{cvitems}}
+    \cventry{B.A. in Cultural Heritage Sciences}{University of Rome Tor Vergata}{Rome, Italy}{Oct 2010--Oct 2013}{\begin{cvitems}
+\item Dissertation: The last Neanderthal: transition and extinction between Middle and Upper Paleolithic in the Iberian Peninsula
+\item Supervisor: Prof. Mario Federico Rolfo
+\item Grade: 110 cum laude
+\end{cvitems}}
+    \cventry{Erasmus Exchange Programme}{University of Granada}{Granada, Spain}{Sept 2012--July 2013}{\begin{cvitems}
+\item Undertook courses in archaeology and history
+\item Conducted bibliographic research on the Middle-to-Upper Paleolithic transition in the Iberian Peninsula
+\item Program supervisor: Prof. Juan Antonio Cámara Serrano
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{peer-reviewed-publications}{%
+\section{Peer-Reviewed Publications}\label{peer-reviewed-publications}}
+
+\small
+\setlength{\leftskip}{0cm}
+
+\textbf{2023}
+
+\setlength{\leftskip}{1cm}
+
+Lombao, D.,\textbf{Falcucci, A.}, Moos, E., Peresani, M. (2023)
+Unravelling technological behaviors through core reduction intensity.
+The case of the early Protoaurignacian assemblage from Fumane Cave.
+\textbf{Journal of Archaeological Science}, 160:105889.
+\url{https://doi.org/10.1016/j.jas.2023.105889} \emph{(co-first
+authorship)}
+
+Rossini, M., \textbf{Falcucci, A.}, Dominici, C., Ronchitelli, A.,
+Tomasso, A., Boschin, F. (2023) Application of 2D shape analysis to
+study Epigravettian lithic assemblages: assessing its analytical
+potential. \textbf{Acta IMEKO}, 12(4):1-8.
+\url{https://doi.org/10.21014/actaimeko.v12i4.1539}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2022}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Falcucci, A.}, Karakostis, F.A., Göldner, D., Peresani, M.
+(2022) Bringing shape into focus: Assessing differences between blades
+and bladelets and their technological significance in 3D form.
+\textbf{Journal of Archaeological Science: Reports}, 43:103490.
+\url{https://doi.org/10.1016/j.jasrep.2022.103490}
+
+\textbf{Falcucci, A.}, Peresani, M. (2022) The contribution of
+integrated 3D model analysis to Protoaurignacian stone tool design.
+\textbf{PLoS One}, 17(5):e0268539.
+\url{https://doi.org/10.1371/journal.pone.0268539}
+
+Göldner, D., Karakostis, F.A., \textbf{Falcucci, A.} (2022) Practical
+and technical aspects for the 3D scanning of lithic artefacts using
+micro-computed tomography techniques and laser light scanners for
+subsequent geometric morphometric analysis. Introducing the StyroStone
+protocol. \textbf{PLoS One}, 17(4):e0267163.
+\url{https://doi.org/10.1371/journal.pone.0267163}
+
+Rossini, M., \textbf{Falcucci, A.}, Dominici, C., Ronchitelli, A.,
+Tomasso, A., Boschin, F. (2022) Analytical potential of 2D shape
+analysis to study Epigravettian lithic assemblages. \textbf{IMEKO TC-4}.
+\url{https://doi.org/10.21014/tc4-ARC-2022.011}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2021}
+
+\setlength{\leftskip}{1cm}
+
+Aleo, A., Duches, R., \textbf{Falcucci, A.}, Rots, V., Peresani, M.
+(2021) Scraping hide in the early Upper Paleolithic: Insights into the
+life and function of the Protoaurignacian endscrapers at Fumane Cave.
+\textbf{Archaeological and Anthropological Sciences}, 13(8):137.
+\url{https://doi.org/10.1007/s12520-021-01367-4}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2020}
+
+\setlength{\leftskip}{1cm}
+
+Bataille, G., \textbf{Falcucci, A.}, Tafelmaier, Y., Conard, N. J.
+(2020). Technological differences between Kostenki 17/II (Spitsynskaya
+industry, Central Russia) and the Protoaurignacian. Reply to Dinnis et
+al.~(2019). \textbf{Journal of Human Evolution}, 146:102685.
+\url{https://doi.org/10.1016/j.jhevol.2019.102685}
+
+\textbf{Falcucci, A.}, Conard, N.J., Peresani, M. (2020) Breaking
+through the Aquitaine frame: A re-evaluation on the significance of
+regional variants during the Aurignacian as seen from a key record in
+southern Europe. \textbf{Journal of Anthropological Sciences},
+98:99-140. \url{https://doi.org/10.4436/JASS.98021}
+
+Marciani, G., Ronchitelli, A., Arrighi, S., Badino, F., Bortolini, E.,
+Boscato, P., Boschin, F., Crezzini, J., Delpiano, D., \textbf{Falcucci,
+A.}, Figus, C., Lugli, F., Negrino, F., Oxilia, G., Romandini, M.,
+Riel-Salvatore, J., Spinapolice, E., Peresani, M., Moroni, A., Benazzi,
+S. (2020) Lithic techno-complexes in Italy from 50 to 39 thousand years
+BP: an overview of cultural and technological changes across the
+Middle-Upper Palaeolithic boundary. \textbf{Quaternary International},
+551:123-149. \url{https://doi.org/10.1016/j.quaint.2019.11.005}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2019}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Falcucci, A.} \& Peresani, M. (2019) A pre-Heinrich Event 3
+assemblage at Fumane Cave and its contribution for understanding the
+beginning of the Gravettian in Italy. \textbf{Quartär}, 66:135-154.
+\url{https://doi.org/10.7485/QU66_6}
+
+Ioannidou, M., \textbf{Falcucci, A.}, Röding, C., Kandel, A.W. (2019)
+Eighth Annual Meeting of the European Society for the Study of Human
+Evolution. \textbf{Evolutionary Anthropology Issues News and Reviews},
+28(2):52--54. \url{https://doi.org/10.1002/evan.21770}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2018}
+
+\setlength{\leftskip}{1cm}
+
+Caricola, I., Zupancich, A., Moscone, D., Mutri, G., \textbf{Falcucci,
+A.}, Duches, R., Peresani, M., Cristiani, E. (2018) An integrated method
+for understanding the function of macro-lithic tools. Use wear, 3D and
+spatial analyses of an Early Upper Palaeolithic assemblage from North
+Eastern Italy. \textbf{PLoS One}, 13:e0207773.
+\url{https://doi.org/10.1371/journal.pone.0207773}
+
+\textbf{Falcucci, A.} (2018) Towards a renewed definition of the
+Protoaurignacian. \textbf{Mitteilungen der Gesellschaft für
+Urgeschichte}, 27:87--130.
+
+\textbf{Falcucci, A.} \& Peresani, M. (2018) Protoaurignacian Core
+Reduction Procedures: Blade and Bladelet Technologies at Fumane Cave.
+\textbf{Lithic Technology}, 43:125-140.
+\url{https://doi.org/10.1080/01977261.2018.1439681}
+
+\textbf{Falcucci, A.}, Peresani, M., Roussel, M., Normand, C., Soressi,
+M. (2018) What's the point? Retouched bladelet variability in the
+Protoaurignacian. Results from Fumane, Isturitz, and Les Cottés.
+\textbf{Archaeological and Anthropological Sciences}, 10:539--554.
+\url{https://doi.org/10.1007/s12520-016-0365-5}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2017}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Falcucci, A.}, Conard, N. J., Peresani, M. (2017) A critical
+assessment of the Protoaurignacian lithic technology at Fumane Cave and
+its implications for the definition of the earliest Aurignacian.
+\textbf{PLoS One}, 12(12): e0189241.
+\url{https://doi.org/10.1371/journal.pone.0189241}
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{non-refereed-publications}{%
+\section{Non-Refereed Publications}\label{non-refereed-publications}}
+
+\textbf{Falcucci, A.} (2019) The importance of re-evaluating the
+Aurignacian industry for understanding the Early Upper Paleolithic. 15th
+Newsletter of The Role of Culture in Early Expansions of Humans
+(ROCEEH).
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{d-scanning-protocols}{%
+\section{3D-Scanning Protocols}\label{d-scanning-protocols}}
+
+\textbf{Falcucci, A.}, (2022) MicroStone: Exploring the capabilities of
+the Artec Micro in scanning stone tools. \textbf{protocols.io}.
+dx.doi.org/10.17504/protocols.io.81wgb6781lpk/v1
+
+Göldner, D., Karakostis, F. A., \textbf{Falcucci, A.}, (2022)
+StyroStone: A protocol for scanning and extracting three-dimensional
+meshes of stone artefacts using Micro-CT scanners V.3.
+\textbf{protocols.io}. dx.doi.org/10.17504/protocols.io.4r3l24d9qg1y/v2
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{open-access-repositories}{%
+\section{Open Access Repositories}\label{open-access-repositories}}
+
+\textbf{Falcucci, A.} (2022) Research compendium for `The contribution
+of integrated 3D model analysis to Protoaurignacian stone tool design'.
+\textbf{Zenodo}. \url{doi:10.5281/zenodo.6504415}
+
+\textbf{Falcucci, A.}, Karakostis, F. A., Göldner, D., Peresani, M.
+(2022) Research compendium for `Bringing shape into focus: Assessing
+differences between blades and bladelets and their technological
+significance in 3D form'. \textbf{Zenodo}.
+\url{doi:10.5281/zenodo.6368200}
+
+\textbf{Falcucci, A.} and Peresani, M. (2022) The Open Aurignacian
+Project. Volume 1: Fumane Cave in northeastern Italy. \textbf{Zenodo}.
+\url{doi:10.5281/zenodo.6362149}
+
+Göldner, D., Karakostis, F. A., \textbf{Falcucci, A.}, (2022) Research
+compendium for `Practical and technical aspects for the 3D scanning of
+lithic artefacts using micro-computed tomography techniques and laser
+light scanners for subsequent geometric morphometric analysis.
+Introducing the StyroStone protocol'. \textbf{Zenodo}.
+\url{doi:10.5281/zenodo.6365680}
+
+Lombao, D.,\textbf{Falcucci, A.}, Moos, E., Peresani, M. (2023) Research
+compendium for `Unravelling technological behaviors through core
+reduction intensity. The case of the early Protoaurignacian assemblage
+from Fumane Cave'. \textbf{Zenodo}.
+\url{https://doi.org/10.5281/zenodo.8212572}
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{grants-and-awards}{%
+\section{Grants and Awards}\label{grants-and-awards}}
+
+\normalsize
+
+Total awarded \textasciitilde420,000€
+
+\begin{cventries}
+    \cventry{DFG, German Research Foundation (Bonn, DE)}{Research Grant}{24,400€}{July 2023}{\begin{cvitems}
+\item Awarded for a three-month extension of the project “Investigating Early Upper Paleolithic Technological Variability and Cultural Dynamics South of the Alps”
+\end{cvitems}}
+    \cventry{Reinhard-Frank-Stiftung (Hamburg, DE)}{Research Grant}{15,000€}{Dec 2022}{\begin{cvitems}
+\item Awarded for a research stay at Harvard University (Cambridge, Massachusetts, USA)
+\end{cvitems}}
+    \cventry{Open Access Publication Fund (Tübingen, DE)}{Publication Grant}{1,200€}{May 2022}{\begin{cvitems}
+\item Awarded to cover the publication fees of open access journals
+\end{cvitems}}
+    \cventry{Open Access Publication Fund (Tübingen, DE)}{Publication Grant}{770€}{April 2022}{\begin{cvitems}
+\item Awarded to cover the publication fees of open access journals
+\end{cvitems}}
+    \cventry{DFG, German Research Foundation (Bonn, DE)}{Research Grant}{316,229€}{Sept 2020}{\begin{cvitems}
+\item Awarded for the project “Investigating Early Upper Paleolithic Technological Variability and Cultural Dynamics South of the Alps”
+\end{cvitems}}
+    \cventry{University of Tübingen (Tübingen, DE)}{Research Grant}{1,000€}{Jan 2019}{\begin{cvitems}
+\item Awarded for conducting research at the Department  of Geosciences, Early Prehistory and Quaternary Ecology working group
+\end{cvitems}}
+    \cventry{University of Ferrara (Ferrara, IT)}{Research Grant}{3,000€}{March 2019}{\begin{cvitems}
+\item Awarded for analyzing the Gravettian lithic assemblage from Fumane Cave
+\end{cvitems}}
+    \cventry{European Society for the study of Human Evolution (ESHE)}{Travel Bursary}{150€}{Sept 2018}{\begin{cvitems}
+\item Awarded to present a paper at the ESHE annual meeting in Faro, Portugal
+\end{cvitems}}
+    \cventry{International Union of Prehistoric and Protohistoric Sciences (UISPP)}{Travel Bursary}{200€}{Aug 2018}{\begin{cvitems}
+\item Awarded  to present a paper at UISPP conference in Paris, France
+\end{cvitems}}
+    \cventry{Universitätsbund Tübingen e. V. (Tübingen, DE)}{Travel Bursary}{150€}{Aug 2018}{\begin{cvitems}
+\item Awarded to present my Ph.D. findings at the UISPP conference in Paris, France
+\end{cvitems}}
+    \cventry{Open Access Publication Fund (Tübingen, DE)}{Publication Grant}{1,150€}{Dec 2017}{\begin{cvitems}
+\item Awarded to cover the publication fees of open access journals
+\end{cvitems}}
+    \cventry{European Society for the study of Human Evolution (ESHE)}{Travel Bursary}{250€}{Sept 2016}{\begin{cvitems}
+\item Awarded to present a paper at the ESHE annual meeting in Madrid, Spain
+\end{cvitems}}
+    \cventry{Baden-Württemberg Ministry of Science, Research and Art (DE)}{Ph.D. Scholarship}{49,200€}{Dec 2015}{\begin{cvitems}
+\item Awarded to conduct a doctoral research project at the University of Tübingen
+\end{cvitems}}
+    \cventry{Fondazione Atlante (Milan, Italy)}{Research Grant}{4,000€}{April 2015}{\begin{cvitems}
+\item Awarded for a research stay at the Hebrew University of Jerusalem, Israel
+\end{cvitems}}
+    \cventry{European Commission}{Erasmus+ Scholarship}{3,000€}{Sept 2014}{\begin{cvitems}
+\item Study abroad program at the University of Toulouse, France
+\end{cvitems}}
+    \cventry{International Union of Prehistoric and Protohistoric Sciences (UISPP)}{Travel Bursary}{350€}{Aug 2014}{\begin{cvitems}
+\item Awarded to present a paper at UISPP conference in Burgos, Spain
+\end{cvitems}}
+    \cventry{European Commission}{Erasmus Scholarship}{4,500€}{Sept 2012}{\begin{cvitems}
+\item Study abroad program at the University of Granada, Spain
+\end{cvitems}}
+\end{cventries}
+
+\small
+\setlength{\leftskip}{0cm}
+
+\hypertarget{teaching-experience-and-supervision}{%
+\section{Teaching Experience and
+Supervision}\label{teaching-experience-and-supervision}}
+
+I teach prehistoric archaeology, lithic technology, and 3D-based methods
+in the framework of the MSc program \textbf{Archaeological Sciences and
+Human Evolution}
+\href{https://uni-tuebingen.de/en/study/finding-a-course/degree-programs-available/detail/course/archaeological-sciences-and-human-evolution-master/}{\faExternalLink}
+at the \textbf{Institute for Archaeological Sciences}
+\href{https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/geosciences/work-groups-contacts/prehistory-and-archaeological-sciences/ina/}{\faExternalLink}
+(University of Tübingen, Germany).
+
+\setlength{\leftskip}{0cm}
+
+\textbf{Winter Term 2023/2024}
+
+\setlength{\leftskip}{1cm}
+
+UFG-BA, UFG-MA, NWA: \emph{Prehistory of Mediterranean Europe: late
+Neanderthals and modern humans} (3 ECTS).
+
+\setlength{\leftskip}{0cm}
+
+\textbf{Summer Term 2023}
+
+\setlength{\leftskip}{1cm}
+
+ASHE 6f-2, ASHE 5, UFGAM\_MA\_6.3: \emph{3D Applications in lithic
+analysis} (3 ECTS).
+
+ASHE-6f-1: \emph{Stone Age Technology} (3 ECTS). Course held in
+collaboration with Prof.~N.J. Conard.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{Summer Term 2022}
+
+\setlength{\leftskip}{1cm}
+
+UFG-BA, UFG-MA, NWA: \emph{Prehistory of Mediterranean Europe: late
+Neanderthals and modern humans} (3 ECTS).
+
+ASHE 6f-2, ASHE 5, UFGAM\_MA\_6.3: \emph{3D Applications in lithic
+analysis} (3 ECTS).
+
+ASHE-6f-1: \emph{Stone Age Technology} (3 ECTS). Course held in
+collaboration with other colleagues from the University of Tübingen.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{Summer Term 2021}
+
+\setlength{\leftskip}{1cm}
+
+UFG-BA, UFG-MA, NWA: \emph{Prehistory of Mediterranean Europe: late
+Neanderthals and modern humans} (3 ECTS).
+
+\setlength{\leftskip}{0cm}
+
+\textbf{Supervision}
+
+\setlength{\leftskip}{1cm}
+
+I supervised \textbf{seven} research assistants (\emph{Wissenschaftliche
+Hilfskraft}) in the framework of my DFG project ``Investigating Early
+Upper Paleolithic Technological Variability and Cultural Dynamics South
+of the Alps'' to assist in lithic analysis, experimental activity, and
+3D-scanning.
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{technical-skills}{%
+\section{Technical Skills}\label{technical-skills}}
+
+\begin{table}[!h]
+\centering\begingroup\fontsize{9}{11}\selectfont
+
+\begin{tabular}{>{\centering\arraybackslash}p{4.75cm}>{\centering\arraybackslash}p{4.75cm}>{\centering\arraybackslash}p{4.75cm}}
+\toprule
+\textcolor[HTML]{414141}{\textbf{Coding Languages}} & \textcolor[HTML]{414141}{\textbf{Software}} & \textcolor[HTML]{414141}{\textbf{3D Scanners}}\\
+\midrule
+\textcolor[HTML]{7f7f7f}{R, RMarkdown, RStudio} & \textcolor[HTML]{7f7f7f}{Adobe CreativeCloud, Avizo, Geomagic Wrap, GitHub, IBM SPSS, Meshlab, Microsoft Office, Past} & \textcolor[HTML]{7f7f7f}{Artec Micro, Artec Space Spider, EinScan Pro HD}\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\hypertarget{additional-training-and-professional-development}{%
+\section{Additional Training and Professional
+Development}\label{additional-training-and-professional-development}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{Certificate Science Communication and Media Competence} (Graduate Academy, Tübingen)}{}{2023}
+    \cvhonor{}{\textbf{Data Manipulation with R Tidyverse} (TransmittingScience, Barcelona)}{}{2022}
+    \cvhonor{}{\textbf{R's ggplot2} (TransmittingScience, Barcelona)}{}{2022}
+    \cvhonor{}{\textbf{R Programming Course} (TransmittingScience, Barcelona)}{}{2022}
+    \cvhonor{}{\textbf{Applying for a Marie Curie Postdoctoral Fellowship} (YellowResearch, Amsterdam)}{}{2022}
+    \cvhonor{}{\textbf{Strategic Career Planning in Academia} (Graduate Academy, Tübingen)}{}{2022}
+    \cvhonor{}{\textbf{Taking the Lead for Postdocs} (Graduate Academy, Tübingen)}{}{2022}
+    \cvhonor{}{\textbf{Advanced Agile Project Management for Researchers} (Graduate Academy, Tübingen)}{}{2022}
+    \cvhonor{}{\textbf{Principles of Grant Writing} (Graduate Academy, Tübingen)}{}{2021}
+\end{cvhonors}
+
+\hypertarget{professional-memberships}{%
+\section{Professional Memberships}\label{professional-memberships}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{Computer Applications and Quantitative Methods in Archaeology (CAA)}}{}{Since 2022}
+    \cvhonor{}{\textbf{Paleoanthropology Society}}{}{Since 2023}
+    \cvhonor{}{\textbf{Society for American Archaeology (SAA)}}{}{Since 2022}
+    \cvhonor{}{\textbf{Gesellschaft für Urgeschichte e.V. (GFU)}}{}{Since 2020}
+    \cvhonor{}{\textbf{Hugo Obermaier-Gesellschaft (HOG)}}{}{Since 2016}
+    \cvhonor{}{\textbf{European Society for the Study of Human Evolution (ESHE)}}{}{Since 2016}
+\end{cvhonors}
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{academic-service}{%
+\section{Academic Service}\label{academic-service}}
+
+I have served as academic reviewer for several peer-reviewed journals
+such as \textbf{PLoS ONE} (4), \textbf{Archeological and Anthropological
+Sciences} (1), \textbf{Journal of Archaeological Science: Reports} (1),
+\textbf{Journal of Paleolithic Archaeology} (3), \textbf{IIPP Journal}
+(2), as well as for several edited book chapters.
+
+\textbf{Member of doctoral committee}
+
+I was an external \textbf{member of the doctoral committee} for the
+dissertation entitled ``Reducción y gestión volumétrica: aproximación a
+la variabilidad y evolución de las dinámicas de explotación durante el
+Pleistoceno inferior y medio europeo, a través de los conjuntos de Gran
+Dolina y Galería (Sierra de Atapuerca, Burgos) y de El Barranc de la
+Boella (La Canonja, Tarragona)'', defended by \textbf{Dr.~Diego Lombao
+Vázquez} at the Universitat Rovira i Virgili (Tarragona, Spain) on the
+\textbf{20.12.2021}
+
+\newpage
+\setlength{\leftskip}{0cm}
+
+\hypertarget{organization-of-conference-sessions}{%
+\section{Organization of Conference
+Sessions}\label{organization-of-conference-sessions}}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2023}
+
+\setlength{\leftskip}{1cm}
+
+Lombao, D., Rabuñal, J.R., \textbf{Falcucci, A.}, Lebret, J.B.,
+Tobalina-Pulido, L. (2023) Replicable Archaeology: Looking for Workflows
+and Data Management Strategies Fostering Data Reuse and Methodological
+Transferability in Archaeological Science. 29th Annual Meeting of the
+\textbf{European Association of Archaeologists (EAA)} (Belfast, Northern
+Ireland). \emph{Session \#603}.
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{scholarly-presentations}{%
+\section{Scholarly Presentations}\label{scholarly-presentations}}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2023}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Falcucci, A.} (2023) Searching for solid and replicable
+frameworks in stone tool analysis: A discussion surrounding recent
+achievements and standing challenges. \textbf{Advances in Human
+Evolution, Adaptation \& Diversity (AHEAD)} (Tarragona, Spain).
+\emph{Podium Presentation}.
+
+\textbf{Falcucci, A.} \& Lombao, D. (2023) Measuring reduction intensity
+in laminar cores: an experimental approach and archaeological
+application. 88th Annual Meeting of the \textbf{Society for American
+Archaeology (SAA)} (Portland, USA). \emph{Podium Presentation}.
+
+\textbf{Falcucci, A.}, Moroni, A., Negrino, F., Peresani, M.,
+Riel-Salvatore, J., Ronchitelli, A. (2023) Investigating Aurignacian
+technological variability and population connectedness south of the Alps
+and along peninsular Italy. Annual \textbf{Paleoanthropology Society}
+Meeting (Portland, USA). \emph{Podium Presentation}.
+
+\textbf{Falcucci, A.} \& Pargeter, J. (2023) Looking for an efficient
+workflow in the R programming language for replicable lithic
+quantitative analysis. 29th Annual Meeting of the \textbf{European
+Association of Archaeologists (EAA)} (Belfast, Northern Ireland).
+\emph{Podium Presentation}.
+
+Lombao, D. \& \textbf{Falcucci, A.} (2023) Blade and bladelet cores in
+the Protoaurignacian: A new method for measuring reduction intensity.
+64th Annual Meeting of the \textbf{Hugo Obermaier Society} (Aarhus,
+Denmark). \emph{Poster Presentation}.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2022}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Falcucci, A.} (2022) Integrating 2D and 3D shape analysis in
+lithic technology: A discussion around a case study and future research
+perspectives. 49th Meeting of the \textbf{Computer Applications and
+Quantitative Methods in Archaeology} (Oxford, UK). \emph{Podium
+Presentation}.
+
+\textbf{Falcucci, A.}, Giusti, D., Zangrossi, F., De Lorenzi, M.,
+Ceregatti, L., Peresani, M. (2022). Linking blades: a systematic
+refitting analysis of blade fragments from the Protoaurignacian sequence
+of Fumane Cave. 12th Annual Meeting of the \textbf{European Society for
+the study of Human Evolution} (Tübingen, DE). \emph{Poster
+Presentation}.
+
+\textbf{Falcucci, A.}, Karakostis, F. A., Göldner, D., \& Peresani, M.
+(2022) Identifying and quantifying morphological separation between
+blade and bladelet productions through 3D shape analysis. 87th Annual
+Meeting of the \textbf{Society for American Archaeology (SAA)} (Chicago,
+USA). \emph{Podium Presentation}.
+
+Rossini, M., \textbf{Falcucci, A.}, Dominici, C, Ronchitelli, A.,
+Tomasso, A., Boschin, F. (2022) Analytical potential of 2D shape
+analysis to study Epigravettian lithic assemblages. 4th IMEKO
+\textbf{International Conference on Metrology for Archaeology and
+Cultural Heritage} (Cosenza, Italy). \emph{Podium Presentation}.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2021}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Falcucci, A.}, Karakostis, F. A., Göldner, D., \& Peresani, M.
+(2021) Identifying and quantifying morphological separation between
+blade and bladelet productions through 3D shape analysis. 13th
+\textbf{International Symposium of Knappable Materials} (Online).
+\emph{Podium Presentation}.
+
+\textbf{Falcucci, A.}, and Peresani, M. (2021) Assessing the Gravettian
+evidence from Fumane Cave. 62nd Annual Meeting of the \textbf{Hugo
+Obermaier Society} for Quaternary Research and Archaeology of the Stone
+Age. \emph{Podium Presentation}.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2019}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Falcucci, A.} (2019) The site of Fumane Cave in northern Italy.
+Formation processes, stratigraphy, and dating of the Protoaurignacian.
+Archéologie Alsace - ÄUQÖ Tübingen \textbf{CIERA Meeting} (Tübingen,
+DE). \emph{Podium Presentation}.
+
+\textbf{Falcucci, A.}, Conard, N. J., Peresani, M. (2019) A
+re-evaluation of the Protoaurignacian sequence at Fumane Cave in
+northern Italy. 61st Annual Meeting of the \textbf{Hugo Obermaier
+Society} for Quaternary Research and Archaeology of the Stone Age
+(Erkrath, DE). \emph{Podium Presentation}.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2018}
+
+\setlength{\leftskip}{1cm}
+
+Aureli, D., Arrighi, S., Bortolini, E., Boscato, P., Boschin, F.,
+Crezzini, J., \textbf{Falcucci, A.}, Delpiano, D., Figus, C., Moroni,
+A., Negrino, F., Peresani, M., Riel-Salvatore, J., Romandini, M.,
+Ronchitelli, A., Spinapolice, E., Benazzi, S. (2018) Italian Peninsula
+between 45 and 39 ky ago: the sunset of the ``old'' and the dawn of the
+``new''? Let the lithic industries tell!XVIII \textbf{UISPP World
+Congress} (Paris, France). \emph{Podium Presentation}.
+
+\textbf{Falcucci, A.}, Conard, N. J., Peresani, M. (2018) Testing
+technological definitions: a critical assessment of the Protoaurignacian
+at Fumane Cave. XVIII \textbf{UISPP World Congress} (Paris, France).
+\emph{Podium Presentation}.
+
+\textbf{Falcucci, A.}, Conard, N. J., Peresani, M. (2018) The
+chrono-cultural narrative of the Fumanian Aurignacian supports the
+inapplicability of the Aquitaine Model on a supra-regional scale. 8th
+Annual Meeting of the \textbf{European Society for the study of Human
+Evolution} (Faro, PT). \emph{Podium Presentation}.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2017}
+
+\setlength{\leftskip}{1cm}
+
+Bataille, G., Bolus, M., Conard, N. J., \textbf{Falcucci, A.}, Peresani,
+M., Tafelmaier, Y. (2017) The techno-typological variability of the
+European Aurignacian from a multi-regional and diachronic perspective.
+59st Annual Meeting of the \textbf{Hugo Obermaier Society} for
+Quaternary Research and Archaeology of the Stone Age (Aurich, DE).
+\emph{Podium Presentation}.
+
+Peresani, M., Delpiano, D., Aleo, A., Duches, R., \textbf{Falcucci, A.},
+Forte, M., Gennai, J., Nannini, N., Romandini, M., Terlato, G. (2017) La
+transizione Neanderthal -- Sapiens in Italia Nord-orientale: Ricerche
+dell'università di Ferrara. Annual Meeting of the \textbf{TourismA
+Society} for Archaeology and Tourism (Firenze, IT). \emph{Poster
+Presentation}.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2016}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Falcucci, A.} \& Peresani, M. (2016) New investigations on the
+Protoaurignacian lithic technology of Fumane Cave. 6th Annual Meeting of
+the \textbf{European Society for the study of Human Evolution} (Madrid,
+ES). \emph{Poster Presentation}.
+
+\textbf{Falcucci, A.}, Peresani, M., Roussel, M., Normand, C., Soressi,
+M. (2016) Protoaurignacian retouched bladelets: where do we stand? 59st
+Annual Meeting of the \textbf{Hugo Obermaier Society} for Quaternary
+Research and Archaeology of the Stone Age (Budapest, HU). \emph{Poster
+Presentation}.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2014}
+
+\setlength{\leftskip}{1cm}
+
+Romandini, M., \textbf{Falcucci., A.}, Gurioli, F., Broglio, A. (2014)
+First European Anatomically Modern Humans and the ``route of shells'':
+chronological and qualitative evidence from the Veneto plain region
+sites. XVII \textbf{UISPP World Congress} (Burgos, ES). \emph{Poster
+Presentation}.
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{invited-academic-lectures}{%
+\section{Invited Academic Lectures}\label{invited-academic-lectures}}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2023}
+
+\setlength{\leftskip}{1cm}
+
+The Institute of Archaeology, \textbf{Hebrew University of Jerusalem}.
+\emph{Title}: Bridging past behavior and modern technologies:
+Three-dimensional and experimental insights into the Aurignacian along
+peninsular Italy.
+
+Department of Anthropology, \textbf{Harvard University}. \emph{Title}:
+3D visualization and analysis in lithic studies.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2022}
+
+\setlength{\leftskip}{1cm}
+
+African Paleosciences Laboratory, Department of Anthropology,
+\textbf{New York University}. \emph{Title}: A discussion surrounding 3D
+scanning technology for archaeological sciences.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2020}
+
+\setlength{\leftskip}{1cm}
+
+Institut für Ur- und Frühgeschichte und Archäologie des Mittelalters,
+\textbf{University of Tübingen}. Kolloquium Ältere Urgeschichte.
+\emph{Title}: A pre-Heinrich Event 3 assemblage at Fumane Cave,
+Northeast Italy.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2019}
+
+\setlength{\leftskip}{1cm}
+
+Institut für Ur- und Frühgeschichte, \textbf{University of Cologne}.
+Prähistorisches Kolloquium. \emph{Title}: Breaking through the
+Aurignacian frame: A re-evaluation of the archaeological record south of
+the Alps.
+
+DFG Center for Advanced Studies ``Words, Bones, Genes, Tools: Tracking
+Linguistic, Cultural and Biological Trajectories of the Human Past'',
+\textbf{University of Tübingen}. Center Colloquium. \emph{Title}: The
+first European archers? Review of Sano et al.~2019 (The earliest
+evidence for mechanically delivered projectile weapons in Europe, Nature
+Ecology and Evolution).
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2018}
+
+\setlength{\leftskip}{1cm}
+
+Institut für Ur- und Frühgeschichte und Archäologie des Mittelalters,
+\textbf{University of Tübingen}. Kolloquium Ältere Urgeschichte.
+\emph{Title}: A Chrono-cultural Narrative of the Fumanian Aurignacian.
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2016}
+
+\setlength{\leftskip}{1cm}
+
+Dipartimento di Studi Umanistici, Sezione di Scienze Preistoriche e
+Antropologiche, \textbf{University of Ferrara}. Student seminar.
+\emph{Title}: L'Aurignaziano di Grotta di Fumane.
+
+\newpage
+\setlength{\leftskip}{0cm}
+
+\textbf{2015}
+
+\setlength{\leftskip}{1cm}
+
+Institut für Naturwissenschaftliche Archäologie, \textbf{University of
+Tübingen}. INA Colloquium. \emph{Title}: The Protoaurignacian in the
+context of the Early Upper Paleolithic. Concepts, variability and
+possible technological convergences with the Early Ahmarian.
+
+\setlength{\leftskip}{0cm}
+
+\hypertarget{fieldwork-experience}{%
+\section{Fieldwork Experience}\label{fieldwork-experience}}
+
+I have taken part in several \textbf{archaeological excavations} across
+France, Germany, Israel, and Italy. Likewise, I have spent several
+months in many universities and research institutions to analyze Upper
+Paleolithic \textbf{lithic assemblages} from France (Isturitz, Les
+Cottés), Israel (Hayonim, Kebara, Manot Cave), Italy (Bombrini,
+Castelcivita, Fumane, Serino, Villabruna), and Lebanon (Ksar Akil).
+
+\hypertarget{languages}{%
+\section{Languages}\label{languages}}
+
+\begin{table}[H]
+\centering\begingroup\fontsize{9}{11}\selectfont
+
+\begin{tabular}{>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.4cm}}
+\toprule
+Skill & Italian & English & Spanish & French & German\\
+\midrule
+Reading & \textcolor[HTML]{009acd}{Native} & \textcolor[HTML]{009acd}{C2} & \textcolor[HTML]{009acd}{C2} & \textcolor[HTML]{009acd}{C1} & \textcolor[HTML]{009acd}{B2}\\
+Writing & \textcolor[HTML]{009acd}{Native} & \textcolor[HTML]{009acd}{C1} & \textcolor[HTML]{009acd}{C1} & \textcolor[HTML]{009acd}{B2} & \textcolor[HTML]{009acd}{B1}\\
+Listening & \textcolor[HTML]{009acd}{Native} & \textcolor[HTML]{009acd}{C2} & \textcolor[HTML]{009acd}{C2} & \textcolor[HTML]{009acd}{C1} & \textcolor[HTML]{009acd}{B2}\\
+Speaking & \textcolor[HTML]{009acd}{Native} & \textcolor[HTML]{009acd}{C1} & \textcolor[HTML]{009acd}{C1} & \textcolor[HTML]{009acd}{B2} & \textcolor[HTML]{009acd}{B1}\\
+\bottomrule
+\multicolumn{6}{l}{\rule{0pt}{1em}\textit{ } \scriptsize Common European Framework of Reference for Languages: A1/A2: Basic User. B1/B2: Independent User. C1/C2: Proficient User}\\
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\vfill
+\footnotesize
+
+\textbf{Note:} this is an R Markdown CV created with the package
+\textbf{\emph{vitae (v. 0.5.4)}} by O'Hara-Wild and Hyndman (2022).
+\url{https://CRAN.R-project.org/package=vitae}.
+
+
+\label{LastPage}~
+\end{document}
