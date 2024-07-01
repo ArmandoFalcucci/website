@@ -3,8 +3,7 @@ title: 'RStone: Population interconnectivity and technological trajectories in s
 summary: Global MSCA research project supported by the Horizon Europe Framework Programme (HORIZON)
 
 tags:
-  - The Aurignacian CHANGE
-date: '2020-09-27T00:00:00Z' CHANGE
+date: '2024-02-14T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 #external_link: 'https://gepris.dfg.de/gepris/projekt/431809858?language=en'
