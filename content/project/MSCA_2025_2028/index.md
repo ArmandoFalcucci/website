@@ -34,19 +34,23 @@ url_video: ''
 
 The RStone project aims to develop standardized methods for recording lithic traits and conduct comprehensive analyses across several sites in Malawi, Mozambique, Namibia, and South Africa. RStone emphasizes open science practices, providing open-source tools and datasets, and aims to engage and support young African researchers.
 
+
 **Involved institutions**
 - New York University (Prof. J. Pargeter)
 - University of Algarve, ICArEHB (Prof. N. Bicho)
 - Research secondment at the University of Washington (Prof. B. Marwick)
+
 
 **Project Goals**
 - Standardize lithic trait recording through replicable experiments.
 - Collect novel lithic data from well-dated MIS3 stratigraphic sequences.
 - Conduct quantitative inter-site comparisons to understand techno-typological similarities and differences.
 
+
 **Start date:** September 2025
 
 **Achieved a score:** 100%
+
 
 **Project's abstract**
 
