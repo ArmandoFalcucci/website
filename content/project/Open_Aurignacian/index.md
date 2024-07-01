@@ -17,8 +17,12 @@ date: '2020-09-27T00:00:00Z'
 links:
    - icon: zenodo
      icon_pack: ai
-     name: "Vol. 1: Fumane Cave"
+     name: "Vol. 1: Grotta di Fumane"
      url: https://zenodo.org/record/6362150#.YySg6nZByUk
+   - icon: zenodo
+     icon_pack: ai
+     name: "Vol. 2: Grotta di Castelcivita"
+     url: https://doi.org/10.5281/zenodo.10631389
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -36,4 +40,4 @@ The aim of this project is to 3D scan Aurignacian lithic assemblages across Ital
 
 
 
-The first available repository is from the site of [**Fumane Cave**](https://zenodo.org/record/6362150#.YySg6nZByUk). Shortly, other Aurignacian sites (e.g., Castelcivita and Bombrini) will follow.
+The first available repositories are from the sites of [**Grotta di Fumane**](https://zenodo.org/record/6362150#.YySg6nZByUk) and [**Grotta di Castelcivita**](https://doi.org/10.5281/zenodo.10631389). Shortly, other Aurignacian sites (e.g., Grotta della Cala, Riparo Bombrini, and Grotta Paglicci) will follow.
