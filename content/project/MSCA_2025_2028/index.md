@@ -49,7 +49,7 @@ The RStone project aims to develop standardized methods for recording lithic tra
 
 **Start date:** September 2025
 
-**Achieved a score:** 100%
+**Achieved score:** 100%
 
 
 **Project's abstract**
