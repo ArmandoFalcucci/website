@@ -25,7 +25,7 @@ authors: [Jacopo Gennai, admin, Vincent Niochet, Marco Peresani, Jürgen Richter
 tags: []
 
 # Is this a featured talk? (true/false)
-featured: false
+featured: true
 
 image:
   caption: 'Image credit: Armando Falcucci'
