@@ -1,6 +1,6 @@
 ---
-title: 'RStone: Population interconnectivity and technological trajectories in southern Africa during the MIS3 through replicable lithic analysis'
-summary: Global MSCA research project supported by the Horizon Europe Framework Programme (HORIZON)
+title: 'The RStone Project. A Global Marie Skłodowska-Curie Postdoctoral Fellowship'
+summary: Population interconnectivity and technological trajectories in southern Africa during the MIS3 through replicable lithic analysis
 
 tags:
 date: '2024-02-14T00:00:00Z'
@@ -9,7 +9,7 @@ date: '2024-02-14T00:00:00Z'
 #external_link: 'https://gepris.dfg.de/gepris/projekt/431809858?language=en'
 
 image:
-  caption: The sequence Fumane Cave. Photo by A. Léone CHANGE
+  caption: Logo from the European Union
   focal_point: Smart
 
 links:
@@ -30,6 +30,24 @@ url_video: ''
 #slides: example
 ---
 
+**Summary**
+The RStone project aims to develop standardized methods for recording lithic traits and conduct comprehensive analyses across several sites in Malawi, Mozambique, Namibia, and South Africa. RStone emphasizes open science practices, providing open-source tools and datasets, and aims to engage and support young African researchers.
+
+**Involved institutions**
+- New York University (Prof. J. Pargeter)
+- University of Algarve, ICArEHB (Prof. N. Bicho)
+- Research secondment at the University of Washington (Prof. B. Marwick)
+
+**Project Goals**
+- Standardize lithic trait recording through replicable experiments.
+- Collect novel lithic data from well-dated MIS3 stratigraphic sequences.
+- Conduct quantitative inter-site comparisons to understand techno-typological similarities and differences.
+
+**Start date:** September 2025
+
+**Achieved a score:** 100%
+
+**Project's abstract**
 Our species emerged from gene flow between structured populations across various regions of Africa. This process entailed intermitted events of
 coalescence and fragmentation, visible in late Pleistocene archaeological records through changing patterns of lithic technological similarity. In this framework, the MIS3 (59–28 ka) is a particularly intriguing period because archaeologists working in southern Africa have hypothesized that the marked regional variance in lithic technology is ascribable to cultural fragmentation and reduced information exchange among dispersed populations.
 
