@@ -15,8 +15,8 @@ image:
 links:
    - icon: open-access
      icon_pack: ai
-     name: "Website" CHANGE
-     url: https://gepris.dfg.de/gepris/projekt/431809858?language=en
+     name: "Website"
+     url: https://cordis.europa.eu/project/id/101152531
 url_code: ''
 url_pdf: ''
 url_slides: ''
