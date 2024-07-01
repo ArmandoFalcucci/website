@@ -1,5 +1,5 @@
 ---
-title: RStone: Population interconnectivity and technological trajectories in southern Africa during the MIS3 through replicable lithic analysis
+title: 'RStone: Population interconnectivity and technological trajectories in southern Africa during the MIS3 through replicable lithic analysis'
 summary: Global MSCA research project supported by the Horizon Europe Framework Programme (HORIZON)
 
 tags:
