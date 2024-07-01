@@ -31,6 +31,7 @@ url_video: ''
 ---
 
 **Summary**
+
 The RStone project aims to develop standardized methods for recording lithic traits and conduct comprehensive analyses across several sites in Malawi, Mozambique, Namibia, and South Africa. RStone emphasizes open science practices, providing open-source tools and datasets, and aims to engage and support young African researchers.
 
 **Involved institutions**
@@ -48,6 +49,7 @@ The RStone project aims to develop standardized methods for recording lithic tra
 **Achieved a score:** 100%
 
 **Project's abstract**
+
 Our species emerged from gene flow between structured populations across various regions of Africa. This process entailed intermitted events of
 coalescence and fragmentation, visible in late Pleistocene archaeological records through changing patterns of lithic technological similarity. In this framework, the MIS3 (59–28 ka) is a particularly intriguing period because archaeologists working in southern Africa have hypothesized that the marked regional variance in lithic technology is ascribable to cultural fragmentation and reduced information exchange among dispersed populations.
 
