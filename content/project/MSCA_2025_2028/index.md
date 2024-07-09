@@ -3,6 +3,8 @@ title: 'The RStone Project. A Global Marie Skłodowska-Curie Postdoctoral Fellow
 summary: Population interconnectivity and technological trajectories in southern Africa during the MIS3 through replicable lithic analysis
 
 tags:
+  - African Archaeology
+  - Open Science
 date: '2024-02-14T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
@@ -36,21 +38,19 @@ The RStone project aims to develop standardized methods for recording lithic tra
 
 
 **Involved institutions**
-- New York University (Prof. J. Pargeter)
-- University of Algarve, ICArEHB (Prof. N. Bicho)
-- Research secondment at the University of Washington (Prof. B. Marwick)
-
+- New York University (Prof. J. Pargeter) for the *outgoing phase* (two years)
+- University of Algarve, ICArEHB (Prof. N. Bicho) for the *return phase* (one year)
+- University of Washington (Prof. B. Marwick) for the *research secondment* (four months)
 
 **Project Goals**
-- Standardize lithic trait recording through replicable experiments.
+- Standardize lithic trait recording through replicability experiments.
 - Collect novel lithic data from well-dated MIS3 stratigraphic sequences.
 - Conduct quantitative inter-site comparisons to understand techno-typological similarities and differences.
 
 
 **Start date:** September 2025
 
-**Achieved score:** 100%
-
+**Achieved score:** 100% (Maximum possible score)
 
 **Project's abstract**
 

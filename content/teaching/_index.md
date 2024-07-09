@@ -37,4 +37,4 @@ This lecture is shared between different instructors and provides an in-depth ov
 
 ---
 
-Detailed information on the MSc program can be found in the [**Module Handbook**](https://uni-tuebingen.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjMzMTUyNDksImV4cCI6MTY2MzQwNTI0MywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW5cL1VuaV9UdWViaW5nZW5cL0Zha3VsdGFldGVuXC9NYXROYXRcL0ZhY2hiZXJlaWNoZVwvR2Vvd2lzc2Vuc2NoYWZ0ZW5cL0FyYmVpdHNncnVwcGVuXC9Vcmdlc2NoaWNodGVfX19OYXR1cndpc3NlbnNjaGFmdGxpY2hlX0FyY2hcdTAwZTRvbG9naWVcL1N0dWRpdW1cLzIwMjFfQVNIRV9tb2R1bGVfaGFuZGJvb2sucGRmIiwicGFnZSI6MjMxNDIyfQ.Z49qhS777Hm0l69Zryiy7gJLCpjhO5s-FuR1xRpEEZY/2021_ASHE_module_handbook.pdf).
+Detailed information on the MSc program can be found in the [**Module Handbook**](https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/geowissenschaften/arbeitsgruppen/urgeschichte-naturwissenschaftliche-archaeologie/studium/studiengaenge/masters/msc-ashe/study-contents/).

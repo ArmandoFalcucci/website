@@ -13,7 +13,7 @@ address:
   postcode:
   country: Italy
 
-summary: 'Session The Material Record: Current Trends and Future Directions'
+summary: 'Session on The Material Record: Current Trends and Future Directions'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

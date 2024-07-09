@@ -5,6 +5,7 @@ summary: Creating open access repositories of lithic artifacts from several Auri
 tags:
   - The Aurignacian
   - 3D lithics
+  - Open Science
 date: '2020-09-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
@@ -36,8 +37,12 @@ url_video: ''
 #slides: example
 ---
 
-The aim of this project is to 3D scan Aurignacian lithic assemblages across Italy to create permanent open access repositories that can be used for teaching, research, and cultural heritage preservation. To do so, I decided to use [**Zenodo**](https://zenodo.org/), a multi-disciplinary open repository maintained by CERN. 3D meshes have been in most cases obtained with an [**Artec Space Spider**](https://www.artec3d.com/portable-3d-scanners/artec-spider), while an [**Artec Micro**](https://www.artec3d.com/portable-3d-scanners/artec-micro) as well as micro-computed tomography has been used to scan the smallest artifacts (e.g., bladelets).
+The aim of this project is to digitally preserve Aurignacian lithic assemblages found across Italy. Our goal is to create comprehensive, open-access repositories on [**Zenodo**](https://zenodo.org/), a respected multi-disciplinary platform maintained by CERN. These repositories serve as invaluable resources for education, research, and the conservation of cultural heritage.
 
+Using state-of-the-art technology, we primarily employ the [**Artec Space Spider**](https://www.artec3d.com/portable-3d-scanners/artec-spider) 3D scanner to capture detailed meshes of the lithic artifacts. For smaller and more intricate pieces, such as bladelets, we utilize the precision of the [**Artec Micro**](https://www.artec3d.com/portable-3d-scanners/artec-micro) scanner and micro-computed tomography.
 
+Currently, repositories are available for the renowned sites of [**Grotta di Fumane**](https://zenodo.org/record/6362150#.YySg6nZByUk) and [**Grotta di Castelcivita**](https://doi.org/10.5281/zenodo.10631389). These repositories showcase a range of artifacts, providing digital access to their forms and textures.
 
-The first available repositories are from the sites of [**Grotta di Fumane**](https://zenodo.org/record/6362150#.YySg6nZByUk) and [**Grotta di Castelcivita**](https://doi.org/10.5281/zenodo.10631389). Shortly, other Aurignacian sites (e.g., Grotta della Cala, Riparo Bombrini, and Grotta Paglicci) will follow.
+In the coming months, we plan to expand our repositories to include additional Aurignacian sites such as Grotta della Cala, Riparo Bombrini, and Grotta Paglicci. Each repository will feature high-resolution 3D models and associated metadata, facilitating detailed study and comparison across these important archaeological contexts.
+
+By making these digital collections openly accessible, we aim to promote scholarly collaboration, advance archaeological research, and contribute to the global efforts in preserving our shared cultural heritage.

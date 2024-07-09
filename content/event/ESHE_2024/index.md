@@ -9,9 +9,9 @@ location: ESHE 2024, University of Zagreb
 address:
   street:
   city: Zagreb
-  region: ADD
+  region: Croatia
   postcode:
-  country: ADD
+  country: Croatia
 
 
 summary:

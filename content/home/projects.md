@@ -31,6 +31,10 @@ content:
       tag: The Aurignacian
     - name: 3D Scanning
       tag: 3D lithics
+    - name: Open Science
+      tag: Open Science
+    - name: African Archaeology
+      tag: African Archaeology
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
