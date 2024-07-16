@@ -74,6 +74,7 @@ The paper has been featured in several national and international news outlets, 
 
 - [**WorldCulturalHeritageVoices.org**](https://worldculturalheritagevoices.org/ancient-volcanic-eruption-not-a-catalyst-for-early-homo-sapiens-cultural-innovations-researchers-say/) (*English*)
 
+
 The original press releases are from the [**University of Tuebingen**](https://uni-tuebingen.de/en/university/news-and-publications/attempto-online/newsfullview-attempto-en/article/ancient-volcanic-eruption-not-key-to-early-homo-sapiens-cultural-innovations/) in English and the [**University of Siena**](https://www.unisi.it/unisilife/eventi/nuove-ricerche-mettono-discussione-limpatto-della-grande-eruzione-Campi-Flegrei) in Italian.
 '
 
