@@ -54,7 +54,7 @@ The paper has been featured in several national and international news outlets, 
 
 - [**Knowridge.com**](https://knowridge.com/2024/07/ancient-volcanic-eruption-didnt-spark-early-human-cultural-changes-say-researchers//) (*English*)
 
-- [**LaNotaDelDia.mx**](https://lanotadeldia.mx/cultura-y-sociedad/las-antiguas-erupciones-volcanicas-no-fueron-un-catalizador-para-las-innovaciones-culturales-del-homo-sapiens-afirman-los-investigadores/17279/) (*English*)
+- [**LaNotaDelDia.mx**](https://lanotadeldia.mx/cultura-y-sociedad/las-antiguas-erupciones-volcanicas-no-fueron-un-catalizador-para-las-innovaciones-culturales-del-homo-sapiens-afirman-los-investigadores/17279/) (*Spanish*)
 
 - [**LaRepubblica.it**](https://napoli.repubblica.it/cronaca/2024/06/18/news/eruzione_campi_flegrei_homo_sapiens-423250144/) (*Italian*)
 
