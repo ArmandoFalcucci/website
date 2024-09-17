@@ -38,7 +38,7 @@ links:
     name: Follow
     url: https://twitter.com/ArmandoFalcucci
 url_code: ''
-url_pdf: ''
+url_pdf: '/Talks/Lombao-et-al._2024_EAA.pdf'
 url_slides: ''
 url_video: ''
 
