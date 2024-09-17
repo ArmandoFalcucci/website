@@ -13,11 +13,12 @@ address:
   postcode:
   country: Italy
 
-summary: 'Session on The Material Record: Current Trends and Future Directions'
+summary: Poster presentation
+abstract: 'Session on The Material Record: Current Trends and Future Directions'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-07-01T10:00:00Z'
+date: '2024-08-30T10:00:00Z'
 date_end: '2024-09-01T10:30:00Z'
 all_day: false
 
