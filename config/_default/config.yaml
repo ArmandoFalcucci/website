@@ -26,6 +26,28 @@ module:
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
 
 ############################
+## MENU CONFIGURATION
+############################
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Publications"
+      url: "/publications/"
+      weight: 2
+    - name: "Talks"
+      url: "/talks/" # Adjust the URL if necessary
+      weight: 3
+    - name: "Projects"
+      url: "/projects/" # Adjust the URL if necessary
+      weight: 4
+    - name: "Teaching"
+      url: "/teaching/" # Adjust the URL if necessary
+      weight: 5
+
+############################
 ## ADVANCED
 ############################
 
