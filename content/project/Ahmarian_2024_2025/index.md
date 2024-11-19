@@ -38,7 +38,7 @@ url_video: ''
 **Research Collaborator**
 - Prof. Steven L. Kuhn (Department of Anthropology, University of Arizona).
 
-**Research stay linked to the project**
+**Research Stays**
 - *March-June 2023*: Research stay at the Department of Anthropology, Harvard University (Boston, USA).
 - *September-October 2024*: Research stay at the Department of Anthropology, University of Arizona (Tucson, USA).
 
