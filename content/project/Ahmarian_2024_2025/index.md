@@ -1,6 +1,6 @@
 ---
 title: 'Reevaluating the Early Upper Paleolithic Sequence at Ksâr ‘Akil, Lebanon (Layers XX-XIB)'
-summary: This project aims to reexamine the Early Upper Paleolithic sequence at Ksâr ‘Akil, Lebanon, focusing on lithic assemblages from layers XX-XIB. By analyzing technological variability, the project explores the untested connections between the Early Ahmarian and the European Protoaurignacian.
+summary: This project aims to reexamine the Early Upper Paleolithic sequence at Ksâr ‘Akil, Lebanon, focusing on the lithic assemblages from layers XX-XIB. By analyzing technological variability, the project explores the untested connections between the Early Ahmarian and the European Protoaurignacian.
 
 tags:
   - Ahmarian

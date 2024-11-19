@@ -27,9 +27,11 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: The Aurignacian
-      tag: The Aurignacian
-    - name: 3D Scanning
+    - name: Aurignacian
+      tag: Aurignacian
+    - name: Ahmarian
+      tag: Ahmarian
+    - name: 3D lithics
       tag: 3D lithics
     - name: Open Science
       tag: Open Science
