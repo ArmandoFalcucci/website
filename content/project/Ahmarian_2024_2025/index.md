@@ -14,7 +14,7 @@ image:
   caption: Photo from C. Bergmann et al. (2017) The Palaeolithic Sequence of Ksar ‘Akil, Lebanon. Cambridge University Press
   focal_point: Smart
 
-links: ''
+links: []
 url_code: ''
 url_pdf: ''
 url_slides: ''
