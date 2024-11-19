@@ -3,7 +3,7 @@ title: The Open Aurignacian Project
 summary: Creating open access repositories of lithic artifacts from several Aurignacian sites in Italy.
 
 tags:
-  - The Aurignacian
+  - Aurignacian
   - 3D lithics
   - Open Science
 date: '2020-09-27T00:00:00Z'

@@ -4,6 +4,7 @@ summary: Developing step-by-step protocols for the 3D scanning of stone tools.
 
 tags:
   - 3D lithics
+  - Open Science
 date: '2020-09-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).

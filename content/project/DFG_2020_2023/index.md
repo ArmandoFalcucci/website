@@ -3,7 +3,8 @@ title: Investigating Early Upper Paleolithic technological variability and cultu
 summary: Research Project supported by the German Research Foundation (DFG) under grant agreement no. 431809858–FA 1707/1-1.
 
 tags:
-  - The Aurignacian
+  - Aurignacian
+  - 3D lithics
 date: '2020-09-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
