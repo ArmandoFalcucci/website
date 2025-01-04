@@ -39,7 +39,7 @@ abstract: 'This paper investigates core reduction intensity in the early Protoau
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
