@@ -4,7 +4,6 @@ summary: This project aims to reexamine the Early Upper Paleolithic sequence at 
 
 tags:
   - Ahmarian
-  - Aurignacian
   - Open Science
 date: '2024-03-01T00:00:00Z'
 
