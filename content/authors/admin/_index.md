@@ -1,6 +1,6 @@
 ---
 title: Armando Falcucci
-role: Principal Investigator
+role: Archaeologist
 avatar_filename: ""
 bio: My research focuses on the earliest stages of the Upper Paleolithic. I am currently analyzing several Aurignacian sites in Italy to better understand the chrono-cultural development of this technocomplex and explore the role of climate change in the evolution of stone tool technologies.
 interests:
