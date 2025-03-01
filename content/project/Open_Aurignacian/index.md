@@ -41,6 +41,8 @@ url_video: ''
 #slides: example
 ---
 
+<iframe src="https://armando.falcucci.com/projects/OAP.pdf" width="600" height="400" style="border: none;"></iframe>
+
 The aim of this project is to digitally preserve Aurignacian lithic assemblages found across Italy. Our goal is to create comprehensive, open-access repositories on [**Zenodo**](https://zenodo.org/), a respected multi-disciplinary platform maintained by CERN. These repositories serve as invaluable resources for education, research, and the conservation of cultural heritage.
 
 Using state-of-the-art technology, we primarily employ the [**Artec Space Spider**](https://www.artec3d.com/portable-3d-scanners/artec-spider) 3D scanner to capture detailed meshes of the lithic artifacts. For smaller and more intricate pieces, such as bladelets, we utilize the precision of the [**Artec Micro**](https://www.artec3d.com/portable-3d-scanners/artec-micro) scanner and micro-computed tomography.
