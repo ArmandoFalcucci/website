@@ -49,8 +49,10 @@ The aim of this project is to digitally preserve Aurignacian lithic assemblages 
 
 Using state-of-the-art technology, we primarily employ the [**Artec Space Spider**](https://www.artec3d.com/portable-3d-scanners/artec-spider) 3D scanner to capture detailed meshes of the lithic artifacts. For smaller and more intricate pieces, such as bladelets, we utilize the precision of the [**Artec Micro**](https://www.artec3d.com/portable-3d-scanners/artec-micro) scanner and micro-computed tomography.
 
-Currently, repositories are available for the renowned sites of [**Grotta di Fumane**](https://doi.org/10.5281/zenodo.6362149), [**Grotta di Castelcivita**](https://doi.org/10.5281/zenodo.10631389), and [**Grotta della Cala**](https://doi.org/10.5281/zenodo.14165189). These repositories showcase a range of artifacts, providing digital access to their forms and textures.
+Currently, repositories are available for the renowned sites of [**Grotta di Fumane**](https://doi.org/10.5281/zenodo.6362149), [**Grotta di Castelcivita**](https://doi.org/10.5281/zenodo.10631389), [**Grotta della Cala**](https://doi.org/10.5281/zenodo.14165189), and [**Riparo Bombrini**](https://doi.org/10.5281/zenodo.14731694). These repositories showcase a range of artifacts, providing digital access to their three-dimensional shapes.
 
-In the coming months, we plan to expand our repositories to include additional Aurignacian sites such as Riparo Bombrini and Grotta Paglicci. Each repository will feature high-resolution 3D models and associated metadata, facilitating detailed study and comparison across these important archaeological contexts.
+In the coming months, I plan to expand the repositories to include additional Aurignacian sites such as Grotta Paglicci. Each repository will feature high-resolution 3D models and associated metadata, facilitating detailed study and comparison across these important archaeological contexts.
 
-By making these digital collections openly accessible, we aim to promote scholarly collaboration, advance archaeological research, and contribute to the global efforts in preserving our shared cultural heritage.
+By making these digital collections openly accessible, I aim to promote scholarly collaboration, advance archaeological research, and contribute to the global efforts in preserving our shared cultural heritage.
+
+***Note:*** *This page is currently under construction in connection with the publication of a Data Descriptor in* ***Scientific Data****, aimed at enhancing the visibility of these repositories within the scientific community.*
