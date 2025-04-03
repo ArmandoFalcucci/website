@@ -55,4 +55,4 @@ In the coming months, I plan to expand the repositories to include additional Au
 
 By making these digital collections openly accessible, I aim to promote scholarly collaboration, advance archaeological research, and contribute to the global efforts in preserving our shared cultural heritage.
 
-***Note:*** *This page is currently under construction in connection with the publication of a Data Descriptor in* ***Scientific Data****, aimed at enhancing the visibility of these repositories within the scientific community.*
+***Note:*** *This page is currently under construction in connection with the publication of a Data Descriptor in Scientific Data, aimed at enhancing the visibility of these repositories within the scientific community.*
