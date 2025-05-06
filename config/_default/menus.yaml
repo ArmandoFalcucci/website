@@ -19,14 +19,17 @@ main:
   - name: Publications
     url: '#featured'
     weight: 20
+  - name: Datasets
+    url: 'datasets'
+    weight: 60
   - name: Personal
     url: 'personal'
-    weight: 60
+    weight: 70
   - name: Contact
     url: '#contact'
-    weight: 70
+    weight: 80
   - name: CV
     url: cv/CV_Falcucci.pdf
-    weight: 80
+    weight: 90
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
