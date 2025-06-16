@@ -13,7 +13,7 @@ social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
-  - icon: bluesky
+  - icon: twitter
     icon_pack: fab
     link: https://web-cdn.bsky.app/profile/armandofalcucci.bsky.social
   - icon: graduation-cap
