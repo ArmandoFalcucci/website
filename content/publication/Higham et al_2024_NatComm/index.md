@@ -55,7 +55,7 @@ abstract: 'The process by which Palaeolithic Europe was transformed from a Neand
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
