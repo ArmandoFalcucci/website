@@ -11,7 +11,7 @@ date: '2024-03-01T00:00:00Z'
 #external_link: 'https://gepris.dfg.de/gepris/projekt/431809858?language=en'
 
 image:
-  caption: Photo from C. Bergmann et al. (2017) The Palaeolithic Sequence of Ksar ‘Akil, Lebanon. Cambridge University Press
+  caption: Photo from Falcucci & Kuhn (accepted) Journal of Human Evolution
   focal_point: Smart
 
 links: []
