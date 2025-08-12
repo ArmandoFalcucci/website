@@ -40,7 +40,7 @@ abstract: 'Here, we introduce an open-access database of 3D models of stone tool
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

@@ -44,15 +44,7 @@ abstract: 'The Aurignacian is the first European technocomplex assigned to Homo 
 The paper has been featured in several national and international news outlets, including:
 
 
-- [**Ancientpages.com**](https://www.ancientpages.com/2024/07/08/ancient-volcanic-eruption-was-not-a-catalyst/) (*English*)
-
 - [**Earth.com**](https://www.earth.com/news/prehistoric-homo-sapiens-stone-tools-preserved-volcanic-ash-grotta-di-castelcivita/) (*English*)
-
-- [**GreenReport.it**](https://www.greenreport.it/news/scienza-e-tecnologie/1055-la-grande-eruzione-dei-campi-flegrei-non-e-stata-cosi-importante-per-linnovazione-culturale) (*Italian*)
-
-- [**IlGiornale.ch**](https://www.ilgiornale.ch/index.php/attualita/20854-nuove-ricerche-mettono-in-discussione-l-impatto-della-grande-eruzione-dei-campi-flegrei-di-40-000-anni-fa) (*Italian*)
-
-- [**Knowridge.com**](https://knowridge.com/2024/07/ancient-volcanic-eruption-didnt-spark-early-human-cultural-changes-say-researchers//) (*English*)
 
 - [**LaNotaDelDia.mx**](https://lanotadeldia.mx/cultura-y-sociedad/las-antiguas-erupciones-volcanicas-no-fueron-un-catalizador-para-las-innovaciones-culturales-del-homo-sapiens-afirman-los-investigadores/17279/) (*Spanish*)
 
@@ -60,19 +52,9 @@ The paper has been featured in several national and international news outlets, 
 
 - [**Lenta.ru**](https://lenta.ru/news/2024/07/08/volcano/) (*Russian*)
 
-- [**MeteoWeb.eu**](https://www.meteoweb.eu/2024/06/campi-flegrei-impatto-eruzione-homo-sapiens/1001493184/) (*Italian*)
-
 - [**Phys.org**](https://phys.org/news/2024-07-ancient-volcanic-eruption-catalyst-early.html) (*English*)
 
 - [**PoskoNews.com**](https://poskonews.com/budaya/peneliti-mengatakan-letusan-gunung-berapi-purba-bukan-katalis-bagi-inovasi-budaya-homo-sapiens-awal/62491/) (*Indonesian*)
-
-- [**RedenginePress.com**](https://redenginepress.com/ancient-volcanic-eruption-not-a-catalyst-for-early-homo-sapiens-cultural-innovations-researchers-say/) (*English*)
-
-- [**SSPDaily.com**](https://www.sspdaily.com/section-life/article-ancient-volcanic-eruption-is-not-the-cause-for-early-homo-sapiens-cultural-advancements-researchers-find-09-07-2024.html) (*English*)
-
-- [**TechAndSciencePost.com**](https://techandsciencepost.com/news/other-sciences/ancient-volcanic-eruption-not-a-catalyst-for-early-homo-sapiens-cultural-innovations-researchers-say/) (*English*)
-
-- [**WorldCulturalHeritageVoices.org**](https://worldculturalheritagevoices.org/ancient-volcanic-eruption-not-a-catalyst-for-early-homo-sapiens-cultural-innovations-researchers-say/) (*English*)
 
 
 The original press releases are from the [**University of Tuebingen**](https://uni-tuebingen.de/en/university/news-and-publications/attempto-online/newsfullview-attempto-en/article/ancient-volcanic-eruption-not-key-to-early-homo-sapiens-cultural-innovations/) in English and the [**University of Siena**](https://www.unisi.it/unisilife/eventi/nuove-ricerche-mettono-discussione-limpatto-della-grande-eruzione-Campi-Flegrei) in Italian.

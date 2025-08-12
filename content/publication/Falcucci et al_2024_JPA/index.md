@@ -41,7 +41,7 @@ abstract: 'High-resolution stratigraphic frameworks are crucial for unraveling t
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
