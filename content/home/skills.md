@@ -19,7 +19,7 @@ feature:
   - description:
     icon: "bladelet"
     icon_pack: "custom"
-    name: "Lithics"
+    name: "Lithic Analysis"
   - description:
     icon: "knapper"
     icon_pack: "custom"
@@ -27,11 +27,12 @@ feature:
   - description:
     icon: r-project
     icon_pack: fab
-    name: R
-  - description:
-    icon: chart-line
-    icon_pack: fas
-    name: Statistics
+    name: R & Statistics
+
+# - description:
+#   icon: chart-line
+#   icon_pack: fas
+#   name: Statistics
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
