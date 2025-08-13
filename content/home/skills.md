@@ -21,6 +21,10 @@ feature:
     icon_pack: "custom"
     name: "Lithics"
   - description:
+    icon: "knapper"
+    icon_pack: "custom"
+    name: "Experimental Archaeology"
+  - description:
     icon: r-project
     icon_pack: fab
     name: R
