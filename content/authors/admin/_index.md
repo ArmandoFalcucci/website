@@ -31,8 +31,12 @@ social:
     icon_pack: ai
     link: https://orcid.org/0000-0002-3255-1005
 organizations:
+  - name: New York University
+    url: https://www.nyu.edu/
+  - name: University of Algarve
+    url: https://www.ualg.pt/en
   - name: University of Tübingen
-    url: https://uni-tuebingen.de/
+    url: https://uni-tuebingen.de/en/
 education:
   courses:
     - course: PhD in Paleolithic Archaeology
