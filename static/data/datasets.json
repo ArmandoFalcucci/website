@@ -1,14 +1,26 @@
 [
   {
-    "name": "Ottawa",
+    "name": "Ottawa Stone Tools",
     "lat": 45.4215,
     "lon": -75.6972,
-    "url": "https://repository.example.com/ottawa-dataset"
+    "url": "https://repository.example.com/ottawa-dataset",
+    "type": "Attribute data",
+    "thumbnail": "/media/ottawa.jpg"
   },
   {
-    "name": "Toronto",
+    "name": "Ottawa Stone Tools",
+    "lat": 45.4215,
+    "lon": -75.6972,
+    "url": "https://repository.example.com/ottawa-dataset",
+    "type": "3D data",
+    "thumbnail": "/media/ottawa.jpg"
+  },
+  {
+    "name": "Toronto 3D Survey",
     "lat": 43.6532,
     "lon": -79.3832,
-    "url": "https://repository.example.com/toronto-dataset"
+    "url": "https://repository.example.com/toronto-dataset",
+    "type": "3D data",
+    "thumbnail": "/media/toronto.jpg"
   }
 ]

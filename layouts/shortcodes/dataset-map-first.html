@@ -1,0 +1,27 @@
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<div id="dataset-map" style="height: 600px; margin-bottom: 2em;"></div>
+
+<script>
+  var map = L.map('dataset-map');
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  fetch('/data/datasets.json')
+    .then(response => response.json())
+    .then(data => {
+      var markers = [];
+      data.forEach(site => {
+        var marker = L.marker([site.lat, site.lon])
+          .addTo(map)
+          .bindPopup(`<a href="${site.url}" target="_blank">${site.name}</a>`);
+        markers.push(marker);
+      });
+      var group = new L.featureGroup(markers);
+      map.fitBounds(group.getBounds().pad(0.2));
+    })
+    .catch(err => console.error("Error loading datasets.json:", err));
+</script>
