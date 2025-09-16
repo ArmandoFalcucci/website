@@ -2,14 +2,8 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-<!-- Filter checkboxes -->
-<div id="dataset-filters" style="margin-bottom: 1em;">
-  <label><input type="checkbox" value="Attribute data" checked> Attribute data</label>
-  <label><input type="checkbox" value="3D data" checked> 3D data</label>
-</div>
-
 <!-- Map container -->
-<div id="dataset-map" style="height: 600px;"></div>
+<div id="dataset-map" style="height: 600px; margin-bottom: 2em;"></div>
 
 <script>
   var map = L.map('dataset-map');
@@ -17,58 +11,30 @@
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  var allMarkers = []; // store all markers
-  var datasetData = []; // store JSON data
-
-  // Load JSON
   fetch('/data/datasets.json')
     .then(response => response.json())
     .then(data => {
-      datasetData = data;
-      createMarkers(data);
-    })
-    .catch(err => console.error("Error loading datasets.json:", err));
+      var markers = [];
 
-  function createMarkers(data) {
-    // Remove existing markers from map
-    allMarkers.forEach(m => map.removeLayer(m.marker));
-    allMarkers = [];
-
-    data.forEach(site => {
-      var popupContent = `<strong>${site.name}</strong><br><a href="${site.url}" target="_blank">View dataset</a>`;
-      if (site.thumbnail) {
-        popupContent = `<img src="${site.thumbnail}" style="width:100px;display:block;margin-bottom:0.5em;">` + popupContent;
-      }
-      var marker = L.marker([site.lat, site.lon]).bindPopup(popupContent).addTo(map);
-      allMarkers.push({ marker: marker, type: site.type });
-    });
-
-    // Fit map to visible markers
-    updateMapBounds();
-  }
-
-  function updateMapBounds() {
-    var visibleMarkers = allMarkers.filter(m => m.marker._map); // only markers on map
-    if (visibleMarkers.length > 0) {
-      var group = new L.featureGroup(visibleMarkers.map(m => m.marker));
-      map.fitBounds(group.getBounds().pad(0.2));
-    }
-  }
-
-  // Filter control
-  document.querySelectorAll('#dataset-filters input[type=checkbox]').forEach(cb => {
-    cb.addEventListener('change', function() {
-      var activeTypes = Array.from(document.querySelectorAll('#dataset-filters input:checked')).map(i => i.value);
-
-      allMarkers.forEach(m => {
-        if (activeTypes.includes(m.type)) {
-          if (!map.hasLayer(m.marker)) map.addLayer(m.marker);
-        } else {
-          if (map.hasLayer(m.marker)) map.removeLayer(m.marker);
+      data.forEach(site => {
+        var popupContent = '';
+        if (site.thumbnail) {
+          popupContent += `<img src="${site.thumbnail}" style="width:100px;display:block;margin-bottom:0.5em;">`;
         }
+        popupContent += `<strong>${site.name}</strong><br>`;
+        popupContent += `<a href="${site.attribute_url}" target="_blank">Attribute dataset</a><br>`;
+        popupContent += `<a href="${site["3d_url"]}" target="_blank">3D dataset</a>`;
+
+        var marker = L.marker([site.lat, site.lon])
+                      .addTo(map)
+                      .bindPopup(popupContent);
+
+        markers.push(marker);
       });
 
-      updateMapBounds();
-    });
-  });
+      // Fit map to all markers
+      var group = new L.featureGroup(markers);
+      map.fitBounds(group.getBounds().pad(0.2));
+    })
+    .catch(err => console.error("Error loading datasets.json:", err));
 </script>
