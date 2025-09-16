@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Ottawa",
+    "lat": 45.4215,
+    "lon": -75.6972,
+    "url": "https://repository.example.com/ottawa-dataset"
+  },
+  {
+    "name": "Toronto",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "url": "https://repository.example.com/toronto-dataset"
+  }
+]

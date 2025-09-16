@@ -18,3 +18,5 @@ header:
 ### Lithic datasets (attribute data)
 
 Work in progress!
+
+{{< dataset-map >}}
