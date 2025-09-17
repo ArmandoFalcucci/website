@@ -22,8 +22,8 @@
           popupContent += `<img src="${site.thumbnail}" style="width:100px;display:block;margin-bottom:0.5em;">`;
         }
         popupContent += `<strong>${site.name}</strong><br>`;
-        popupContent += `<a href="${site.attribute_url}" target="_blank">Attribute dataset</a><br>`;
-        popupContent += `<a href="${site["3d_url"]}" target="_blank">3D dataset</a>`;
+        popupContent += `<a href="${site.attribute_url}" target="_blank">Attribute data</a><br>`;
+        popupContent += `<a href="${site["3d_url"]}" target="_blank">3D data</a>`;
 
         var marker = L.marker([site.lat, site.lon])
                       .addTo(map)
