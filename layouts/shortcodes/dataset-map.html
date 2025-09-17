@@ -1,3 +1,25 @@
+<style>
+  #dataset-map {
+    height: 600px;
+    margin-bottom: 2em;
+  }
+  .leaflet-container img {
+    max-width: none !important;
+  }
+  .popup-thumb {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5em;
+    border-radius: 6px;
+  }
+  .popup-links a {
+    display: block;
+    text-decoration: underline;
+    margin: 0.15em 0;
+  }
+</style>
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
 <div id="map-wrapper">
@@ -5,49 +27,19 @@
 </div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
 <script>
   (function () {
-    // Warn if any ancestor of #dataset-map has transform/filter/perspective (common cause of drift)
-    (function warnOnTransformedAncestors() {
-      var el = document.getElementById('dataset-map');
-      var culprit = null;
-      while (el && el !== document.body) {
-        var s = getComputedStyle(el);
-        if (
-          (s.transform && s.transform !== 'none') ||
-          (s.filter && s.filter !== 'none') ||
-          (s.perspective && s.perspective !== 'none') ||
-          (s.willChange && /transform|filter|perspective/.test(s.willChange)) ||
-          (s.zoom && s.zoom !== 'normal' && s.zoom !== '1')
-        ) {
-          culprit = el;
-          break;
-        }
-        el = el.parentElement;
-      }
-      if (culprit) {
-        console.warn(
-          'Leaflet markers can drift when a parent has CSS transform/filter/perspective/zoom.\n' +
-          'Problem element:', culprit, '\nComputed styles:', getComputedStyle(culprit)
-        );
-      }
-    })();
-
-    // Create the map
     var map = L.map('dataset-map', {
       zoomControl: true,
       worldCopyJump: true
     });
 
-    // Retina-friendly tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors',
       detectRetina: true,
       maxZoom: 19
     }).addTo(map);
 
-    // Build popup HTML (links on separate lines)
     function buildPopup(site) {
       var html = '';
       if (site.thumbnail) {
@@ -67,53 +59,25 @@
       return html;
     }
 
-    // Optional: explicitly define the default icon so CSS can’t change its size/anchor
     var DefaultIcon = L.Icon.Default.extend({
       options: {
-        // Leaflet's defaults; restated here to be explicit
-        iconSize:    [25, 41],
-        iconAnchor:  [12, 41],
-        popupAnchor: [ 1, -34],
-        tooltipAnchor: [16, -28],
-        shadowSize:  [41, 41]
+        iconSize:    [25, 41], iconAnchor:  [12, 41], popupAnchor: [ 1, -34],
+        tooltipAnchor: [16, -28], shadowSize:  [41, 41]
       }
     });
     var defaultIcon = new DefaultIcon();
 
-    // Fetch and render points
     fetch('/data/datasets.json', { cache: 'no-cache' })
-      .then(function (response) {
-        if (!response.ok) throw new Error('HTTP ' + response.status);
-        return response.json();
-      })
+      .then(function (response) { return response.json(); })
       .then(function (data) {
-        if (!Array.isArray(data)) {
-          console.error('datasets.json is not an array');
-          map.setView([42.5, 12.5], 5);
-          return;
-        }
-
         var markers = [];
-
-        data.forEach(function (site, idx) {
+        data.forEach(function (site) {
           var lat = Number(site.lat);
           var lon = Number(site.lon);
-          var validLat = Number.isFinite(lat) && lat >= -90 && lat <= 90;
-          var validLon = Number.isFinite(lon) && lon >= -180 && lon <= 180;
-          if (!validLat || !validLon) {
-            console.warn('Skipping site with invalid coords at index', idx, site);
-            return;
+          if (Number.isFinite(lat) && Number.isFinite(lon)) {
+            L.marker([lat, lon], { icon: defaultIcon }).addTo(map).bindPopup(buildPopup(site));
+            markers.push([lat, lon]);
           }
-
-          L.marker([lat, lon], { icon: defaultIcon })
-            .addTo(map)
-            .bindPopup(buildPopup(site))
-            .on('add', function (e) {
-              // Nudge Leaflet to recompute positions if a layout/transform just happened
-              map.invalidateSize({ debounceMoveend: true });
-            });
-
-          markers.push([lat, lon]);
         });
 
         if (markers.length) {
@@ -126,5 +90,10 @@
         console.error('Error loading datasets.json:', err);
         map.setView([42.5, 12.5], 5);
       });
+      
+    // This makes sure the map recalculates its size after the page loads
+    setTimeout(function() {
+        map.invalidateSize();
+    }, 500);
   })();
 </script>
