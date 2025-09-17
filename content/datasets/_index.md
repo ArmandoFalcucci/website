@@ -30,4 +30,4 @@ Over the years, I have published a number of lithic datasets from important site
 
 Click on a site marker to open a popup with links to both the **attribute dataset** and the **3D models**.  
 
-You can also browse the list of sites and access the repositories directly below the map.
+**Note:** The code is not behaving as expected and the pins are not on the right location until you zoom in. I am working to solve this issue.
