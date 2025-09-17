@@ -9,13 +9,25 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
   <style>
+    /* Map container */
     #dataset-map {
       height: 600px;
       margin-bottom: 2em;
     }
-    /* Prevent global img rules from shrinking Leaflet tiles */
-    .leaflet-container img { max-width: none !important; }
 
+    /* Fix 1: prevent global img rules from distorting Leaflet images */
+    .leaflet-container img {
+      max-width: none !important;
+    }
+
+    /* Fix 2: explicitly size the default marker so the anchor is correct even if CSS touches <img> */
+    .leaflet-marker-icon,
+    .leaflet-marker-shadow {
+      width: auto;   /* Let Leaflet's inline width/height win */
+      height: auto;
+    }
+
+    /* Optional: nicer popup image */
     .popup-thumb {
       width: 120px;
       height: auto;
@@ -23,8 +35,9 @@
       margin-bottom: 0.5em;
       border-radius: 6px;
     }
+
     .popup-links a {
-      display: block;         /* each on its own line */
+      display: block;          /* one link per line */
       text-decoration: underline;
       margin: 0.15em 0;
     }
@@ -32,6 +45,7 @@
 </head>
 <body>
 
+  <!-- If this map sits inside a transformed element, markers can drift at low zooms -->
   <div id="dataset-map" role="region" aria-label="Archaeological sites map"></div>
 
   <!-- Leaflet JS -->
@@ -39,13 +53,39 @@
 
   <script>
     (function () {
-      // Create the map; prefer Canvas to avoid DOM/icon drift
+      // Warn if any ancestor of #dataset-map has transform/filter/perspective (common cause of drift)
+      (function warnOnTransformedAncestors() {
+        var el = document.getElementById('dataset-map');
+        var culprit = null;
+        while (el && el !== document.body) {
+          var s = getComputedStyle(el);
+          if (
+            (s.transform && s.transform !== 'none') ||
+            (s.filter && s.filter !== 'none') ||
+            (s.perspective && s.perspective !== 'none') ||
+            (s.willChange && /transform|filter|perspective/.test(s.willChange)) ||
+            (s.zoom && s.zoom !== 'normal' && s.zoom !== '1')
+          ) {
+            culprit = el;
+            break;
+          }
+          el = el.parentElement;
+        }
+        if (culprit) {
+          console.warn(
+            'Leaflet markers can drift when a parent has CSS transform/filter/perspective/zoom.\n' +
+            'Problem element:', culprit, '\nComputed styles:', getComputedStyle(culprit)
+          );
+        }
+      })();
+
+      // Create the map
       var map = L.map('dataset-map', {
         zoomControl: true,
-        worldCopyJump: true,
-        preferCanvas: true
+        worldCopyJump: true
       });
 
+      // Retina-friendly tiles
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         detectRetina: true,
@@ -72,19 +112,24 @@
         return html;
       }
 
-      // Style for circle markers (Canvas)
-      var circleStyle = {
-        radius: 6,
-        weight: 2,
-        color: '#1f6feb',   // outline (Leaflet will pick default if this is removed)
-        fillColor: '#1f6feb',
-        fillOpacity: 0.7
-      };
+      // Optional: explicitly define the default icon so CSS can’t change its size/anchor
+      var DefaultIcon = L.Icon.Default.extend({
+        options: {
+          // Leaflet's defaults; restated here to be explicit
+          iconSize:    [25, 41],
+          iconAnchor:  [12, 41],
+          popupAnchor: [ 1, -34],
+          tooltipAnchor: [16, -28],
+          shadowSize:  [41, 41]
+        }
+      });
+      var defaultIcon = new DefaultIcon();
 
+      // Fetch and render points
       fetch('/data/datasets.json', { cache: 'no-cache' })
-        .then(function (r) {
-          if (!r.ok) throw new Error('HTTP ' + r.status);
-          return r.json();
+        .then(function (response) {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.json();
         })
         .then(function (data) {
           if (!Array.isArray(data)) {
@@ -93,7 +138,7 @@
             return;
           }
 
-          var latlngs = [];
+          var markers = [];
 
           data.forEach(function (site, idx) {
             var lat = Number(site.lat);
@@ -105,16 +150,19 @@
               return;
             }
 
-            // Use vector marker (Canvas) — immune to DOM/CSS drift
-            var cm = L.circleMarker([lat, lon], circleStyle)
+            L.marker([lat, lon], { icon: defaultIcon })
               .addTo(map)
-              .bindPopup(buildPopup(site));
+              .bindPopup(buildPopup(site))
+              .on('add', function (e) {
+                // Nudge Leaflet to recompute positions if a layout/transform just happened
+                map.invalidateSize({ debounceMoveend: true });
+              });
 
-            latlngs.push([lat, lon]);
+            markers.push([lat, lon]);
           });
 
-          if (latlngs.length) {
-            map.fitBounds(L.latLngBounds(latlngs).pad(0.2));
+          if (markers.length) {
+            map.fitBounds(L.latLngBounds(markers).pad(0.2));
           } else {
             map.setView([42.5, 12.5], 5);
           }
@@ -123,20 +171,6 @@
           console.error('Error loading datasets.json:', err);
           map.setView([42.5, 12.5], 5);
         });
-
-      // If the map is inside a hidden tab or layout that changes size, this keeps tiles aligned
-      window.addEventListener('resize', function () {
-        map.invalidateSize({ debounceMoveend: true });
-      });
-
-      // --- If/when you want the classic pin icons back ---
-      // 1) Remove preferCanvas:true above
-      // 2) Replace L.circleMarker(...) with:
-      /*
-      var marker = L.marker([lat, lon]).addTo(map).bindPopup(buildPopup(site));
-      */
-      // 3) Ensure NO ancestor of #dataset-map has transform/scale/filter/perspective/zoom.
-      //    Those create new containing blocks and cause DOM icon drift at low zooms.
     })();
   </script>
 </body>
