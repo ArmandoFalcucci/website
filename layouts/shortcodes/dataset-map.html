@@ -15,12 +15,19 @@
       margin-bottom: 2em;
     }
 
-    /* Fix: prevent global img rules from distorting Leaflet markers/tiles */
+    /* Fix 1: prevent global img rules from distorting Leaflet images */
     .leaflet-container img {
       max-width: none !important;
     }
 
-    /* Optional: nicer popup images */
+    /* Fix 2: explicitly size the default marker so the anchor is correct even if CSS touches <img> */
+    .leaflet-marker-icon,
+    .leaflet-marker-shadow {
+      width: auto;   /* Let Leaflet's inline width/height win */
+      height: auto;
+    }
+
+    /* Optional: nicer popup image */
     .popup-thumb {
       width: 120px;
       height: auto;
@@ -30,15 +37,15 @@
     }
 
     .popup-links a {
-      display: inline-block;
-      margin-right: 0.5em;
+      display: block;          /* one link per line */
       text-decoration: underline;
+      margin: 0.15em 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Map container -->
+  <!-- If this map sits inside a transformed element, markers can drift at low zooms -->
   <div id="dataset-map" role="region" aria-label="Archaeological sites map"></div>
 
   <!-- Leaflet JS -->
@@ -46,45 +53,77 @@
 
   <script>
     (function () {
-      // Create the map with sensible defaults
+      // Warn if any ancestor of #dataset-map has transform/filter/perspective (common cause of drift)
+      (function warnOnTransformedAncestors() {
+        var el = document.getElementById('dataset-map');
+        var culprit = null;
+        while (el && el !== document.body) {
+          var s = getComputedStyle(el);
+          if (
+            (s.transform && s.transform !== 'none') ||
+            (s.filter && s.filter !== 'none') ||
+            (s.perspective && s.perspective !== 'none') ||
+            (s.willChange && /transform|filter|perspective/.test(s.willChange)) ||
+            (s.zoom && s.zoom !== 'normal' && s.zoom !== '1')
+          ) {
+            culprit = el;
+            break;
+          }
+          el = el.parentElement;
+        }
+        if (culprit) {
+          console.warn(
+            'Leaflet markers can drift when a parent has CSS transform/filter/perspective/zoom.\n' +
+            'Problem element:', culprit, '\nComputed styles:', getComputedStyle(culprit)
+          );
+        }
+      })();
+
+      // Create the map
       var map = L.map('dataset-map', {
         zoomControl: true,
         worldCopyJump: true
       });
 
-      // Retina-friendly tile layer
-      var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      var tileLayer = L.tileLayer(tileUrl, {
+      // Retina-friendly tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         detectRetina: true,
         maxZoom: 19
       }).addTo(map);
 
-      // Helper: build popup HTML safely
+      // Build popup HTML (links on separate lines)
       function buildPopup(site) {
         var html = '';
-
         if (site.thumbnail) {
           html += '<img class="popup-thumb" src="' + site.thumbnail + '" alt="Thumbnail for ' + (site.name || 'site') + '">';
         }
-
         if (site.name) {
           html += '<strong>' + site.name + '</strong><br>';
         }
-
         html += '<div class="popup-links">';
-
         if (site.attribute_url) {
           html += '<a href="' + site.attribute_url + '" target="_blank" rel="noopener">Attribute data</a>';
         }
-
         if (site["3d_url"]) {
           html += '<a href="' + site["3d_url"] + '" target="_blank" rel="noopener">3D data</a>';
         }
-
         html += '</div>';
         return html;
       }
+
+      // Optional: explicitly define the default icon so CSS can’t change its size/anchor
+      var DefaultIcon = L.Icon.Default.extend({
+        options: {
+          // Leaflet's defaults; restated here to be explicit
+          iconSize:    [25, 41],
+          iconAnchor:  [12, 41],
+          popupAnchor: [ 1, -34],
+          tooltipAnchor: [16, -28],
+          shadowSize:  [41, 41]
+        }
+      });
+      var defaultIcon = new DefaultIcon();
 
       // Fetch and render points
       fetch('/data/datasets.json', { cache: 'no-cache' })
@@ -95,6 +134,7 @@
         .then(function (data) {
           if (!Array.isArray(data)) {
             console.error('datasets.json is not an array');
+            map.setView([42.5, 12.5], 5);
             return;
           }
 
@@ -103,35 +143,32 @@
           data.forEach(function (site, idx) {
             var lat = Number(site.lat);
             var lon = Number(site.lon);
-
-            // Validate coordinates
             var validLat = Number.isFinite(lat) && lat >= -90 && lat <= 90;
             var validLon = Number.isFinite(lon) && lon >= -180 && lon <= 180;
-
             if (!validLat || !validLon) {
               console.warn('Skipping site with invalid coords at index', idx, site);
               return;
             }
 
-            // IMPORTANT: Leaflet wants [lat, lon]
-            var marker = L.marker([lat, lon])
+            L.marker([lat, lon], { icon: defaultIcon })
               .addTo(map)
-              .bindPopup(buildPopup(site));
+              .bindPopup(buildPopup(site))
+              .on('add', function (e) {
+                // Nudge Leaflet to recompute positions if a layout/transform just happened
+                map.invalidateSize({ debounceMoveend: true });
+              });
 
-            markers.push(marker);
+            markers.push([lat, lon]);
           });
 
           if (markers.length) {
-            var group = L.featureGroup(markers);
-            map.fitBounds(group.getBounds().pad(0.2));
+            map.fitBounds(L.latLngBounds(markers).pad(0.2));
           } else {
-            // Fallback view: Italy-centered
             map.setView([42.5, 12.5], 5);
           }
         })
         .catch(function (err) {
           console.error('Error loading datasets.json:', err);
-          // Fallback view even if fetch fails
           map.setView([42.5, 12.5], 5);
         });
     })();
