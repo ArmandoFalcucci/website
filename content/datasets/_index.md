@@ -26,8 +26,8 @@ Over the years, I have published a number of lithic datasets from important site
 
 - **Attribute data:** Detailed datasets containing continuous, ordinal, and categorical data of lithic artifacts with related contextual information.
 
-- **3D data:** High-resolution 3D scans of selected stone tools, mostly cores retouched tools, and laminar blanks. These repositories are part of the **Open Aurignacian Project**.
+- **3D data:** High-resolution 3D scans of selected stone tools, mostly cores, retouched tools, and laminar blanks. These repositories are part of the **[Open Aurignacian Project](https://www.armandofalcucci.com/project/open_aurignacian/)**.
 
 Click on a site marker to open a popup with links to both the **attribute dataset** and the **3D models**.  
 
-**Note:** The code is not behaving as expected and the pins are not on the right location until you zoom in. I am working to solve this issue.
+**Note:** The code is not behaving as expected and the pins are not on the exact location until you zoom in. I am working to solve this issue.
