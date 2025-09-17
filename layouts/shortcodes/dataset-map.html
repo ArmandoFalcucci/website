@@ -35,14 +35,24 @@
       worldCopyJump: true
     });
 
-    // Terrain tiles from Stamen
-    L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg', {
+    // Use Stamen Terrain + Labels tiles
+    L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
       attribution: 'Map tiles by <a href="http://stamen.com/">Stamen Design</a>, ' +
                    'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
       subdomains: 'abcd',
       minZoom: 0,
       maxZoom: 20,
       detectRetina: true
+    }).addTo(map);
+
+    // Add labels overlay (for city names and roads)
+    L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.png', {
+      attribution: '',
+      subdomains: 'abcd',
+      minZoom: 0,
+      maxZoom: 20,
+      detectRetina: true,
+      opacity: 0.7
     }).addTo(map);
 
     // Build popup HTML
