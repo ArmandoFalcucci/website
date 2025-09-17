@@ -8,6 +8,10 @@ cms_exclude: true
 #   3 = Card
 view: 2
 
+# Add this block to disable the page animation
+design:
+  animation: "none"
+
 # Optional header image (relative to `static/media/` folder).
 header:
   caption: ''
