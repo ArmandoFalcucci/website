@@ -1,4 +1,5 @@
-/* Fix for Leaflet map marker drift in Wowchemy/Academic theme */
-body section[data-section-id] {
+/* Final override for Leaflet marker drift in Academic/Wowchemy */
+.page-body {
   transform: none !important;
+  -webkit-transform: none !important;
 }
