@@ -1,40 +1,140 @@
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dataset Map</title>
 
-<!-- Map container -->
-<div id="dataset-map" style="height: 600px; margin-bottom: 2em;"></div>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-<script>
-  var map = L.map('dataset-map');
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
+  <style>
+    /* Map container */
+    #dataset-map {
+      height: 600px;
+      margin-bottom: 2em;
+    }
 
-  fetch('/data/datasets.json')
-    .then(response => response.json())
-    .then(data => {
-      var markers = [];
+    /* Fix: prevent global img rules from distorting Leaflet markers/tiles */
+    .leaflet-container img {
+      max-width: none !important;
+    }
 
-      data.forEach(site => {
-        var popupContent = '';
-        if (site.thumbnail) {
-          popupContent += `<img src="${site.thumbnail}" style="width:100px;display:block;margin-bottom:0.5em;">`;
-        }
-        popupContent += `<strong>${site.name}</strong><br>`;
-        popupContent += `<a href="${site.attribute_url}" target="_blank">Attribute data</a><br>`;
-        popupContent += `<a href="${site["3d_url"]}" target="_blank">3D data</a>`;
+    /* Optional: nicer popup images */
+    .popup-thumb {
+      width: 120px;
+      height: auto;
+      display: block;
+      margin-bottom: 0.5em;
+      border-radius: 6px;
+    }
 
-        var marker = L.marker([site.lat, site.lon])
-                      .addTo(map)
-                      .bindPopup(popupContent);
+    .popup-links a {
+      display: inline-block;
+      margin-right: 0.5em;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
 
-        markers.push(marker);
+  <!-- Map container -->
+  <div id="dataset-map" role="region" aria-label="Archaeological sites map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    (function () {
+      // Create the map with sensible defaults
+      var map = L.map('dataset-map', {
+        zoomControl: true,
+        worldCopyJump: true
       });
 
-      // Fit map to all markers
-      var group = new L.featureGroup(markers);
-      map.fitBounds(group.getBounds().pad(0.2));
-    })
-    .catch(err => console.error("Error loading datasets.json:", err));
-</script>
+      // Retina-friendly tile layer
+      var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      var tileLayer = L.tileLayer(tileUrl, {
+        attribution: '&copy; OpenStreetMap contributors',
+        detectRetina: true,
+        maxZoom: 19
+      }).addTo(map);
+
+      // Helper: build popup HTML safely
+      function buildPopup(site) {
+        var html = '';
+
+        if (site.thumbnail) {
+          html += '<img class="popup-thumb" src="' + site.thumbnail + '" alt="Thumbnail for ' + (site.name || 'site') + '">';
+        }
+
+        if (site.name) {
+          html += '<strong>' + site.name + '</strong><br>';
+        }
+
+        html += '<div class="popup-links">';
+
+        if (site.attribute_url) {
+          html += '<a href="' + site.attribute_url + '" target="_blank" rel="noopener">Attribute data</a>';
+        }
+
+        if (site["3d_url"]) {
+          html += '<a href="' + site["3d_url"] + '" target="_blank" rel="noopener">3D data</a>';
+        }
+
+        html += '</div>';
+        return html;
+      }
+
+      // Fetch and render points
+      fetch('/data/datasets.json', { cache: 'no-cache' })
+        .then(function (response) {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.json();
+        })
+        .then(function (data) {
+          if (!Array.isArray(data)) {
+            console.error('datasets.json is not an array');
+            return;
+          }
+
+          var markers = [];
+
+          data.forEach(function (site, idx) {
+            var lat = Number(site.lat);
+            var lon = Number(site.lon);
+
+            // Validate coordinates
+            var validLat = Number.isFinite(lat) && lat >= -90 && lat <= 90;
+            var validLon = Number.isFinite(lon) && lon >= -180 && lon <= 180;
+
+            if (!validLat || !validLon) {
+              console.warn('Skipping site with invalid coords at index', idx, site);
+              return;
+            }
+
+            // IMPORTANT: Leaflet wants [lat, lon]
+            var marker = L.marker([lat, lon])
+              .addTo(map)
+              .bindPopup(buildPopup(site));
+
+            markers.push(marker);
+          });
+
+          if (markers.length) {
+            var group = L.featureGroup(markers);
+            map.fitBounds(group.getBounds().pad(0.2));
+          } else {
+            // Fallback view: Italy-centered
+            map.setView([42.5, 12.5], 5);
+          }
+        })
+        .catch(function (err) {
+          console.error('Error loading datasets.json:', err);
+          // Fallback view even if fetch fails
+          map.setView([42.5, 12.5], 5);
+        });
+    })();
+  </script>
+</body>
+</html>

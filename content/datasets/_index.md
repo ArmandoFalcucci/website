@@ -1,5 +1,5 @@
 ---
-title: Datasets
+title: Datasets (attribute data and 3D models)
 cms_exclude: true
 
 # View.
@@ -14,9 +14,5 @@ header:
   image: ''
 
 ---
-
-### Lithic datasets (attribute data)
-
-Work in progress!
 
 {{< dataset-map >}}
