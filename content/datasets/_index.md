@@ -19,53 +19,34 @@ header:
 
 ---
 
-<style>
-  #dataset-map {
-    width: 100%;
-    max-width: 1000px; /* optional */
-    height: 600px;
-    margin-bottom: 2em;
-  }
-  .popup-thumb {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin-bottom: 0.5em;
-    border-radius: 6px;
-  }
-  .popup-links a {
-    display: block;
-    text-decoration: underline;
-    margin: 0.15em 0;
-  }
-</style>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
 <div id="dataset-map"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
 (function() {
-  // Map image size in pixels
-  const imageWidth = 1000;
-  const imageHeight = 600;
+  const imageWidth = 3311;
+  const imageHeight = 2064;
 
-  // Initialize Leaflet map
   const map = L.map('dataset-map', {
     crs: L.CRS.Simple,
     minZoom: -1,
-    maxZoom: 2
+    maxZoom: 2,
+    zoomControl: true
   });
 
-  // Define image bounds
   const bounds = [[0,0], [imageHeight, imageWidth]];
 
-  // Add static image as map
+  // Add the static image
   L.imageOverlay('/media/map-dataset.png', bounds).addTo(map);
-  map.fitBounds(bounds);
 
-  // Function to build popup HTML
+  // Set the map view zoomed in to fill the container
+  // Center at middle of image
+  const centerY = imageHeight / 2;
+  const centerX = imageWidth / 2;
+
+  // Set initial zoom level (adjust 0-2 depending on how much you want to zoom)
+  map.setView([centerY, centerX], 1.2);
+
   function buildPopup(site) {
     let html = '';
     if (site.thumbnail) {
@@ -79,19 +60,15 @@ header:
     return html;
   }
 
-  // Load dataset JSON and add markers
   fetch('/data/datasets.json', { cache: 'no-cache' })
     .then(r => r.json())
     .then(data => {
       data.forEach(site => {
-        // Convert % to pixel coordinates
-        const px = (site.x / 100) * imageWidth;
-        const py = (site.y / 100) * imageHeight;
-
-        L.marker([py, px]).addTo(map).bindPopup(buildPopup(site));
+        L.marker([site.y, site.x]).addTo(map).bindPopup(buildPopup(site));
       });
     })
     .catch(err => console.error('Error loading datasets.json:', err));
+
 })();
 </script>
 
