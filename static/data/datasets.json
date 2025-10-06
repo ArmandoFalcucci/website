@@ -1,41 +1,7 @@
 [
-  {
-    "name": "Grotta di Fumane",
-    "lat": 45.5918287,
-    "lon": 10.9051824,
-    "attribute_url": "https://zenodo.org/doi/10.5281/zenodo.10965413",
-    "3d_url": "https://zenodo.org/doi/10.5281/zenodo.6362149",
-    "thumbnail": "/media/fumane.jpg"
-  },
-  {
-    "name": "Grotta di Castelcivita",
-    "lat": 40.5419159,
-    "lon": 15.3093058,
-    "attribute_url": "https://doi.org/10.5281/zenodo.10639552",
-    "3d_url": "https://doi.org/10.5281/zenodo.10631389",
-    "thumbnail": "/media/castelcivita.jpg"
-  },
-  {
-    "name": "Grotta della Cala",
-    "lat": 40.000983,
-    "lon": 15.381251,
-    "attribute_url": "https://zenodo.org/doi/10.5281/zenodo.15430432",
-    "3d_url": "https://zenodo.org/doi/10.5281/zenodo.14165189",
-    "thumbnail": "/media/cala.jpg"
-  },
-  {
-    "name": "Riparo Bombrini",
-    "lat": 43.7838361,
-    "lon": 7.5341963,
-    "attribute_url": "https://zenodo.org/doi/10.5281/zenodo.15363594",
-    "3d_url": "https://zenodo.org/doi/10.5281/zenodo.14731694",
-    "thumbnail": "/media/bombrini.jpg"
-  },
-  {
-    "name": "Ksar Akil",
-    "lat": 33.911833,
-    "lon": 35.603253,
-    "attribute_url": "https://zenodo.org/doi/10.5281/zenodo.16932273",
-    "thumbnail": "/media/ksarAkil.jpg"
-  }
+  {"name":"Grotta di Fumane","x":10.07,"y":6.25,"attribute_url":"https://zenodo.org/doi/10.5281/zenodo.10965413","3d_url":"https://zenodo.org/doi/10.5281/zenodo.6362149","thumbnail":"/media/fumane.jpg"},
+  {"name":"Riparo Bombrini","x":8.45,"y":7.41,"attribute_url":"https://zenodo.org/doi/10.5281/zenodo.15363594","3d_url":"https://zenodo.org/doi/10.5281/zenodo.14731694","thumbnail":"/media/bombrini.jpg"},
+  {"name":"Grotta di Castelcivita","x":11.97,"y":9.46,"attribute_url":"https://doi.org/10.5281/zenodo.10639552","3d_url":"https://doi.org/10.5281/zenodo.10631389","thumbnail":"/media/castelcivita.jpg"},
+  {"name":"Grotta della Cala","x":12.01,"y":9.70,"attribute_url":"https://zenodo.org/doi/10.5281/zenodo.15430432","3d_url":"https://zenodo.org/doi/10.5281/zenodo.14165189","thumbnail":"/media/cala.jpg"},
+  {"name":"Ksar Akil","x":21.28,"y":12.96,"attribute_url":"https://zenodo.org/doi/10.5281/zenodo.16932273","3d_url":"","thumbnail":"/media/ksarAkil.jpg"}
 ]
