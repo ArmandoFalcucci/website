@@ -22,8 +22,8 @@ header:
 <style>
   #dataset-map {
     width: 100%;
-    max-width: 1000px; /* optional: scale down from 3311px for page layout */
-    height: 624px;      /* scale height proportionally: 2064 * (1000/3311) */
+    max-width: 1200px; /* scale down if needed */
+    height: 750px;     /* adjust proportionally: 2064/3311 * 1200 ≈ 750 */
     margin-bottom: 2em;
   }
   .popup-thumb {
@@ -50,20 +50,22 @@ header:
   const imageWidth = 3311;
   const imageHeight = 2064;
 
-  // Initialize Leaflet map
+  // Initialize map with CRS.Simple
   const map = L.map('dataset-map', {
     crs: L.CRS.Simple,
     minZoom: -1,
     maxZoom: 2
   });
 
-  const bounds = [[0,0], [imageHeight, imageWidth]];
+  // Full image bounds
+  const bounds = [[0, 0], [imageHeight, imageWidth]];
 
-  // Add static image
+  // Add static image overlay
   L.imageOverlay('/media/map-dataset.png', bounds).addTo(map);
 
-  // Fit map to image bounds
-  map.fitBounds(bounds);
+  // Zoom in on Mediterranean region by defining subset of image bounds
+  const medBounds = [[400, 1300], [1000, 2800]]; // y1,x1 -> y2,x2
+  map.fitBounds(medBounds);
 
   // Build popup HTML
   function buildPopup(site) {
@@ -84,13 +86,15 @@ header:
     .then(r => r.json())
     .then(data => {
       data.forEach(site => {
-        // Use Photoshop pixel coordinates directly
+        // Use pixel coordinates directly
         L.marker([site.y, site.x]).addTo(map).bindPopup(buildPopup(site));
       });
     })
     .catch(err => console.error('Error loading datasets.json:', err));
+
 })();
 </script>
+
 
 
 
