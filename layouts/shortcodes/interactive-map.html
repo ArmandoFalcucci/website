@@ -1,9 +1,10 @@
 <div style="position: relative; display: inline-block;">
-  <img src="/media/map-dataset.png" width="3311" height="2064" alt="Map of sites">
+  
+  <img src="/media/map-dataset.png" width="3311" height="2064" alt="Map of archaeological sites" style="max-width: 100%; height: auto;">
 
   <div class="site-pin"
-       style="position: absolute; left: 1184px; top: 734px; transform: translate(-50%, -50%);
-              width: 30px; height: 30px; background: red; border-radius: 50%; cursor: pointer; z-index:1000;"
+       style="position: absolute; left: 35.76%; top: 35.56%; transform: translate(-50%, -50%);
+              width: 25px; height: 25px; background: red; border-radius: 50%; cursor: pointer; z-index:10;"
        data-name="Grotta di Fumane"
        data-thumbnail="/media/fumane.jpg"
        data-attribute="https://zenodo.org/doi/10.5281/zenodo.10965413"
@@ -11,8 +12,8 @@
   </div>
 
   <div class="site-pin"
-       style="position: absolute; left: 1008px; top: 872px; transform: translate(-50%, -50%);
-              width: 30px; height: 30px; background: blue; border-radius: 50%; cursor: pointer; z-index:1000;"
+       style="position: absolute; left: 30.44%; top: 42.25%; transform: translate(-50%, -50%);
+              width: 25px; height: 25px; background: blue; border-radius: 50%; cursor: pointer; z-index:10;"
        data-name="Riparo Bombrini"
        data-thumbnail="/media/bombrini.jpg"
        data-attribute="https://zenodo.org/doi/10.5281/zenodo.15363594"
@@ -20,8 +21,26 @@
   </div>
 
   <div class="site-pin"
-       style="position: absolute; left: 2525px; top: 1458px; transform: translate(-50%, -50%);
-              width: 30px; height: 30px; background: purple; border-radius: 50%; cursor: pointer; z-index:1000;"
+       style="position: absolute; left: 43.19%; top: 54.02%; transform: translate(-50%, -50%);
+              width: 25px; height: 25px; background: green; border-radius: 50%; cursor: pointer; z-index:10;"
+       data-name="Grotta di Castelcivita"
+       data-thumbnail="/media/castelcivita.jpg"
+       data-attribute="https://doi.org/10.5281/zenodo.10639552"
+       data-3d="https://doi.org/10.5281/zenodo.10631389">
+  </div>
+
+  <div class="site-pin"
+       style="position: absolute; left: 42.89%; top: 55.52%; transform: translate(-50%, -50%);
+              width: 25px; height: 25px; background: orange; border-radius: 50%; cursor: pointer; z-index:10;"
+       data-name="Grotta della Cala"
+       data-thumbnail="/media/cala.jpg"
+       data-attribute="https://zenodo.org/doi/10.5281/zenodo.15430432"
+       data-3d="https://zenodo.org/doi/10.5281/zenodo.14165189">
+  </div>
+
+  <div class="site-pin"
+       style="position: absolute; left: 76.26%; top: 70.64%; transform: translate(-50%, -50%);
+              width: 25px; height: 25px; background: purple; border-radius: 50%; cursor: pointer; z-index:10;"
        data-name="Ksar Akil"
        data-thumbnail="/media/ksarAkil.jpg"
        data-attribute="https://zenodo.org/doi/10.5281/zenodo.16932273"
@@ -29,46 +48,72 @@
   </div>
 </div>
 
-<div id="popup" style="position:absolute; display:none; background:white; border:1px solid #333; padding:10px; border-radius:6px; z-index:2000;"></div>
+<div id="popup" style="position: fixed; display: none; background: white; border: 1px solid #ccc; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); z-index: 1000; text-align: center; max-width: 200px;">
+</div>
 
 <script>
-  const popup = document.getElementById('popup');
-  const pins = document.querySelectorAll('.site-pin');
+  // Ensure this script runs only once, even if the shortcode is used multiple times.
+  if (!window.interactiveMapInitialized) {
+    const popup = document.getElementById('popup');
+    const pins = document.querySelectorAll('.site-pin');
 
-  pins.forEach(pin => {
-    pin.addEventListener('click', function(e){
-      // Stop the document click event from firing immediately
-      e.stopPropagation(); 
-      
-      const rect = e.target.getBoundingClientRect();
-      const bodyRect = document.body.getBoundingClientRect();
-      
-      // Position the popup relative to the pin
-      popup.style.top = (rect.top - bodyRect.top + window.scrollY - popup.offsetHeight - 10) + 'px';
-      popup.style.left = (rect.left - bodyRect.left + window.scrollX + (rect.width / 2) - (popup.offsetWidth / 2)) + 'px';
+    pins.forEach(pin => {
+      pin.addEventListener('click', function(event) {
+        // Stop the click from bubbling up to the document, which would hide the popup.
+        event.stopPropagation();
+        
+        let htmlContent = '';
+        if (this.dataset.thumbnail) {
+          htmlContent += `<img src="${this.dataset.thumbnail}" alt="${this.dataset.name}" style="width: 100%; height: auto; display: block; margin-bottom: 10px; border-radius: 4px;">`;
+        }
+        htmlContent += `<strong style="font-size: 1.1em;">${this.dataset.name}</strong><br>`;
+        
+        let links = [];
+        if (this.dataset.attribute) {
+          links.push(`<a href="${this.dataset.attribute}" target="_blank" rel="noopener noreferrer">Attribute data</a>`);
+        }
+        if (this.dataset['3d']) {
+          links.push(`<a href="${this.dataset['3d']}" target="_blank" rel="noopener noreferrer">3D data</a>`);
+        }
+        
+        if (links.length > 0) {
+          htmlContent += `<div style="margin-top: 10px;">${links.join(' | ')}</div>`;
+        }
+        
+        popup.innerHTML = htmlContent;
 
-      let htmlContent = `<div style="text-align: center;">`;
-      if(this.dataset.thumbnail) {
-        htmlContent += `<img src="${this.dataset.thumbnail}" width="150" style="display:block; margin-bottom:10px; border-radius: 4px;">`;
-      }
-      htmlContent += `<strong>${this.dataset.name}</strong><br>`;
-      
-      let links = [];
-      if(this.dataset.attribute) links.push(`<a href="${this.dataset.attribute}" target="_blank">Attribute data</a>`);
-      if(this.dataset['3d']) links.push(`<a href="${this.dataset['3d']}" target="_blank">3D data</a>`);
-      
-      htmlContent += links.join(' | ');
-      htmlContent += `</div>`;
-      
-      popup.innerHTML = htmlContent;
-      popup.style.display = 'block';
+        // Position the popup above the pin.
+        const pinRect = this.getBoundingClientRect();
+        popup.style.display = 'block'; // Make it visible to calculate its dimensions
+        
+        const popupRect = popup.getBoundingClientRect();
+        let topPos = pinRect.top + window.scrollY - popupRect.height - 10; // 10px buffer
+        let leftPos = pinRect.left + window.scrollX + (pinRect.width / 2) - (popupRect.width / 2);
+
+        // Adjust if popup goes off-screen
+        if (topPos < window.scrollY) {
+            topPos = pinRect.bottom + window.scrollY + 10;
+        }
+        if (leftPos < window.scrollX) {
+            leftPos = window.scrollX + 5;
+        }
+        if (leftPos + popupRect.width > window.innerWidth) {
+            leftPos = window.innerWidth - popupRect.width - 5;
+        }
+
+        popup.style.top = `${topPos}px`;
+        popup.style.left = `${leftPos}px`;
+        popup.style.position = 'absolute'; // Use absolute positioning relative to the document
+      });
     });
-  });
 
-  // Hide popup when clicking anywhere else on the document
-  document.addEventListener('click', function(e){
-    if (!popup.contains(e.target) && !e.target.classList.contains('site-pin')) {
-      popup.style.display = 'none';
-    }
-  });
+    // Hide popup when clicking anywhere else on the document.
+    document.addEventListener('click', function(event) {
+      if (popup.style.display === 'block' && !popup.contains(event.target)) {
+        popup.style.display = 'none';
+      }
+    });
+
+    window.interactiveMapInitialized = true;
+  }
 </script>
