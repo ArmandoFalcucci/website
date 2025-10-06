@@ -22,8 +22,8 @@ header:
 <style>
   #dataset-map {
     width: 100%;
-    max-width: 1200px; /* scale down if needed */
-    height: 750px;     /* adjust proportionally: 2064/3311 * 1200 ≈ 750 */
+    max-width: 1200px; /* scale down for page layout */
+    height: 750px;     /* proportional to 3311x2064 */
     margin-bottom: 2em;
   }
   .popup-thumb {
@@ -50,7 +50,6 @@ header:
   const imageWidth = 3311;
   const imageHeight = 2064;
 
-  // Initialize map with CRS.Simple
   const map = L.map('dataset-map', {
     crs: L.CRS.Simple,
     minZoom: -1,
@@ -58,16 +57,15 @@ header:
   });
 
   // Full image bounds
-  const bounds = [[0, 0], [imageHeight, imageWidth]];
+  const bounds = [[0,0], [imageHeight, imageWidth]];
 
-  // Add static image overlay
+  // Add the static PNG as the map
   L.imageOverlay('/media/map-dataset.png', bounds).addTo(map);
 
-  // Zoom in on Mediterranean region by defining subset of image bounds
-  const medBounds = [[400, 1300], [1000, 2800]]; // y1,x1 -> y2,x2
-  map.fitBounds(medBounds);
+  // Fit to full image (original Leaflet behavior)
+  map.fitBounds(bounds);
 
-  // Build popup HTML
+  // Build popup HTML for each site
   function buildPopup(site) {
     let html = '';
     if (site.thumbnail) {
@@ -91,12 +89,8 @@ header:
       });
     })
     .catch(err => console.error('Error loading datasets.json:', err));
-
 })();
 </script>
-
-
-
 
 Over the years, I have published a number of lithic datasets from important sites across the Mediterranean. This interactive map allows you to locate the sites and access the corresponding repositories:
 
