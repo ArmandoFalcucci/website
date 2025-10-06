@@ -1,42 +1,43 @@
 [
   {
     "name": "Grotta di Fumane",
-    "x": 10.07,
-    "y": 6.25,
+    "x": 334,
+    "y": 129,
     "attribute_url": "https://zenodo.org/doi/10.5281/zenodo.10965413",
     "3d_url": "https://zenodo.org/doi/10.5281/zenodo.6362149",
     "thumbnail": "/media/fumane.jpg"
   },
   {
     "name": "Riparo Bombrini",
-    "x": 8.45,
-    "y": 7.41,
+    "x": 280,
+    "y": 153,
     "attribute_url": "https://zenodo.org/doi/10.5281/zenodo.15363594",
     "3d_url": "https://zenodo.org/doi/10.5281/zenodo.14731694",
     "thumbnail": "/media/bombrini.jpg"
   },
   {
     "name": "Grotta di Castelcivita",
-    "x": 11.97,
-    "y": 9.46,
+    "x": 396,
+    "y": 195,
     "attribute_url": "https://doi.org/10.5281/zenodo.10639552",
     "3d_url": "https://doi.org/10.5281/zenodo.10631389",
     "thumbnail": "/media/castelcivita.jpg"
   },
   {
     "name": "Grotta della Cala",
-    "x": 12.01,
-    "y": 9.70,
+    "x": 398,
+    "y": 200,
     "attribute_url": "https://zenodo.org/doi/10.5281/zenodo.15430432",
     "3d_url": "https://zenodo.org/doi/10.5281/zenodo.14165189",
     "thumbnail": "/media/cala.jpg"
   },
   {
     "name": "Ksar Akil",
-    "x": 21.28,
-    "y": 12.96,
+    "x": 704,
+    "y": 267,
     "attribute_url": "https://zenodo.org/doi/10.5281/zenodo.16932273",
     "3d_url": "",
     "thumbnail": "/media/ksarAkil.jpg"
   }
 ]
+
