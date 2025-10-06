@@ -19,6 +19,29 @@ header:
 
 ---
 
+<style>
+  #dataset-map {
+    width: 100%;
+    max-width: 3311px; /* match image width */
+    height: 2064px;    /* match image height */
+    margin-bottom: 2em;
+  }
+  .popup-thumb {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5em;
+    border-radius: 6px;
+  }
+  .popup-links a {
+    display: block;
+    text-decoration: underline;
+    margin: 0.15em 0;
+  }
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
 <div id="dataset-map"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -30,22 +53,12 @@ header:
   const map = L.map('dataset-map', {
     crs: L.CRS.Simple,
     minZoom: -1,
-    maxZoom: 2,
-    zoomControl: true
+    maxZoom: 2
   });
 
   const bounds = [[0,0], [imageHeight, imageWidth]];
-
-  // Add the static image
   L.imageOverlay('/media/map-dataset.png', bounds).addTo(map);
-
-  // Set the map view zoomed in to fill the container
-  // Center at middle of image
-  const centerY = imageHeight / 2;
-  const centerX = imageWidth / 2;
-
-  // Set initial zoom level (adjust 0-2 depending on how much you want to zoom)
-  map.setView([centerY, centerX], 1.2);
+  map.fitBounds(bounds);
 
   function buildPopup(site) {
     let html = '';
@@ -68,9 +81,9 @@ header:
       });
     })
     .catch(err => console.error('Error loading datasets.json:', err));
-
 })();
 </script>
+
 
 Over the years, I have published a number of lithic datasets from important sites across the Mediterranean. This interactive map allows you to locate the sites and access the corresponding repositories:
 
