@@ -3,48 +3,28 @@
   <img src="/media/map-dataset.png" width="3311" height="2064" alt="Map of archaeological sites" style="max-width: 100%; height: auto;">
 
   <div class="site-pin"
-       style="position: absolute; left: 35.76%; top: 35.56%; transform: translate(-50%, -50%);
-              width: 25px; height: 25px; background: red; border-radius: 50%; cursor: pointer; z-index:10;"
-       data-name="Grotta di Fumane"
-       data-thumbnail="/media/fumane.jpg"
-       data-attribute="https://zenodo.org/doi/10.5281/zenodo.10965413"
-       data-3d="https://zenodo.org/doi/10.5281/zenodo.6362149">
+       style="position: absolute; left: 35.76%; top: 35.56%; transform: translate(-50%, -100%); cursor: pointer; z-index:10;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
   </div>
 
   <div class="site-pin"
-       style="position: absolute; left: 30.44%; top: 42.25%; transform: translate(-50%, -50%);
-              width: 25px; height: 25px; background: blue; border-radius: 50%; cursor: pointer; z-index:10;"
-       data-name="Riparo Bombrini"
-       data-thumbnail="/media/bombrini.jpg"
-       data-attribute="https://zenodo.org/doi/10.5281/zenodo.15363594"
-       data-3d="https://zenodo.org/doi/10.5281/zenodo.14731694">
+       style="position: absolute; left: 30.44%; top: 42.25%; transform: translate(-50%, -100%); cursor: pointer; z-index:10;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
   </div>
 
   <div class="site-pin"
-       style="position: absolute; left: 43.19%; top: 54.02%; transform: translate(-50%, -50%);
-              width: 25px; height: 25px; background: green; border-radius: 50%; cursor: pointer; z-index:10;"
-       data-name="Grotta di Castelcivita"
-       data-thumbnail="/media/castelcivita.jpg"
-       data-attribute="https://doi.org/10.5281/zenodo.10639552"
-       data-3d="https://doi.org/10.5281/zenodo.10631389">
+       style="position: absolute; left: 43.19%; top: 54.02%; transform: translate(-50%, -100%); cursor: pointer; z-index:10;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
   </div>
 
   <div class="site-pin"
-       style="position: absolute; left: 42.89%; top: 55.52%; transform: translate(-50%, -50%);
-              width: 25px; height: 25px; background: orange; border-radius: 50%; cursor: pointer; z-index:10;"
-       data-name="Grotta della Cala"
-       data-thumbnail="/media/cala.jpg"
-       data-attribute="https://zenodo.org/doi/10.5281/zenodo.15430432"
-       data-3d="https://zenodo.org/doi/10.5281/zenodo.14165189">
+       style="position: absolute; left: 42.89%; top: 55.52%; transform: translate(-50%, -100%); cursor: pointer; z-index:10;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
   </div>
 
   <div class="site-pin"
-       style="position: absolute; left: 76.26%; top: 70.64%; transform: translate(-50%, -50%);
-              width: 25px; height: 25px; background: purple; border-radius: 50%; cursor: pointer; z-index:10;"
-       data-name="Ksar Akil"
-       data-thumbnail="/media/ksarAkil.jpg"
-       data-attribute="https://zenodo.org/doi/10.5281/zenodo.16932273"
-       data-3d="">
+       style="position: absolute; left: 76.26%; top: 70.64%; transform: translate(-50%, -100%); cursor: pointer; z-index:10;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
   </div>
 </div>
 
@@ -64,21 +44,19 @@
         if (this.dataset.thumbnail) {
           htmlContent += `<img src="${this.dataset.thumbnail}" alt="${this.dataset.name}" style="width: 100%; height: auto; display: block; margin-bottom: 10px; border-radius: 4px;">`;
         }
-        // Site name with black color
         htmlContent += `<strong style="font-size: 1.1em; color: black;">${this.dataset.name}</strong><br>`;
         
         let links = [];
         if (this.dataset.attribute) {
-          // Links with explicit blue color
           links.push(`<a href="${this.dataset.attribute}" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none;">Attribute data</a>`);
         }
         if (this.dataset['3d']) {
-          // Links with explicit blue color
           links.push(`<a href="${this.dataset['3d']}" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none;">3D data</a>`);
         }
         
         if (links.length > 0) {
-          htmlContent += `<div style="margin-top: 10px;">${links.join(' | ')}</div>`;
+          // The separator is now wrapped in a span with a specific color to ensure visibility
+          htmlContent += `<div style="margin-top: 10px;">${links.join(' <span style="color: #6c757d;">|</span> ')}</div>`;
         }
         
         popup.innerHTML = htmlContent;
