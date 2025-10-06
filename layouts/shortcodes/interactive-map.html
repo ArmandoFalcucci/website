@@ -1,0 +1,74 @@
+<div style="position: relative; display: inline-block;">
+  <img src="/media/map-dataset.png" width="3311" height="2064" alt="Map of sites">
+
+  <div class="site-pin"
+       style="position: absolute; left: 1184px; top: 734px; transform: translate(-50%, -50%);
+              width: 30px; height: 30px; background: red; border-radius: 50%; cursor: pointer; z-index:1000;"
+       data-name="Grotta di Fumane"
+       data-thumbnail="/media/fumane.jpg"
+       data-attribute="https://zenodo.org/doi/10.5281/zenodo.10965413"
+       data-3d="https://zenodo.org/doi/10.5281/zenodo.6362149">
+  </div>
+
+  <div class="site-pin"
+       style="position: absolute; left: 1008px; top: 872px; transform: translate(-50%, -50%);
+              width: 30px; height: 30px; background: blue; border-radius: 50%; cursor: pointer; z-index:1000;"
+       data-name="Riparo Bombrini"
+       data-thumbnail="/media/bombrini.jpg"
+       data-attribute="https://zenodo.org/doi/10.5281/zenodo.15363594"
+       data-3d="https://zenodo.org/doi/10.5281/zenodo.14731694">
+  </div>
+
+  <div class="site-pin"
+       style="position: absolute; left: 2525px; top: 1458px; transform: translate(-50%, -50%);
+              width: 30px; height: 30px; background: purple; border-radius: 50%; cursor: pointer; z-index:1000;"
+       data-name="Ksar Akil"
+       data-thumbnail="/media/ksarAkil.jpg"
+       data-attribute="https://zenodo.org/doi/10.5281/zenodo.16932273"
+       data-3d="">
+  </div>
+</div>
+
+<div id="popup" style="position:absolute; display:none; background:white; border:1px solid #333; padding:10px; border-radius:6px; z-index:2000;"></div>
+
+<script>
+  const popup = document.getElementById('popup');
+  const pins = document.querySelectorAll('.site-pin');
+
+  pins.forEach(pin => {
+    pin.addEventListener('click', function(e){
+      // Stop the document click event from firing immediately
+      e.stopPropagation(); 
+      
+      const rect = e.target.getBoundingClientRect();
+      const bodyRect = document.body.getBoundingClientRect();
+      
+      // Position the popup relative to the pin
+      popup.style.top = (rect.top - bodyRect.top + window.scrollY - popup.offsetHeight - 10) + 'px';
+      popup.style.left = (rect.left - bodyRect.left + window.scrollX + (rect.width / 2) - (popup.offsetWidth / 2)) + 'px';
+
+      let htmlContent = `<div style="text-align: center;">`;
+      if(this.dataset.thumbnail) {
+        htmlContent += `<img src="${this.dataset.thumbnail}" width="150" style="display:block; margin-bottom:10px; border-radius: 4px;">`;
+      }
+      htmlContent += `<strong>${this.dataset.name}</strong><br>`;
+      
+      let links = [];
+      if(this.dataset.attribute) links.push(`<a href="${this.dataset.attribute}" target="_blank">Attribute data</a>`);
+      if(this.dataset['3d']) links.push(`<a href="${this.dataset['3d']}" target="_blank">3D data</a>`);
+      
+      htmlContent += links.join(' | ');
+      htmlContent += `</div>`;
+      
+      popup.innerHTML = htmlContent;
+      popup.style.display = 'block';
+    });
+  });
+
+  // Hide popup when clicking anywhere else on the document
+  document.addEventListener('click', function(e){
+    if (!popup.contains(e.target) && !e.target.classList.contains('site-pin')) {
+      popup.style.display = 'none';
+    }
+  });
+</script>
