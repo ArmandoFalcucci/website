@@ -23,8 +23,9 @@ header:
   <img src="/media/map-dataset.png" width="3311" height="2064" alt="Map of sites">
 
   <!-- Grotta di Fumane -->
-  <div class="site-pin" 
-       style="position: absolute; left: 1184px; top: 734px; transform: translate(-50%, -50%); width:24px; height:24px; background:red; border-radius:50%; cursor:pointer;"
+  <div class="site-pin"
+       style="position: absolute; left: 1184px; top: 734px; transform: translate(-50%, -50%);
+              width: 30px; height: 30px; background: red; border-radius: 50%; cursor: pointer; z-index:1000;"
        data-name="Grotta di Fumane"
        data-thumbnail="/media/fumane.jpg"
        data-attribute="https://zenodo.org/doi/10.5281/zenodo.10965413"
@@ -32,8 +33,9 @@ header:
   </div>
 
   <!-- Riparo Bombrini -->
-  <div class="site-pin" 
-       style="position: absolute; left: 1008px; top: 872px; transform: translate(-50%, -50%); width:24px; height:24px; background:blue; border-radius:50%; cursor:pointer;"
+  <div class="site-pin"
+       style="position: absolute; left: 1008px; top: 872px; transform: translate(-50%, -50%);
+              width: 30px; height: 30px; background: blue; border-radius: 50%; cursor: pointer; z-index:1000;"
        data-name="Riparo Bombrini"
        data-thumbnail="/media/bombrini.jpg"
        data-attribute="https://zenodo.org/doi/10.5281/zenodo.15363594"
@@ -41,8 +43,9 @@ header:
   </div>
 
   <!-- Grotta di Castelcivita -->
-  <div class="site-pin" 
-       style="position: absolute; left: 1430px; top: 1115px; transform: translate(-50%, -50%); width:24px; height:24px; background:green; border-radius:50%; cursor:pointer;"
+  <div class="site-pin"
+       style="position: absolute; left: 1430px; top: 1115px; transform: translate(-50%, -50%);
+              width: 30px; height: 30px; background: green; border-radius: 50%; cursor: pointer; z-index:1000;"
        data-name="Grotta di Castelcivita"
        data-thumbnail="/media/castelcivita.jpg"
        data-attribute="https://doi.org/10.5281/zenodo.10639552"
@@ -50,8 +53,9 @@ header:
   </div>
 
   <!-- Grotta della Cala -->
-  <div class="site-pin" 
-       style="position: absolute; left: 1420px; top: 1146px; transform: translate(-50%, -50%); width:24px; height:24px; background:orange; border-radius:50%; cursor:pointer;"
+  <div class="site-pin"
+       style="position: absolute; left: 1420px; top: 1146px; transform: translate(-50%, -50%);
+              width: 30px; height: 30px; background: orange; border-radius: 50%; cursor: pointer; z-index:1000;"
        data-name="Grotta della Cala"
        data-thumbnail="/media/cala.jpg"
        data-attribute="https://zenodo.org/doi/10.5281/zenodo.15430432"
@@ -59,18 +63,18 @@ header:
   </div>
 
   <!-- Ksar Akil -->
-  <div class="site-pin" 
-       style="position: absolute; left: 2525px; top: 1458px; transform: translate(-50%, -50%); width:24px; height:24px; background:purple; border-radius:50%; cursor:pointer;"
+  <div class="site-pin"
+       style="position: absolute; left: 2525px; top: 1458px; transform: translate(-50%, -50%);
+              width: 30px; height: 30px; background: purple; border-radius: 50%; cursor: pointer; z-index:1000;"
        data-name="Ksar Akil"
        data-thumbnail="/media/ksarAkil.jpg"
        data-attribute="https://zenodo.org/doi/10.5281/zenodo.16932273"
        data-3d="">
   </div>
-
 </div>
 
 <!-- Popup container -->
-<div id="popup" style="position:absolute; display:none; background:white; border:1px solid #333; padding:10px; border-radius:6px; z-index:1000;"></div>
+<div id="popup" style="position:absolute; display:none; background:white; border:1px solid #333; padding:10px; border-radius:6px; z-index:2000;"></div>
 
 <script>
   const popup = document.getElementById('popup');
@@ -103,6 +107,7 @@ header:
     }
   });
 </script>
+
 
 Over the years, I have published a number of lithic datasets from important sites across the Mediterranean. This interactive map allows you to locate the sites and access the corresponding repositories:
 
