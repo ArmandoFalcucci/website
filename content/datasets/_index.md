@@ -19,75 +19,45 @@ header:
 
 ---
 
-<style>
-  #dataset-map {
-    width: 3311px;
-    height: 2064px;
-    margin-bottom: 2em;
-  }
-  .popup-thumb {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin-bottom: 0.5em;
-    border-radius: 6px;
-  }
-  .popup-links a {
-    display: block;
-    text-decoration: underline;
-    margin: 0.15em 0;
-  }
-</style>
+<div style="position: relative; display: inline-block;">
+  <img src="/media/map-dataset.png" width="3311" height="2064" alt="Map of sites">
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Grotta di Fumane -->
+  <a href="https://zenodo.org/doi/10.5281/zenodo.10965413" 
+     style="position: absolute; left: 1184px; top: 734px; transform: translate(-50%, -100%);" 
+     title="Grotta di Fumane">
+    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
+  </a>
 
-<div id="dataset-map"></div>
+  <!-- Riparo Bombrini -->
+  <a href="https://zenodo.org/doi/10.5281/zenodo.15363594" 
+     style="position: absolute; left: 1008px; top: 872px; transform: translate(-50%, -100%);" 
+     title="Riparo Bombrini">
+    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
+  </a>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script>
-(function() {
-  const imageWidth = 3311;
-  const imageHeight = 2064;
+  <!-- Grotta di Castelcivita -->
+  <a href="https://doi.org/10.5281/zenodo.10639552" 
+     style="position: absolute; left: 1430px; top: 1115px; transform: translate(-50%, -100%);" 
+     title="Grotta di Castelcivita">
+    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
+  </a>
 
-  const map = L.map('dataset-map', {
-    crs: L.CRS.Simple,
-    minZoom: -1,
-    maxZoom: 1,   // limit zoom to prevent scaling
-    zoomControl: true
-  });
+  <!-- Grotta della Cala -->
+  <a href="https://zenodo.org/doi/10.5281/zenodo.15430432" 
+     style="position: absolute; left: 1420px; top: 1146px; transform: translate(-50%, -100%);" 
+     title="Grotta della Cala">
+    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
+  </a>
 
-  // Image overlay (full-size)
-  const bounds = [[0,0], [imageHeight, imageWidth]];
-  L.imageOverlay('/media/map-dataset.png', bounds).addTo(map);
+  <!-- Ksar Akil -->
+  <a href="https://zenodo.org/doi/10.5281/zenodo.16932273" 
+     style="position: absolute; left: 2525px; top: 1458px; transform: translate(-50%, -100%);" 
+     title="Ksar Akil">
+    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
+  </a>
+</div>
 
-  // Optional: start at top-left
-  map.setView([imageHeight/2, imageWidth/2], 0);
-
-  // Build popup function
-  function buildPopup(site) {
-    let html = '';
-    if (site.thumbnail) {
-      html += `<img class="popup-thumb" src="${site.thumbnail}" alt="Thumbnail for ${site.name}">`;
-    }
-    html += `<strong>${site.name}</strong><br>`;
-    html += '<div class="popup-links">';
-    if (site.attribute_url) html += `<a href="${site.attribute_url}" target="_blank">Attribute data</a>`;
-    if (site["3d_url"]) html += `<a href="${site["3d_url"]}" target="_blank">3D data</a>`;
-    html += '</div>';
-    return html;
-  }
-
-  // Add markers
-  fetch('/data/datasets.json', { cache: 'no-cache' })
-    .then(r => r.json())
-    .then(data => {
-      data.forEach(site => {
-        L.marker([site.y, site.x]).addTo(map).bindPopup(buildPopup(site));
-      });
-    })
-    .catch(err => console.error('Error loading datasets.json:', err));
-})();
-</script>
 
 
 Over the years, I have published a number of lithic datasets from important sites across the Mediterranean. This interactive map allows you to locate the sites and access the corresponding repositories:
