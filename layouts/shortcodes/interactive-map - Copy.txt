@@ -52,29 +52,28 @@
 </div>
 
 <script>
+  // Ensure this script runs only once, even if the shortcode is used multiple times.
   if (!window.interactiveMapInitialized) {
     const popup = document.getElementById('popup');
     const pins = document.querySelectorAll('.site-pin');
 
     pins.forEach(pin => {
       pin.addEventListener('click', function(event) {
+        // Stop the click from bubbling up to the document, which would hide the popup.
         event.stopPropagation();
         
         let htmlContent = '';
         if (this.dataset.thumbnail) {
           htmlContent += `<img src="${this.dataset.thumbnail}" alt="${this.dataset.name}" style="width: 100%; height: auto; display: block; margin-bottom: 10px; border-radius: 4px;">`;
         }
-        // Site name with black color
-        htmlContent += `<strong style="font-size: 1.1em; color: black;">${this.dataset.name}</strong><br>`;
+        htmlContent += `<strong style="font-size: 1.1em;">${this.dataset.name}</strong><br>`;
         
         let links = [];
         if (this.dataset.attribute) {
-          // Links with explicit blue color
-          links.push(`<a href="${this.dataset.attribute}" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none;">Attribute data</a>`);
+          links.push(`<a href="${this.dataset.attribute}" target="_blank" rel="noopener noreferrer">Attribute data</a>`);
         }
         if (this.dataset['3d']) {
-          // Links with explicit blue color
-          links.push(`<a href="${this.dataset['3d']}" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none;">3D data</a>`);
+          links.push(`<a href="${this.dataset['3d']}" target="_blank" rel="noopener noreferrer">3D data</a>`);
         }
         
         if (links.length > 0) {
@@ -83,13 +82,15 @@
         
         popup.innerHTML = htmlContent;
 
+        // Position the popup above the pin.
         const pinRect = this.getBoundingClientRect();
-        popup.style.display = 'block'; 
+        popup.style.display = 'block'; // Make it visible to calculate its dimensions
         
         const popupRect = popup.getBoundingClientRect();
-        let topPos = pinRect.top + window.scrollY - popupRect.height - 10; 
+        let topPos = pinRect.top + window.scrollY - popupRect.height - 10; // 10px buffer
         let leftPos = pinRect.left + window.scrollX + (pinRect.width / 2) - (popupRect.width / 2);
 
+        // Adjust if popup goes off-screen
         if (topPos < window.scrollY) {
             topPos = pinRect.bottom + window.scrollY + 10;
         }
@@ -102,12 +103,13 @@
 
         popup.style.top = `${topPos}px`;
         popup.style.left = `${leftPos}px`;
-        popup.style.position = 'absolute'; 
+        popup.style.position = 'absolute'; // Use absolute positioning relative to the document
       });
     });
 
+    // Hide popup when clicking anywhere else on the document.
     document.addEventListener('click', function(event) {
-      if (popup.style.display === 'block' && !popup.contains(event.target) && !event.target.classList.contains('site-pin')) {
+      if (popup.style.display === 'block' && !popup.contains(event.target)) {
         popup.style.display = 'none';
       }
     });
