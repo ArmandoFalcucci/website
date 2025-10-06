@@ -23,40 +23,82 @@ header:
   <img src="/media/map-dataset.png" width="3311" height="2064" alt="Map of sites">
 
   <!-- Grotta di Fumane -->
-  <a href="https://zenodo.org/doi/10.5281/zenodo.10965413" 
-     style="position: absolute; left: 1184px; top: 734px; transform: translate(-50%, -100%);" 
-     title="Grotta di Fumane">
-    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
-  </a>
+  <div style="
+    width: 24px;
+    height: 24px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 1184px;
+    top: 734px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;"
+    title="Grotta di Fumane"
+    onclick="window.open('https://zenodo.org/doi/10.5281/zenodo.10965413', '_blank')">
+  </div>
 
   <!-- Riparo Bombrini -->
-  <a href="https://zenodo.org/doi/10.5281/zenodo.15363594" 
-     style="position: absolute; left: 1008px; top: 872px; transform: translate(-50%, -100%);" 
-     title="Riparo Bombrini">
-    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
-  </a>
+  <div style="
+    width: 24px;
+    height: 24px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 1008px;
+    top: 872px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;"
+    title="Riparo Bombrini"
+    onclick="window.open('https://zenodo.org/doi/10.5281/zenodo.15363594', '_blank')">
+  </div>
 
   <!-- Grotta di Castelcivita -->
-  <a href="https://doi.org/10.5281/zenodo.10639552" 
-     style="position: absolute; left: 1430px; top: 1115px; transform: translate(-50%, -100%);" 
-     title="Grotta di Castelcivita">
-    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
-  </a>
+  <div style="
+    width: 24px;
+    height: 24px;
+    background: green;
+    border-radius: 50%;
+    position: absolute;
+    left: 1430px;
+    top: 1115px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;"
+    title="Grotta di Castelcivita"
+    onclick="window.open('https://doi.org/10.5281/zenodo.10639552', '_blank')">
+  </div>
 
   <!-- Grotta della Cala -->
-  <a href="https://zenodo.org/doi/10.5281/zenodo.15430432" 
-     style="position: absolute; left: 1420px; top: 1146px; transform: translate(-50%, -100%);" 
-     title="Grotta della Cala">
-    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
-  </a>
+  <div style="
+    width: 24px;
+    height: 24px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    left: 1420px;
+    top: 1146px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;"
+    title="Grotta della Cala"
+    onclick="window.open('https://zenodo.org/doi/10.5281/zenodo.15430432', '_blank')">
+  </div>
 
   <!-- Ksar Akil -->
-  <a href="https://zenodo.org/doi/10.5281/zenodo.16932273" 
-     style="position: absolute; left: 2525px; top: 1458px; transform: translate(-50%, -100%);" 
-     title="Ksar Akil">
-    <img src="/media/pin-icon.png" width="24" height="24" alt="Pin">
-  </a>
+  <div style="
+    width: 24px;
+    height: 24px;
+    background: purple;
+    border-radius: 50%;
+    position: absolute;
+    left: 2525px;
+    top: 1458px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;"
+    title="Ksar Akil"
+    onclick="window.open('https://zenodo.org/doi/10.5281/zenodo.16932273', '_blank')">
+  </div>
+
 </div>
+
 
 
 
