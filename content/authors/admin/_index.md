@@ -34,9 +34,9 @@ organizations:
   - name: New York University
     url: https://www.nyu.edu/
   - name: University of Algarve
-    url: https://www.ualg.pt/en
+    url: https://www.icarehb.com/afalcucci/
   - name: University of Tübingen
-    url: https://uni-tuebingen.de/en/
+    url: https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/geowissenschaften/arbeitsgruppen/urgeschichte-naturwissenschaftliche-archaeologie/ina/aeltere-urgeschichte-quartaeroekologie/mitarbeiter/associated-members/dr-armando-falcucci/
 education:
   courses:
     - course: PhD in Paleolithic Archaeology
@@ -60,3 +60,5 @@ In parallel, I am a **Research Associate** at the [**Institute for Archaeologica
 From 2020 to 2025, I led the [**DFG-funded project**](https://gepris.dfg.de/gepris/projekt/431809858?language=en) *Investigating Early Upper Paleolithic technological variability and cultural dynamics south of the Alps*. This research explored how cultural transmission and environmental factors shaped the lifeways of foragers along the Italian Peninsula between 42,000 and 36,000 years ago, combining traditional archaeological methods, experimental approaches, and advanced 3D analyses.
 
 I am also committed to advancing **Open Science**. I have created open-access repositories for the Early Upper Paleolithic, providing researchers worldwide with high-resolution [**3D models**](https://www.armandofalcucci.com/project/open_aurignacian/) and [**attribute-based datasets**](https://www.armandofalcucci.com/datasets/) of stone tool assemblages—resources designed to foster global collaboration and improve reproducibility in archaeological research.
+
+In 2025, I was elected as a regular **board member** of the [**European Society for the Study of Human Evolution (ESHE)**](https://www.eshe.eu/aboutus/). In this role, I contribute to fostering interdisciplinary collaboration in human evolution research, supporting early-career researchers, and promoting public engagement with the study of human origins.
