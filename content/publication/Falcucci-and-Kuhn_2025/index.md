@@ -34,9 +34,17 @@ abstract: 'The appearance of the Protoaurignacian in Europe around 42,000 years 
 
 The paper has been featured in several national and international news outlets, including:
 
+- [**Discover Magazine**](https://www.discovermagazine.com/humans-in-europe-might-ve-taken-toolmaking-inspiration-from-neanderthals-48152) (*English*)
 
-- [**Earth.com**](https://www.earth.com/news/prehistoric-homo-sapiens-stone-tools-preserved-volcanic-ash-grotta-di-castelcivita/) (*English*)
+- [**Geo.fr**](https://www.geo.fr/histoire/prehistoire-les-premiers-outils-europeens-n-etaient-en-realite-pas-importes-du-proche-orient-229080) (*French*)
 
+- [**Pikaia.eu**](https://pikaia.eu/strumenti-simili-tecnologie-diverse-innovazioni-culturali-indipendenti-tra-vicino-oriente-ed-europa/) (*Italian*)
+
+- [**Phys.org**](https://phys.org/news/2025-10-stone-tool-independently-europe-east.html) (*English*)
+
+- [**Science & Vie**](https://www.science-et-vie.com/science-et-culture/des-milliers-outils-prehistoriques-montrent-que-les-europeens-ont-innove-sans-copier-dautres-peuples-215485.html) (*French*)
+
+- [**Stuttgarter Zeitung**](https://www.stuttgarter-zeitung.de/inhalt.vor-42000-jahren-ex-oriente-lux-steinzeit-technik-war-kein-wissens-import.f014399a-d7dd-4586-9121-6a34541063d3.html) (*German*)
 
 
 The original press release is from the [**University of Tuebingen**](https://uni-tuebingen.de/en/university/news-and-publications/press-releases/press-releases/article/innovation-in-stone-tool-manufacture-occurred-independently-in-europe-and-the-near-east-says-study/).
