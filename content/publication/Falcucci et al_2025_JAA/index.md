@@ -41,7 +41,7 @@ abstract: 'Riparo Bombrini is a collapsed rockshelter within the Balzi Rossi sit
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
