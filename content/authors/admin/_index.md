@@ -1,6 +1,6 @@
 ---
 title: Armando Falcucci
-role: Lecturer
+role: Lecturer in Palaeolithic Archaeology
 avatar_filename: ""
 bio: I am a Lecturer in Palaeolithic Archaeology at the University of Southampton (CAHO). My research investigates the interplay between technological evolution, mobility, and human-climate interactions across Europe, the Levant, and southern Africa. Using a combination of traditional and computational methods, I explore cultural transmission and demic spread during the MIS3.
 interests:
