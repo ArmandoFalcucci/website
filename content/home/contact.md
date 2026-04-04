@@ -28,21 +28,21 @@ content:
   # email:
   # phone:
   address:
-    street: Burgsteige 11
-    city: Tübingen
-    region: DE
-    postcode: "72070"
-    country: Germany
-    country_code: DE
+    street: Archaeology B65A 
+    city: Southampton
+    region: Hampshire
+    postcode: "SO17 1NX"
+    country: United Kingdom
+    country_code: UK
   coordinates:
-    latitude: '48.519433'
-    longitude: '9.050234'
+    latitude: '50.928740'
+    longitude: '-1.403304'
   appointment_url: ''
   contact_links:
     - icon: twitter
       icon_pack: fab
       name: DM Me
-      link: 'https://twitter.com/ArmandoFalcucci'
+      link: 'https://bsky.app/profile/armandofalcucci.bsky.social'
     # - icon: video
     #   icon_pack: fas
     #   name: Zoom Me
