@@ -15,9 +15,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
-  - icon: twitter
+  - icon: linkedin
     icon_pack: fab
-    link: https://web-cdn.bsky.app/profile/armandofalcucci.bsky.social
+    link: https://www.linkedin.com/in/armando-falcucci-ba271190/
   - icon: graduation-cap
     icon_pack: fas
     link: https://scholar.google.com/citations?user=hsrY_B4AAAAJ&hl=en
@@ -32,7 +32,7 @@ social:
     link: https://orcid.org/0000-0002-3255-1005
 organizations:
   - name: University of Southampton
-    url: https://www.southampton.ac.uk/research/groups/centre-for-the-archaeology-of-human-origins
+    url: https://www.southampton.ac.uk/people/676smr/doctor-armando-falcucci
 education:
   courses:
     - course: PhD in Paleolithic Archaeology
