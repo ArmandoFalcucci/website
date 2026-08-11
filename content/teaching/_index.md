@@ -57,6 +57,14 @@ An introduction to the evolution of hominin biology and culture, and to how idea
 
 ---
 
+## Supervision
+
+I supervise undergraduate, MA, and PhD projects on Late Pleistocene archaeology, quantitative and 3D-based lithic analysis, experimental archaeology, and open science in archaeology. I also mentor early-career researchers preparing Marie Skłodowska-Curie proposals and comparable fellowship applications.
+
+[**→ Supervision and prospective students**](/supervision)
+
+---
+
 ## Past teaching — University of Tübingen
 
 From my time at the [**Institute for Archaeological Sciences**](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/geowissenschaften/arbeitsgruppen/urgeschichte-naturwissenschaftliche-archaeologie/ina/) (University of Tübingen, Germany), where I taught in the MSc programme [**Archaeological Sciences and Human Evolution**](https://uni-tuebingen.de/studium/studienangebot/verzeichnis-der-studiengaenge/detail/course/archaeological-sciences-and-human-evolution-master/).
