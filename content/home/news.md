@@ -2,7 +2,7 @@
 
 active: true
 widget: pages
-weight: 15
+weight: 35
 title: Latest news
 content:
   count: 3

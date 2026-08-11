@@ -1,7 +1,7 @@
 ---
 title: "Call for papers: quantitative approaches to lithic analysis"
-subtitle: "A new Collection in the Journal of Archaeological Method and Theory (JAMT)"
-summary: "I am co-editing a Collection in JAMT on the integration of quantitative approaches to lithic analysis, together with Dr Tanner Kovach. Submissions are open now."
+subtitle: "A new Collection in the Journal of Archaeological Method and Theory"
+summary: "I am co-editing a Collection in the Journal of Archaeological Method and Theory on the integration of quantitative approaches to lithic analysis, together with Dr Tanner Kovach. Submissions are open now."
 authors:
   - admin
   - Tanner Kovach
