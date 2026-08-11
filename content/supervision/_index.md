@@ -1,5 +1,5 @@
 ---
-title: Supervision
+title: Supervision and prospective students
 cms_exclude: true
 
 # View.
@@ -14,8 +14,6 @@ header:
   image: ''
 
 ---
-
-# Supervision and prospective students
 
 I welcome enquiries from students interested in Palaeolithic archaeology and lithic technology, at undergraduate and graduate level alike. If your interests overlap with the themes below — or sit somewhere adjacent that you think could work — please get in touch.
 
