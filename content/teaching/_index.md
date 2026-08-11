@@ -1,5 +1,5 @@
 ---
-title: Courses
+title:
 cms_exclude: true
 
 # View.
