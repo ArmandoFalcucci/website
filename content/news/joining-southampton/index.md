@@ -1,7 +1,7 @@
 ---
 title: "Joining the Department of Archaeology at Southampton"
 subtitle: "New post as Lecturer in Palaeolithic Archaeology"
-summary:
+summary: "I have joined the University of Southampton as Lecturer in Palaeolithic Archaeology, and am a member of the Centre for the Archaeology of Human Origins."
 authors:
   - admin
 tags:
