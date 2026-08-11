@@ -5,7 +5,6 @@ summary:
 authors:
   - admin
 tags:
-  - Teaching
 categories:
   - News
 date: 2026-04-01

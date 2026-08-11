@@ -10,7 +10,7 @@ content:
     folders:
       - news
 design:
-  view: 3
+  view: compact
   columns: '2'
 
 ---
